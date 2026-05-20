@@ -6,80 +6,71 @@ import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { siteConfig, navigation } from "@/lib/constants";
-import Container from "./container";
 
 const Navbar: FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-gray-100 bg-white/95 backdrop-blur-sm">
-      <Container>
-        <nav className="flex h-16 items-center justify-between md:h-20">
-          <Link
-            href="/"
-            className="text-primary-800 text-lg font-bold md:text-xl"
-          >
-            {siteConfig.name}
-          </Link>
+    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
+        <Link href="/" className="text-xl font-semibold tracking-tight">
+          {siteConfig.name}
+        </Link>
 
-          {/* Desktop Navigation */}
-          <ul className="hidden items-center gap-8 md:flex">
-            {navigation.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className={cn(
-                    "hover:text-primary-700 text-sm font-medium transition-colors",
-                    pathname === item.href
-                      ? "text-primary-700"
-                      : "text-gray-600"
-                  )}
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-            <li>
-              <a
-                href="#kontakt"
-                className="bg-primary-800 hover:bg-primary-900 rounded-lg px-4 py-2 text-sm font-medium text-white transition-colors"
-              >
-                Kontakt aufnehmen
-              </a>
-            </li>
-          </ul>
-
-          {/* Mobile Burger */}
-          <button
-            type="button"
-            className="md:hidden"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label={mobileOpen ? "Menü schließen" : "Menü öffnen"}
+        {/* Desktop Navigation */}
+        <nav className="hidden items-center gap-10 md:flex">
+          {navigation.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={cn(
+                "text-[15px] font-medium transition-colors duration-200",
+                pathname === item.href
+                  ? "text-black"
+                  : "text-neutral-500 hover:text-black"
+              )}
+            >
+              {item.label}
+            </Link>
+          ))}
+          <a
+            href="#kontakt"
+            className="ml-2 rounded-full bg-black px-5 py-2.5 text-[14px] font-medium text-white transition-opacity hover:opacity-80"
           >
-            {mobileOpen ? (
-              <X className="h-6 w-6 text-gray-700" />
-            ) : (
-              <Menu className="h-6 w-6 text-gray-700" />
-            )}
-          </button>
+            Kontakt aufnehmen
+          </a>
         </nav>
-      </Container>
+
+        {/* Mobile Burger */}
+        <button
+          type="button"
+          className="md:hidden"
+          onClick={() => setMobileOpen(!mobileOpen)}
+          aria-label={mobileOpen ? "Menü schließen" : "Menü öffnen"}
+        >
+          {mobileOpen ? (
+            <X className="h-6 w-6" />
+          ) : (
+            <Menu className="h-6 w-6" />
+          )}
+        </button>
+      </div>
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="border-t border-gray-100 bg-white md:hidden">
-          <Container>
-            <ul className="flex flex-col gap-1 py-4">
+        <div className="border-t border-neutral-100 bg-white md:hidden">
+          <nav className="mx-auto max-w-7xl px-6 py-6">
+            <ul className="flex flex-col gap-1">
               {navigation.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
                     className={cn(
-                      "block rounded-lg px-4 py-3 text-sm font-medium transition-colors",
+                      "block rounded-lg px-4 py-3 text-[15px] font-medium transition-colors",
                       pathname === item.href
-                        ? "bg-primary-50 text-primary-700"
-                        : "text-gray-600 hover:bg-gray-50"
+                        ? "bg-neutral-50 text-black"
+                        : "text-neutral-500 hover:bg-neutral-50 hover:text-black"
                     )}
                     onClick={() => setMobileOpen(false)}
                   >
@@ -88,7 +79,7 @@ const Navbar: FC = () => {
                 </li>
               ))}
             </ul>
-          </Container>
+          </nav>
         </div>
       )}
     </header>

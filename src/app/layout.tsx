@@ -1,19 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import KontaktFormularWrapper from "@/components/sections/kontakt-formular-wrapper";
 import { siteConfig } from "@/lib/constants";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -30,10 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="de"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
+    <html lang="de" className={`${inter.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col">
         <Navbar />
         <main className="flex-1">{children}</main>

@@ -19,10 +19,11 @@ html {
   --color-accent-400: #a3a3a3;
   --color-accent-500: #737373;
   --color-accent-600: #525252;
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
 }
 
 body {
   font-family: var(--font-sans), system-ui, sans-serif;
+  color: #171717;
+  letter-spacing: -0.01em;
 }
