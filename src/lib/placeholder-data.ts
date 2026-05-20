@@ -2,7 +2,7 @@ export const heroData = {
   headline: "Moderne Fertighäuser",
   subline:
     "Ihr Partner für nachhaltiges Bauen – von der Beratung bis zur Schlüsselübergabe.",
-  ctaText: "Kostenloses Erstgespräch",
+  ctaText: "Kontakt aufnehmen",
   ctaHref: "#kontakt",
 };
 

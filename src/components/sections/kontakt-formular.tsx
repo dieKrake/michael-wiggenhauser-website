@@ -5,7 +5,10 @@ import Button from "@/components/ui/button";
 
 const KontaktFormular = () => {
   return (
-    <section className="border-t border-gray-200 bg-gray-50 py-16 md:py-24">
+    <section
+      id="kontakt"
+      className="scroll-mt-24 border-t border-gray-200 bg-gray-50 py-16 md:py-24"
+    >
       <Container>
         <div className="grid gap-12 md:grid-cols-2">
           {/* Info-Seite */}

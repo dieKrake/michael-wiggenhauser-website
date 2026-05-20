@@ -18,7 +18,7 @@ const Navbar: FC = () => {
         <nav className="flex h-16 items-center justify-between md:h-20">
           <Link
             href="/"
-            className="text-lg font-bold text-primary-800 md:text-xl"
+            className="text-primary-800 text-lg font-bold md:text-xl"
           >
             {siteConfig.name}
           </Link>
@@ -30,7 +30,7 @@ const Navbar: FC = () => {
                 <Link
                   href={item.href}
                   className={cn(
-                    "text-sm font-medium transition-colors hover:text-primary-700",
+                    "hover:text-primary-700 text-sm font-medium transition-colors",
                     pathname === item.href
                       ? "text-primary-700"
                       : "text-gray-600"
@@ -40,6 +40,14 @@ const Navbar: FC = () => {
                 </Link>
               </li>
             ))}
+            <li>
+              <a
+                href="#kontakt"
+                className="bg-primary-800 hover:bg-primary-900 rounded-lg px-4 py-2 text-sm font-medium text-white transition-colors"
+              >
+                Kontakt aufnehmen
+              </a>
+            </li>
           </ul>
 
           {/* Mobile Burger */}
