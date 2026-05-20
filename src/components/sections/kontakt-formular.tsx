@@ -13,8 +13,8 @@ const KontaktFormular = () => {
             <Heading as="h2">Sie haben noch Fragen?</Heading>
             <p className="mt-4 text-gray-600">
               Ich freue mich, Sie kennenzulernen. Vereinbaren Sie ein
-              unverbindliches Erstgespräch – telefonisch, per E-Mail oder
-              direkt über das Formular.
+              unverbindliches Erstgespräch – telefonisch, per E-Mail oder direkt
+              über das Formular.
             </p>
             <div className="mt-8 space-y-4">
               <div className="flex items-center gap-3">
@@ -44,7 +44,7 @@ const KontaktFormular = () => {
                   type="text"
                   id="contact-name"
                   name="name"
-                  className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 focus:border-gray-700 focus:outline-none focus:ring-1 focus:ring-gray-700"
+                  className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 focus:border-gray-700 focus:ring-1 focus:ring-gray-700 focus:outline-none"
                   placeholder="Ihr Name"
                 />
               </div>
@@ -59,7 +59,7 @@ const KontaktFormular = () => {
                   type="email"
                   id="contact-email"
                   name="email"
-                  className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 focus:border-gray-700 focus:outline-none focus:ring-1 focus:ring-gray-700"
+                  className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 focus:border-gray-700 focus:ring-1 focus:ring-gray-700 focus:outline-none"
                   placeholder="ihre@email.de"
                 />
               </div>
@@ -75,7 +75,7 @@ const KontaktFormular = () => {
                 id="contact-message"
                 name="message"
                 rows={5}
-                className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 focus:border-gray-700 focus:outline-none focus:ring-1 focus:ring-gray-700"
+                className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 focus:border-gray-700 focus:ring-1 focus:ring-gray-700 focus:outline-none"
                 placeholder="Ihre Nachricht..."
               />
             </div>
@@ -91,6 +91,10 @@ const KontaktFormular = () => {
                 className="text-sm text-gray-600"
               >
                 Ich habe die{" "}
+                <a href="/agb" className="underline hover:text-gray-900">
+                  AGB
+                </a>{" "}
+                und der{" "}
                 <a
                   href="/datenschutz"
                   className="underline hover:text-gray-900"

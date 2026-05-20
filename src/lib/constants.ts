@@ -15,6 +15,7 @@ export const navigation = [
 export const footerLinks = {
   main: navigation,
   legal: [
+    { label: "AGB", href: "/agb" },
     { label: "Datenschutz", href: "/datenschutz" },
     { label: "Impressum", href: "/impressum" },
   ],

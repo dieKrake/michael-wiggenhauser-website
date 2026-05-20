@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
-import KontaktFormular from "@/components/sections/kontakt-formular";
+import KontaktFormularWrapper from "@/components/sections/kontakt-formular-wrapper";
 import { siteConfig } from "@/lib/constants";
 import "./globals.css";
 
@@ -37,7 +37,7 @@ export default function RootLayout({
       <body className="flex min-h-full flex-col">
         <Navbar />
         <main className="flex-1">{children}</main>
-        <KontaktFormular />
+        <KontaktFormularWrapper />
         <Footer />
       </body>
     </html>
