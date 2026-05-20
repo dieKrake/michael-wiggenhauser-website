@@ -7,9 +7,9 @@ export const siteConfig = {
 
 export const navigation = [
   { label: "Startseite", href: "/" },
-  { label: "Leistungen", href: "/leistungen" },
+  { label: "Sorgenfrei Bauen", href: "/sorgenfrei-bauen" },
+  { label: "Finanzierung & Ablauf", href: "/finanzierung-ablauf" },
   { label: "Über mich", href: "/ueber-mich" },
-  { label: "Aktuelles", href: "/aktuelles" },
 ] as const;
 
 export const footerLinks = {

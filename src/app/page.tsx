@@ -140,24 +140,6 @@ export default function Startseite() {
         </Container>
       </Section>
 
-      {/* E-Book CTA */}
-      <Section background="primary">
-        <Container className="text-center">
-          <Heading as="h2" className="text-white">
-            Kostenloses E-Book
-          </Heading>
-          <p className="text-primary-200 mx-auto mt-4 max-w-xl">
-            Ihr Leitfaden zum passenden Fertighausanbieter. Verschaffen Sie sich
-            einen genauen Überblick.
-          </p>
-          <div className="mt-8">
-            <Button variant="secondary" size="lg">
-              Zum kostenlosen E-Book
-            </Button>
-          </div>
-        </Container>
-      </Section>
-
       {/* Testimonials */}
       <Section background="gray">
         <Container>

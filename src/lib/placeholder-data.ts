@@ -3,7 +3,7 @@ export const heroData = {
   subline:
     "Ihr Partner für nachhaltiges Bauen – von der Beratung bis zur Schlüsselübergabe.",
   ctaText: "Kostenloses Erstgespräch",
-  ctaHref: "/kontakt",
+  ctaHref: "#kontakt",
 };
 
 export const leistungsKarten = [
@@ -11,14 +11,14 @@ export const leistungsKarten = [
     title: "Bauberatung & Finanzierung",
     description:
       "Gemeinsam erarbeiten wir eine maßgeschneiderte Finanzierungslösung, die Ihren Bedürfnissen und finanziellen Möglichkeiten entspricht.",
-    href: "/leistungen",
+    href: "/sorgenfrei-bauen",
     icon: "calculator" as const,
   },
   {
     title: "ELK Fertighäuser",
     description:
       "Schnelle Lieferzeiten zum Festpreis & sichere Budgetplanung, sowie komplette Individualisierbarkeit.",
-    href: "/leistungen",
+    href: "/sorgenfrei-bauen",
     icon: "home" as const,
   },
   {
@@ -178,6 +178,125 @@ export const events = [
     title: "Finanzierungstag im ELK-Musterhaus",
     location: "ELK-Musterhaus Fellbach",
     description: "Unverbindlich beraten lassen.",
+  },
+];
+
+export const leistungenListe = [
+  "Kostenlose Erstberatung vor Ort oder telefonisch",
+  "Individuelle Bedarfsanalyse und Grundrissplanung",
+  "Auswahl und Konfiguration Ihres ELK Fertighauses",
+  "Finanzierungsberatung und Fördermittelprüfung",
+  "Koordination mit Architekten und Behörden",
+  "Begleitung vom Erstgespräch bis zur Schlüsselübergabe",
+  "Bemusterung und Ausstattungsberatung",
+  "After-Sales-Service auch nach dem Einzug",
+];
+
+export const elkGalerie = {
+  einfamilienhaus: {
+    label: "Einfamilienhaus",
+    bilder: [
+      { src: "/images/placeholder-efh-1.jpg", alt: "Einfamilienhaus Modell 1" },
+      { src: "/images/placeholder-efh-2.jpg", alt: "Einfamilienhaus Modell 2" },
+      { src: "/images/placeholder-efh-3.jpg", alt: "Einfamilienhaus Modell 3" },
+    ],
+  },
+  bungalow: {
+    label: "Bungalow",
+    bilder: [
+      { src: "/images/placeholder-bungalow-1.jpg", alt: "Bungalow Modell 1" },
+      { src: "/images/placeholder-bungalow-2.jpg", alt: "Bungalow Modell 2" },
+      { src: "/images/placeholder-bungalow-3.jpg", alt: "Bungalow Modell 3" },
+    ],
+  },
+  mehrfamilienhaus: {
+    label: "Mehrfamilienhaus",
+    bilder: [
+      {
+        src: "/images/placeholder-mfh-1.jpg",
+        alt: "Mehrfamilienhaus Modell 1",
+      },
+      {
+        src: "/images/placeholder-mfh-2.jpg",
+        alt: "Mehrfamilienhaus Modell 2",
+      },
+      {
+        src: "/images/placeholder-mfh-3.jpg",
+        alt: "Mehrfamilienhaus Modell 3",
+      },
+    ],
+  },
+};
+
+export const sorgenfreiVerkaufenSchritte = [
+  {
+    nummer: "01",
+    title: "Kostenlose Erstberatung",
+    description:
+      "Wir lernen uns kennen und besprechen Ihre Situation. Was ist Ihnen beim Verkauf wichtig? Welche Ziele verfolgen Sie? Dieses Gespräch ist selbstverständlich kostenfrei und unverbindlich.",
+  },
+  {
+    nummer: "02",
+    title: "Bewertung Ihrer Immobilie",
+    description:
+      "Eine realistische und marktgerechte Bewertung bildet die Grundlage für einen erfolgreichen Verkauf. Wir berücksichtigen aktuelle Marktpreise, regionale Gegebenheiten und die Besonderheiten Ihres Objekts.",
+  },
+  {
+    nummer: "03",
+    title: "Professionelle Vermarktung",
+    description:
+      "Hochwertige Fotos, ein ansprechendes Exposé und die passende Vermarktungsstrategie – wir sorgen dafür, dass Ihre Immobilie die richtigen Interessenten erreicht.",
+  },
+  {
+    nummer: "04",
+    title: "Besichtigungen & Auswahl",
+    description:
+      "Wir koordinieren und führen alle Besichtigungstermine durch, prüfen die Bonität der Interessenten und wählen die geeignetsten Kandidaten für die Verhandlung aus.",
+  },
+  {
+    nummer: "05",
+    title: "Verhandlung & Abschluss",
+    description:
+      "Von der Preisverhandlung über den Kaufvertrag bis zum Notartermin – wir begleiten Sie durch den gesamten Prozess und sorgen für einen reibungslosen Ablauf.",
+  },
+  {
+    nummer: "06",
+    title: "After-Sales-Service",
+    description:
+      "Auch nach dem erfolgreichen Verkauf stehen wir Ihnen als Ansprechpartner zur Verfügung und unterstützen Sie bei allen weiteren Anliegen.",
+  },
+];
+
+export const finanzierungAbschnitte = [
+  {
+    title: "Finanzierungsberatung",
+    content:
+      "Die richtige Finanzierung ist das Fundament Ihres Bauvorhabens. Gemeinsam analysieren wir Ihre finanzielle Situation, ermitteln die optimale Darlehenshöhe und finden die besten Konditionen bei namhaften Banken und Kreditinstituten. Dabei berücksichtigen wir staatliche Förderprogramme wie KfW-Kredite, BAFA-Zuschüsse und regionale Fördermittel.",
+  },
+  {
+    title: "Grundstückssuche",
+    content:
+      "Noch kein Grundstück? Kein Problem. Durch unser Netzwerk und unsere Erfahrung in der Region unterstützen wir Sie bei der Suche nach dem passenden Baugrund. Wir prüfen Bebauungspläne, Bodengutachten und Erschließungskosten, damit Sie eine fundierte Entscheidung treffen können.",
+  },
+  {
+    title: "Planung & Konfiguration",
+    content:
+      "Ihr ELK Fertighaus wird exakt nach Ihren Wünschen konfiguriert. Vom Grundriss über die Fassade bis zur Innenausstattung – in der Bemusterung wählen Sie aus einer Vielzahl hochwertiger Materialien und Optionen. Dabei stehe ich Ihnen beratend zur Seite.",
+  },
+  {
+    title: "Genehmigung & Vorbereitung",
+    content:
+      "Wir unterstützen Sie bei der Einreichung des Bauantrags und koordinieren die notwendigen Schritte mit Architekten, Statikern und Behörden. Parallel beginnt die Produktion Ihres Hauses im ELK Werk.",
+  },
+  {
+    title: "Bau & Montage",
+    content:
+      "Die vorgefertigten Hauselemente werden in nur ein bis zwei Tagen auf Ihrem Grundstück montiert und witterungsdicht aufgestellt. Anschließend folgt der Innenausbau – je nach Ausbaustufe von ELK oder in Eigenleistung.",
+  },
+  {
+    title: "Übergabe & Einzug",
+    content:
+      "Nach einer gründlichen Qualitätsprüfung übergeben wir Ihnen die Schlüssel zu Ihrem neuen Zuhause. Auch danach stehe ich Ihnen als Ansprechpartner für alle Fragen zur Verfügung.",
   },
 ];
 
