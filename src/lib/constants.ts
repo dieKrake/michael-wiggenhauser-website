@@ -6,10 +6,9 @@ export const siteConfig = {
 };
 
 export const navigation = [
-  { label: "Startseite", href: "/" },
-  { label: "Sorgenfrei Bauen", href: "/sorgenfrei-bauen" },
-  { label: "Finanzierung & Ablauf", href: "/finanzierung-ablauf" },
-  { label: "Über mich", href: "/ueber-mich" },
+  { label: "SORGENFREI BAUEN", href: "/sorgenfrei-bauen" },
+  { label: "FINANZIERUNG & ABLAUF", href: "/finanzierung-ablauf" },
+  { label: "ÜBER MICH", href: "/ueber-mich" },
 ] as const;
 
 export const footerLinks = {
