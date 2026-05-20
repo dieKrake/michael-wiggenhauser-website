@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Home, Calculator, Users, Trees, Leaf, Heart, Zap } from "lucide-react";
 import Container from "@/components/layout/container";
@@ -12,6 +13,12 @@ import {
   nachhaltigkeitFeatures,
   testimonials,
 } from "@/lib/placeholder-data";
+
+export const metadata: Metadata = {
+  title: "Startseite",
+  description:
+    "Ihr Fachberater für ELK Fertighäuser – Bauberatung, Finanzierung und individuelle Hausplanung.",
+};
 
 const iconMap = {
   calculator: Calculator,
@@ -169,22 +176,6 @@ export default function Startseite() {
                 </div>
               </Card>
             ))}
-          </div>
-        </Container>
-      </Section>
-
-      {/* Kontakt CTA */}
-      <Section background="white">
-        <Container className="text-center">
-          <Heading as="h2">Sie haben noch Fragen?</Heading>
-          <p className="mx-auto mt-4 max-w-xl text-gray-600">
-            Ich freue mich, Sie kennenzulernen. Vereinbaren Sie ein
-            unverbindliches Erstgespräch.
-          </p>
-          <div className="mt-8">
-            <Link href="/kontakt">
-              <Button size="lg">Kontakt aufnehmen</Button>
-            </Link>
           </div>
         </Container>
       </Section>

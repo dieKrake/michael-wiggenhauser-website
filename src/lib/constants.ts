@@ -10,7 +10,6 @@ export const navigation = [
   { label: "Leistungen", href: "/leistungen" },
   { label: "Über mich", href: "/ueber-mich" },
   { label: "Aktuelles", href: "/aktuelles" },
-  { label: "Kontakt", href: "/kontakt" },
 ] as const;
 
 export const footerLinks = {

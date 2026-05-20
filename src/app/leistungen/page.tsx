@@ -116,21 +116,6 @@ export default function LeistungenPage() {
           </div>
         </Container>
       </Section>
-
-      {/* CTA */}
-      <Section background="gray">
-        <Container className="text-center">
-          <Heading as="h2">Sie haben noch Fragen?</Heading>
-          <p className="mx-auto mt-4 max-w-xl text-gray-600">
-            Kontaktieren Sie uns für ein unverbindliches Beratungsgespräch.
-          </p>
-          <div className="mt-8">
-            <Link href="/kontakt">
-              <Button size="lg">Kontakt aufnehmen</Button>
-            </Link>
-          </div>
-        </Container>
-      </Section>
     </>
   );
 }

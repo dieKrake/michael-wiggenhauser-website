@@ -82,21 +82,6 @@ export default function UeberMichPage() {
           </div>
         </Container>
       </Section>
-
-      {/* CTA */}
-      <Section background="white">
-        <Container className="text-center">
-          <Heading as="h2">Sie haben noch Fragen?</Heading>
-          <p className="mx-auto mt-4 max-w-xl text-gray-600">
-            Kontaktieren Sie mich für ein unverbindliches Erstgespräch.
-          </p>
-          <div className="mt-8">
-            <Link href="/kontakt">
-              <Button size="lg">Kontakt aufnehmen</Button>
-            </Link>
-          </div>
-        </Container>
-      </Section>
     </>
   );
 }

@@ -10,7 +10,8 @@ import { events } from "@/lib/placeholder-data";
 
 export const metadata: Metadata = {
   title: "Aktuelles & Termine",
-  description: "Aktuelle Termine, Messen und Veranstaltungen rund um ELK Fertighäuser.",
+  description:
+    "Aktuelle Termine, Messen und Veranstaltungen rund um ELK Fertighäuser.",
 };
 
 export default function AktuellesPage() {
@@ -32,9 +33,9 @@ export default function AktuellesPage() {
             {events.map((event) => (
               <Card key={event.title}>
                 <div className="flex items-start gap-4">
-                  <CalendarDays className="mt-1 h-5 w-5 shrink-0 text-primary-600" />
+                  <CalendarDays className="text-primary-600 mt-1 h-5 w-5 shrink-0" />
                   <div>
-                    <p className="text-sm font-medium text-primary-700">
+                    <p className="text-primary-700 text-sm font-medium">
                       {event.date}
                       {event.dateEnd && ` – ${event.dateEnd}`}
                     </p>
@@ -50,21 +51,6 @@ export default function AktuellesPage() {
                 </div>
               </Card>
             ))}
-          </div>
-        </Container>
-      </Section>
-
-      {/* CTA */}
-      <Section background="white">
-        <Container className="text-center">
-          <Heading as="h2">Sie haben Fragen?</Heading>
-          <p className="mx-auto mt-4 max-w-xl text-gray-600">
-            Setzen Sie sich mit mir in Kontakt zur Terminvereinbarung.
-          </p>
-          <div className="mt-8">
-            <Link href="/kontakt">
-              <Button size="lg">Kontakt aufnehmen</Button>
-            </Link>
           </div>
         </Container>
       </Section>
