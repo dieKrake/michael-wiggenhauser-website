@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, HardHat, MessageCircle, Home } from "lucide-react";
 import { leistungsKarten, testimonials } from "@/lib/placeholder-data";
 
@@ -14,41 +15,87 @@ export default function Startseite() {
     <>
       {/* Hero */}
       <section className="relative overflow-hidden">
-        {/* Bilder */}
-        <div className="grid lg:grid-cols-2">
-          {/* Bild links – nur auf Desktop sichtbar */}
-          <div className="relative hidden min-h-[70vh] bg-neutral-300 lg:block">
-            <div className="flex h-full w-full items-center justify-center text-sm text-neutral-500">
-              Haus-Bild 1 Placeholder
-            </div>
+        <div className="grid lg:grid-cols-12">
+          {/* Bild links – volle Höhe */}
+          <div className="relative min-h-[50vh] lg:col-span-5 lg:row-span-1 lg:min-h-0">
+            <Image
+              src="/images/haus-placeholder.webp"
+              alt="ELK Fertighaus"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 42vw"
+              priority
+            />
           </div>
 
-          {/* Bild rechts – immer sichtbar */}
-          <div className="relative min-h-[50vh] bg-neutral-200 lg:min-h-[70vh]">
-            <div className="flex h-full w-full items-center justify-center text-sm text-neutral-500">
-              Haus-Bild 2 Placeholder
+          {/* Rechte Seite: Bild oben + Text unten */}
+          <div className="hidden lg:col-span-7 lg:flex lg:flex-col">
+            {/* Bild rechts oben */}
+            <div className="relative min-h-[40vh] flex-1">
+              <Image
+                src="/images/haus-placeholder2.webp"
+                alt="ELK Fertighaus"
+                fill
+                className="object-cover"
+                sizes="58vw"
+                priority
+              />
+            </div>
+
+            {/* Text rechts unten */}
+            <div className="bg-gray-50 py-8 pl-28">
+              <h1 className="text-3xl font-bold tracking-tight text-neutral-900 uppercase lg:text-5xl">
+                Sorgenfrei ins neue
+                <br />
+                Zuhause
+              </h1>
+
+              <div className="grid grid-cols-[1fr_2fr] items-center gap-8">
+                <p className="order-last border-l border-neutral-200 pr-4 pl-8 text-base leading-relaxed text-neutral-700">
+                  Der Bau eines Hauses ist eine der wichtigsten Entscheidungen
+                  im Leben. Umso wichtiger ist ein Partner, der euch zuverlässig
+                  begleitet – von der ersten Idee bis zum Einzug. Als
+                  persönlicher ELK-Fachberater unterstütze ich euch dabei, euer
+                  individuelles Fertighaus sorgenfrei zu planen und sicher
+                  umzusetzen.
+                </p>
+                <div className="flex justify-center">
+                  <a
+                    href="#kontakt"
+                    className="inline-flex items-center gap-2 rounded-full bg-black px-6 py-3 text-[14px] font-medium text-white transition-opacity hover:opacity-80"
+                  >
+                    Kontakt aufnehmen <ArrowRight className="h-4 w-4" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Text unter Bildern (mobil) / Overlay unten rechts (desktop) */}
-        <div className="px-6 py-10 lg:absolute lg:right-0 lg:bottom-0 lg:w-1/2 lg:p-12">
-          {/* Container 1: Überschrift */}
-          <h1 className="text-3xl font-bold tracking-tight text-neutral-900 uppercase lg:text-5xl">
+        {/* Diagonaler Teiler zwischen den Bildern */}
+        <div className="pointer-events-none absolute inset-y-0 left-[38%] z-10 hidden w-36 -translate-x-1/2 -skew-x-16 bg-gray-700 lg:block">
+          <div className="pointer-events-none absolute inset-y-0 left-36 w-28 bg-gray-50" />
+        </div>
+
+        {/* Mobile: Text unter dem Bild */}
+        <div className="px-6 py-10 lg:hidden">
+          <h1 className="text-3xl font-bold tracking-tight text-neutral-900 uppercase">
             Sorgenfrei ins neue
             <br />
             Zuhause
           </h1>
-          {/* Container 2 & 3: Text first, Button below on mobile / reversed on desktop */}
-          <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-2 lg:items-center">
-            <p className="order-first text-base leading-relaxed text-neutral-700 lg:order-last">
+
+          <div className="my-5 h-px bg-neutral-200" />
+
+          <div className="grid grid-cols-1 gap-6">
+            <p className="text-base leading-relaxed text-neutral-700">
               Der Bau eines Hauses ist eine der wichtigsten Entscheidungen im
               Leben. Umso wichtiger ist ein Partner, der euch zuverlässig
               begleitet – von der ersten Idee bis zum Einzug. Als persönlicher
               ELK-Fachberater unterstütze ich euch dabei, euer individuelles
               Fertighaus sorgenfrei zu planen und sicher umzusetzen.
             </p>
-            <div className="flex lg:justify-center">
+            <div className="flex">
               <a
                 href="#kontakt"
                 className="inline-flex items-center gap-2 rounded-full bg-black px-6 py-3 text-[14px] font-medium text-white transition-opacity hover:opacity-80"
@@ -134,11 +181,15 @@ export default function Startseite() {
           </div>
 
           {/* Bild */}
-          <div className="flex items-end justify-center bg-neutral-200 lg:bg-transparent">
-            <div className="aspect-3/4 w-full max-w-md bg-neutral-300 lg:aspect-auto lg:h-full">
-              <div className="flex h-full w-full items-center justify-center text-sm text-neutral-500">
-                Porträt-Foto Placeholder
-              </div>
+          <div className="relative overflow-hidden lg:min-h-full">
+            <div className="aspect-3/4 w-full lg:absolute lg:inset-0 lg:aspect-auto">
+              <Image
+                src="/images/michi-gespraech.JPG"
+                alt="Michael Wiggenhauser"
+                fill
+                className="object-cover object-[center_20%] transition-transform duration-700 hover:scale-105"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
             </div>
           </div>
         </div>
@@ -182,10 +233,14 @@ export default function Startseite() {
         {/* Constrained + rounded on desktop, full-width on mobile */}
         <div className="relative overflow-hidden lg:mx-auto lg:max-w-7xl lg:rounded-3xl">
           {/* Background image */}
-          <div className="absolute inset-0 bg-neutral-400">
-            <div className="flex h-full w-full items-center justify-center text-sm text-neutral-600">
-              Zufriedene Kunden Placeholder-Bild
-            </div>
+          <div className="absolute inset-0">
+            <Image
+              src="/images/placeholder-stock-family.jpg"
+              alt="Zufriedene Bauherren"
+              fill
+              className="object-cover object-[center_100%]"
+              sizes="100vw"
+            />
           </div>
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/35" />

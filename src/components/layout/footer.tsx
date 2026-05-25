@@ -1,5 +1,6 @@
 import { FC } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { siteConfig, footerLinks } from "@/lib/constants";
 
 const Footer: FC = () => {
@@ -9,7 +10,13 @@ const Footer: FC = () => {
         <div className="grid gap-12 md:grid-cols-3">
           {/* Brand */}
           <div>
-            <p className="text-lg font-semibold">{siteConfig.name}</p>
+            <Image
+              src="/images/Wiggenhauser.png"
+              alt={siteConfig.name}
+              width={160}
+              height={40}
+              className="h-20 w-auto object-contain"
+            />
             <p className="mt-3 text-sm leading-relaxed text-neutral-400">
               {siteConfig.description}
             </p>

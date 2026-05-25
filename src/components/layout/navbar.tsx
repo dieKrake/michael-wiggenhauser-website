@@ -2,6 +2,7 @@
 
 import { FC, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -14,8 +15,15 @@ const Navbar: FC = () => {
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
-        <Link href="/" className="text-xl font-semibold tracking-tight">
-          {siteConfig.name}
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/images/Wiggenhauser.png"
+            alt={siteConfig.name}
+            width={160}
+            height={40}
+            className="h-16 w-auto object-contain"
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation */}
