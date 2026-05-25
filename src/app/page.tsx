@@ -32,23 +32,54 @@ export default function Startseite() {
         </div>
 
         {/* Text unter Bildern (mobil) / Overlay unten rechts (desktop) */}
-        <div className="px-6 py-10 md:absolute md:right-0 md:bottom-0 md:p-12">
+        <div className="px-6 py-10 md:absolute md:right-0 md:bottom-0 md:w-1/2 md:p-12">
+          {/* Container 1: Überschrift */}
           <h1 className="text-3xl font-bold tracking-tight text-neutral-900 uppercase md:text-5xl">
             Sorgenfrei ins neue
             <br />
             Zuhause
           </h1>
-          <a
-            href="#kontakt"
-            className="mt-6 inline-flex items-center gap-2 rounded-full bg-black px-6 py-3 text-[14px] font-medium text-white transition-opacity hover:opacity-80"
-          >
-            Kontakt aufnehmen <ArrowRight className="h-4 w-4" />
-          </a>
+          {/* Container 2 & 3: Button links, Text rechts */}
+          <div className="mt-0 grid grid-cols-1 gap-6 md:grid-cols-2 md:items-center">
+            <div className="items-left flex">
+              <a
+                href="#kontakt"
+                className="inline-flex items-center gap-2 rounded-full bg-black px-6 py-3 text-[14px] font-medium text-white transition-opacity hover:opacity-80"
+              >
+                Kontakt aufnehmen <ArrowRight className="h-4 w-4" />
+              </a>
+            </div>
+            <p className="text-base leading-relaxed text-neutral-700">
+              Der Bau eines Hauses ist eine der wichtigsten Entscheidungen im
+              Leben. Umso wichtiger ist ein Partner, der euch zuverlässig
+              begleitet – von der ersten Idee bis zum Einzug. Als persönlicher
+              ELK-Fachberater unterstütze ich euch dabei, euer individuelles
+              Fertighaus sorgenfrei zu planen und sicher umzusetzen.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Intro-Text */}
+      <section className="border-b border-neutral-100 px-6 py-14 md:py-16">
+        <div className="mx-auto max-w-7xl">
+          <p className="mx-auto max-w-2xl text-lg leading-relaxed text-neutral-700 md:text-center">
+            Ob moderner Bungalow, energieeffizientes Einfamilienhaus oder
+            schlüsselfertiges Mehrfamilienhaus – mit ELK setzen wir auf
+            nachhaltiges Bauen, hochwertige Architektur und maximale
+            Planungssicherheit. Gemeinsam verwirklichen wir euer modernes
+            Fertighaus.
+          </p>
+          <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-neutral-700 md:text-center">
+            Lasst uns euren Traum vom eigenen Fertighaus Schritt für Schritt
+            angehen: persönlich, planbar und sorgenfrei. Schreibt mir gerne für
+            eine kostenlose Erstberatung.
+          </p>
         </div>
       </section>
 
       {/* Service-Karten */}
-      <section className="py-24 md:py-32">
+      <section className="py-12 md:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid gap-12 md:grid-cols-3">
             {leistungsKarten.map((item, index) => {
@@ -64,7 +95,7 @@ export default function Startseite() {
                   <h3 className="mt-6 text-sm font-bold tracking-wider uppercase">
                     {item.title}
                   </h3>
-                  <p className="mx-auto mt-3 max-w-xs text-[15px] leading-relaxed text-neutral-600">
+                  <p className="mx-auto mt-3 max-w-xs text-base leading-relaxed text-neutral-600">
                     {item.description}
                   </p>
                   <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-bold tracking-wider text-neutral-800 uppercase">
@@ -88,7 +119,7 @@ export default function Startseite() {
               auf Sie
             </h2>
             <div className="mt-8 border-l-[3px] border-black pl-6">
-              <p className="text-[15px] leading-relaxed text-neutral-600">
+              <p className="text-base leading-relaxed text-neutral-600">
                 Ob Neubau, Finanzierung oder der Verkauf Ihrer bestehenden
                 Immobilie – diese spannende Phase birgt Herausforderungen. Mein
                 umfassender Service bietet maßgeschneiderte Lösungen für Ihr
@@ -137,7 +168,7 @@ export default function Startseite() {
               ].map((item) => (
                 <li
                   key={item}
-                  className="border-b border-neutral-100 pb-4 text-[15px] text-neutral-700"
+                  className="border-b border-neutral-100 pb-4 text-base text-neutral-700"
                 >
                   {item}
                 </li>
@@ -159,7 +190,7 @@ export default function Startseite() {
                 key={item.name}
                 className="rounded-2xl bg-white p-8 shadow-sm"
               >
-                <p className="text-[15px] leading-relaxed text-neutral-600">
+                <p className="text-base leading-relaxed text-neutral-600">
                   &ldquo;{item.quote}&rdquo;
                 </p>
                 <div className="mt-6 border-t border-neutral-100 pt-4">
