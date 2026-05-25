@@ -8,25 +8,22 @@ export const heroData = {
 
 export const leistungsKarten = [
   {
-    title: "Bauberatung & Finanzierung",
+    title: "Sorgenfrei mit ELK",
     description:
-      "Gemeinsam erarbeiten wir eine maßgeschneiderte Finanzierungslösung, die Ihren Bedürfnissen und finanziellen Möglichkeiten entspricht.",
+      "Von der Grundrissplanung über die Konfiguration bis hin zur Behörden-Kommunikation. Umfassende Beratung gepaart mit den Fertighaus-Qualitätsstandards von ELK.",
     href: "/sorgenfrei-bauen",
-    icon: "calculator" as const,
   },
   {
-    title: "ELK Fertighäuser",
+    title: "Finanziert. Geplant. Gebaut.",
     description:
-      "Schnelle Lieferzeiten zum Festpreis & sichere Budgetplanung, sowie komplette Individualisierbarkeit.",
+      "Profitiert von der Erfahrung hunderter ELK-Bauprojekte – mit bewährten Abläufen, sicherer Finanzierung und einem starken Partner, der euch Schritt für Schritt begleitet.",
     href: "/sorgenfrei-bauen",
-    icon: "home" as const,
   },
   {
-    title: "Persönliche Beratung",
+    title: "Immer für euch da",
     description:
-      "Als selbstständiger Handelsvertreter begleite ich Sie persönlich durch alle Phasen Ihres Bauvorhabens.",
+      "Ein Haus zu bauen braucht Vertrauen. Ich begleite euch persönlich durch jede Phase eures Bauvorhabens – mit Erfahrung, ehrlicher Beratung und einem klaren Plan für euer Fertighaus.",
     href: "/ueber-mich",
-    icon: "users" as const,
   },
 ];
 

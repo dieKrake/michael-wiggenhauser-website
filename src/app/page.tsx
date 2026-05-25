@@ -83,7 +83,7 @@ export default function Startseite() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-3">
             {leistungsKarten.map((item, index) => {
-              const icons = [Home, HardHat, MessageCircle];
+              const icons = [HardHat, Home, MessageCircle];
               const Icon = icons[index] || Home;
               return (
                 <Link
@@ -113,17 +113,16 @@ export default function Startseite() {
         <div className="mx-auto grid max-w-7xl lg:grid-cols-2">
           {/* Text */}
           <div className="flex flex-col justify-center px-6 py-20 lg:px-16 lg:py-28">
-            <h2 className="text-3xl leading-tight font-bold tracking-tight uppercase lg:text-4xl">
-              Ich freue mich
-              <br />
-              auf Sie
+            <h2 className="text-3xl leading-tight font-bold tracking-tight uppercase lg:text-3xl">
+              Sorgenfrei bauen beginnt mit einem Gespräch.
             </h2>
             <div className="mt-8 border-l-[3px] border-black pl-6">
               <p className="text-base leading-relaxed text-neutral-600">
-                Ob Neubau, Finanzierung oder der Verkauf Ihrer bestehenden
-                Immobilie – diese spannende Phase birgt Herausforderungen. Mein
-                umfassender Service bietet maßgeschneiderte Lösungen für Ihr
-                individuelles Bauvorhaben.
+                In einem kostenlosen Erstgespräch klären wir eure Wünsche,
+                Möglichkeiten und die nächsten Schritte auf dem Weg zum eigenen
+                Fertighaus. Gemeinsam sprechen wir über Finanzierung,
+                Hausplanung und den Ablauf eures Bauvorhabens – und klären alle
+                offenen Fragen.
               </p>
             </div>
             <a
@@ -154,7 +153,7 @@ export default function Startseite() {
                 Meine Dienstleistungen
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-neutral-600">
-                Von der ersten Idee bis zum Einzug begleite ich Sie
+                Von der ersten Idee bis zum Einzug begleite ich
                 partnerschaftlich und professionell.
               </p>
             </div>
@@ -180,7 +179,7 @@ export default function Startseite() {
 
       {/* Testimonials */}
       <section className="border-t border-neutral-100 bg-neutral-50 py-24 lg:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl bg-amber-300 px-6 lg:px-8">
           <h2 className="text-center text-3xl font-semibold tracking-tight lg:text-4xl">
             Zufriedene Bauherren
           </h2>
