@@ -19,7 +19,7 @@ const Navbar: FC = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden items-center gap-10 md:flex">
+        <nav className="hidden items-center gap-10 lg:flex">
           {navigation.map((item) => (
             <Link
               key={item.href}
@@ -45,7 +45,7 @@ const Navbar: FC = () => {
         {/* Mobile Burger */}
         <button
           type="button"
-          className="md:hidden"
+          className="lg:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? "Menü schließen" : "Menü öffnen"}
         >
@@ -59,7 +59,7 @@ const Navbar: FC = () => {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="border-t border-neutral-100 bg-white md:hidden">
+        <div className="border-t border-neutral-100 bg-white lg:hidden">
           <nav className="mx-auto max-w-7xl px-6 py-6">
             <ul className="flex flex-col gap-1">
               {navigation.map((item) => (

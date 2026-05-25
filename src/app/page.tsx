@@ -178,26 +178,61 @@ export default function Startseite() {
       </section>
 
       {/* Testimonials */}
-      <section className="border-t border-neutral-100 bg-neutral-50 py-24 lg:py-32">
-        <div className="mx-auto max-w-7xl bg-amber-300 px-6 lg:px-8">
-          <h2 className="text-center text-3xl font-semibold tracking-tight lg:text-4xl">
-            Zufriedene Bauherren
-          </h2>
-          <div className="mt-16 grid gap-8 lg:grid-cols-3">
-            {testimonials.map((item) => (
-              <div
-                key={item.name}
-                className="rounded-2xl bg-white p-8 shadow-sm"
-              >
-                <p className="text-base leading-relaxed text-neutral-600">
-                  &ldquo;{item.quote}&rdquo;
-                </p>
-                <div className="mt-6 border-t border-neutral-100 pt-4">
-                  <p className="text-sm font-semibold">{item.name}</p>
-                  <p className="text-sm text-neutral-500">{item.location}</p>
+      <section className="py-12 lg:py-16">
+        {/* Constrained + rounded on desktop, full-width on mobile */}
+        <div className="relative overflow-hidden lg:mx-auto lg:max-w-7xl lg:rounded-3xl">
+          {/* Background image */}
+          <div className="absolute inset-0 bg-neutral-400">
+            <div className="flex h-full w-full items-center justify-center text-sm text-neutral-600">
+              Zufriedene Kunden Placeholder-Bild
+            </div>
+          </div>
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-black/35" />
+
+          {/* Content */}
+          <div className="relative px-6 py-16 lg:px-12 lg:py-24">
+            <h2 className="text-center text-3xl font-semibold tracking-tight text-white lg:text-4xl">
+              Zufriedene Bauherren
+            </h2>
+
+            {/* Mobile: swipe slider */}
+            <div className="mt-10 flex snap-x snap-mandatory scroll-pl-6 scrollbar-none gap-4 overflow-x-auto pb-4 lg:hidden [&::-webkit-scrollbar]:hidden">
+              <div className="shrink-0 basis-6" />
+              {testimonials.map((item) => (
+                <div
+                  key={item.name}
+                  className="w-[80vw] shrink-0 snap-start rounded-2xl bg-white p-6 shadow-sm"
+                >
+                  <p className="text-base leading-relaxed text-neutral-600">
+                    &ldquo;{item.quote}&rdquo;
+                  </p>
+                  <div className="mt-6 border-t border-neutral-100 pt-4">
+                    <p className="text-sm font-semibold">{item.name}</p>
+                    <p className="text-sm text-neutral-500">{item.location}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+              <div className="shrink-0 basis-6" />
+            </div>
+
+            {/* Desktop: 3-col grid */}
+            <div className="mt-16 hidden gap-8 lg:grid lg:grid-cols-3">
+              {testimonials.map((item) => (
+                <div
+                  key={item.name}
+                  className="rounded-2xl bg-white p-8 shadow-sm"
+                >
+                  <p className="text-base leading-relaxed text-neutral-600">
+                    &ldquo;{item.quote}&rdquo;
+                  </p>
+                  <div className="mt-6 border-t border-neutral-100 pt-4">
+                    <p className="text-sm font-semibold">{item.name}</p>
+                    <p className="text-sm text-neutral-500">{item.location}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

@@ -14,9 +14,10 @@ const KontaktFormular = () => {
               Kontakt aufnehmen
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-neutral-600">
-              Ich freue mich, Sie kennenzulernen. Vereinbaren Sie ein
-              unverbindliches Erstgespräch – telefonisch, per E-Mail oder direkt
-              über das Formular.
+              Sorgenfrei bauen beginnt mit einem Gespräch. Ich freue mich
+              darauf, euch kennenzulernen. Vereinbart jetzt ein kostenloses
+              Erstgespräch – telefonisch, per E-Mail oder direkt über das
+              Formular.
             </p>
             <div className="mt-8 space-y-5">
               <div className="flex items-center gap-3">
