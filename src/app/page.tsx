@@ -15,16 +15,16 @@ export default function Startseite() {
       {/* Hero */}
       <section className="relative overflow-hidden">
         {/* Bilder */}
-        <div className="grid md:grid-cols-2">
+        <div className="grid lg:grid-cols-2">
           {/* Bild links – nur auf Desktop sichtbar */}
-          <div className="relative hidden min-h-[70vh] bg-neutral-300 md:block">
+          <div className="relative hidden min-h-[70vh] bg-neutral-300 lg:block">
             <div className="flex h-full w-full items-center justify-center text-sm text-neutral-500">
               Haus-Bild 1 Placeholder
             </div>
           </div>
 
           {/* Bild rechts – immer sichtbar */}
-          <div className="relative min-h-[50vh] bg-neutral-200 md:min-h-[70vh]">
+          <div className="relative min-h-[50vh] bg-neutral-200 lg:min-h-[70vh]">
             <div className="flex h-full w-full items-center justify-center text-sm text-neutral-500">
               Haus-Bild 2 Placeholder
             </div>
@@ -32,16 +32,23 @@ export default function Startseite() {
         </div>
 
         {/* Text unter Bildern (mobil) / Overlay unten rechts (desktop) */}
-        <div className="px-6 py-10 md:absolute md:right-0 md:bottom-0 md:w-1/2 md:p-12">
+        <div className="px-6 py-10 lg:absolute lg:right-0 lg:bottom-0 lg:w-1/2 lg:p-12">
           {/* Container 1: Überschrift */}
-          <h1 className="text-3xl font-bold tracking-tight text-neutral-900 uppercase md:text-5xl">
+          <h1 className="text-3xl font-bold tracking-tight text-neutral-900 uppercase lg:text-5xl">
             Sorgenfrei ins neue
             <br />
             Zuhause
           </h1>
-          {/* Container 2 & 3: Button links, Text rechts */}
-          <div className="mt-0 grid grid-cols-1 gap-6 md:grid-cols-2 md:items-center">
-            <div className="items-left flex">
+          {/* Container 2 & 3: Text first, Button below on mobile / reversed on desktop */}
+          <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-2 lg:items-center">
+            <p className="order-first text-base leading-relaxed text-neutral-700 lg:order-last">
+              Der Bau eines Hauses ist eine der wichtigsten Entscheidungen im
+              Leben. Umso wichtiger ist ein Partner, der euch zuverlässig
+              begleitet – von der ersten Idee bis zum Einzug. Als persönlicher
+              ELK-Fachberater unterstütze ich euch dabei, euer individuelles
+              Fertighaus sorgenfrei zu planen und sicher umzusetzen.
+            </p>
+            <div className="flex lg:justify-center">
               <a
                 href="#kontakt"
                 className="inline-flex items-center gap-2 rounded-full bg-black px-6 py-3 text-[14px] font-medium text-white transition-opacity hover:opacity-80"
@@ -49,28 +56,21 @@ export default function Startseite() {
                 Kontakt aufnehmen <ArrowRight className="h-4 w-4" />
               </a>
             </div>
-            <p className="text-base leading-relaxed text-neutral-700">
-              Der Bau eines Hauses ist eine der wichtigsten Entscheidungen im
-              Leben. Umso wichtiger ist ein Partner, der euch zuverlässig
-              begleitet – von der ersten Idee bis zum Einzug. Als persönlicher
-              ELK-Fachberater unterstütze ich euch dabei, euer individuelles
-              Fertighaus sorgenfrei zu planen und sicher umzusetzen.
-            </p>
           </div>
         </div>
       </section>
 
       {/* Intro-Text */}
-      <section className="border-b border-neutral-100 px-6 py-14 md:py-16">
+      <section className="border-b border-neutral-100 px-6 py-14 lg:py-16">
         <div className="mx-auto max-w-7xl">
-          <p className="mx-auto max-w-2xl text-lg leading-relaxed text-neutral-700 md:text-center">
+          <p className="mx-auto max-w-5xl text-base leading-relaxed text-neutral-700 lg:text-center lg:text-lg lg:font-bold">
             Ob moderner Bungalow, energieeffizientes Einfamilienhaus oder
             schlüsselfertiges Mehrfamilienhaus – mit ELK setzen wir auf
             nachhaltiges Bauen, hochwertige Architektur und maximale
             Planungssicherheit. Gemeinsam verwirklichen wir euer modernes
             Fertighaus.
           </p>
-          <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-neutral-700 md:text-center">
+          <p className="mx-auto mt-4 max-w-5xl text-base leading-relaxed text-neutral-700 lg:text-center lg:text-lg lg:font-bold">
             Lasst uns euren Traum vom eigenen Fertighaus Schritt für Schritt
             angehen: persönlich, planbar und sorgenfrei. Schreibt mir gerne für
             eine kostenlose Erstberatung.
@@ -79,9 +79,9 @@ export default function Startseite() {
       </section>
 
       {/* Service-Karten */}
-      <section className="py-12 md:py-24">
+      <section className="py-12 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid gap-12 md:grid-cols-3">
+          <div className="grid gap-12 lg:grid-cols-3">
             {leistungsKarten.map((item, index) => {
               const icons = [Home, HardHat, MessageCircle];
               const Icon = icons[index] || Home;
@@ -110,10 +110,10 @@ export default function Startseite() {
 
       {/* Willkommens-Text */}
       <section className="relative overflow-hidden bg-neutral-100">
-        <div className="mx-auto grid max-w-7xl md:grid-cols-2">
+        <div className="mx-auto grid max-w-7xl lg:grid-cols-2">
           {/* Text */}
-          <div className="flex flex-col justify-center px-6 py-20 md:py-28 lg:px-16">
-            <h2 className="text-3xl leading-tight font-bold tracking-tight uppercase md:text-4xl">
+          <div className="flex flex-col justify-center px-6 py-20 lg:px-16 lg:py-28">
+            <h2 className="text-3xl leading-tight font-bold tracking-tight uppercase lg:text-4xl">
               Ich freue mich
               <br />
               auf Sie
@@ -135,8 +135,8 @@ export default function Startseite() {
           </div>
 
           {/* Bild */}
-          <div className="flex items-end justify-center bg-neutral-200 md:bg-transparent">
-            <div className="aspect-3/4 w-full max-w-md bg-neutral-300 md:aspect-auto md:h-full">
+          <div className="flex items-end justify-center bg-neutral-200 lg:bg-transparent">
+            <div className="aspect-3/4 w-full max-w-md bg-neutral-300 lg:aspect-auto lg:h-full">
               <div className="flex h-full w-full items-center justify-center text-sm text-neutral-500">
                 Porträt-Foto Placeholder
               </div>
@@ -146,11 +146,11 @@ export default function Startseite() {
       </section>
 
       {/* Leistungen als elegante Liste */}
-      <section className="py-24 md:py-32">
+      <section className="py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid gap-16 md:grid-cols-2">
+          <div className="grid gap-16 lg:grid-cols-2">
             <div>
-              <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+              <h2 className="text-3xl font-semibold tracking-tight lg:text-4xl">
                 Meine Dienstleistungen
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-neutral-600">
@@ -179,12 +179,12 @@ export default function Startseite() {
       </section>
 
       {/* Testimonials */}
-      <section className="border-t border-neutral-100 bg-neutral-50 py-24 md:py-32">
+      <section className="border-t border-neutral-100 bg-neutral-50 py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-3xl font-semibold tracking-tight md:text-4xl">
+          <h2 className="text-center text-3xl font-semibold tracking-tight lg:text-4xl">
             Zufriedene Bauherren
           </h2>
-          <div className="mt-16 grid gap-8 md:grid-cols-3">
+          <div className="mt-16 grid gap-8 lg:grid-cols-3">
             {testimonials.map((item) => (
               <div
                 key={item.name}
