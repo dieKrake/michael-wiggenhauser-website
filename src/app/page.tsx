@@ -208,6 +208,12 @@ export default function Startseite() {
                 Von der ersten Idee bis zum Einzug begleite ich
                 partnerschaftlich und professionell.
               </p>
+              <Link
+                href="/sorgenfrei-bauen"
+                className="mt-8 hidden items-center gap-1.5 text-sm font-bold tracking-wider text-neutral-800 uppercase sm:inline-flex"
+              >
+                Mehr erfahren <ArrowRight className="h-3.5 w-3.5" />
+              </Link>
             </div>
             <ul className="space-y-4">
               {[
@@ -224,6 +230,12 @@ export default function Startseite() {
                   {item}
                 </li>
               ))}
+              <Link
+                href="/sorgenfrei-bauen#leistungen"
+                className="mt-8 inline-flex items-center gap-1.5 text-sm font-bold tracking-wider text-neutral-800 uppercase sm:mt-0 sm:hidden"
+              >
+                Mehr erfahren <ArrowRight className="h-3.5 w-3.5" />
+              </Link>
             </ul>
           </div>
         </div>

@@ -28,7 +28,7 @@ export default function SorgenfreiBauenPage() {
           <Heading as="h1" className="text-white">
             Sorgenfrei Bauen
           </Heading>
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-200">
+          <p className="text-primary-200 mx-auto mt-6 max-w-2xl text-lg">
             Von der ersten Idee bis zum Einzug – ich begleite Sie durch alle
             Phasen Ihres Bauvorhabens. Persönlich, kompetent und transparent.
           </p>
@@ -36,7 +36,7 @@ export default function SorgenfreiBauenPage() {
       </Section>
 
       {/* Leistungen */}
-      <Section background="white">
+      <Section background="white" id="leistungen">
         <Container>
           <Heading as="h2" className="text-center">
             Unsere Leistungen
