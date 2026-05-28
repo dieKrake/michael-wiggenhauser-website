@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { siteConfig, navigation } from "@/lib/constants";
+import Button from "@/components/ui/button";
 
 const Navbar: FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -42,12 +43,9 @@ const Navbar: FC = () => {
               {item.label}
             </Link>
           ))}
-          <a
-            href="#kontakt"
-            className="ml-2 rounded-full bg-black px-5 py-2.5 text-[14px] font-medium text-white transition-opacity hover:opacity-80"
-          >
+          <Button href="#kontakt" size="sm" className="ml-2">
             Kontakt aufnehmen
-          </a>
+          </Button>
         </nav>
 
         {/* Mobile Burger */}

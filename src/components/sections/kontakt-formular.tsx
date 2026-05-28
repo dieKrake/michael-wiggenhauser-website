@@ -1,4 +1,5 @@
 import { Mail, Phone } from "lucide-react";
+import Button from "@/components/ui/button";
 
 const KontaktFormular = () => {
   return (
@@ -112,12 +113,9 @@ const KontaktFormular = () => {
                 gelesen und stimme der Verarbeitung meiner Daten zu.
               </label>
             </div>
-            <button
-              type="submit"
-              className="w-full rounded-full bg-black px-7 py-3.5 text-[15px] font-medium text-white transition-opacity hover:opacity-80"
-            >
+            <Button type="submit" className="w-full">
               Nachricht senden
-            </button>
+            </Button>
           </form>
         </div>
       </div>

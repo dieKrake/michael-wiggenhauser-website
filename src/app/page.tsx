@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, HardHat, MessageCircle, Home } from "lucide-react";
 import { leistungsKarten, testimonials } from "@/lib/placeholder-data";
+import Button from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Startseite",
@@ -17,7 +18,7 @@ export default function Startseite() {
       <section className="relative overflow-hidden">
         <div className="grid lg:grid-cols-12">
           {/* Bild links – volle Höhe */}
-          <div className="relative min-h-[28vh] sm:min-h-[50vh] lg:col-span-5 lg:row-span-1 lg:min-h-0">
+          <div className="relative aspect-video sm:aspect-auto sm:min-h-[50vh] lg:col-span-5 lg:row-span-1 lg:min-h-0">
             <Image
               src="/images/haus-placeholder.webp"
               alt="ELK Fertighaus"
@@ -60,12 +61,9 @@ export default function Startseite() {
                   umzusetzen.
                 </p>
                 <div className="flex justify-center">
-                  <a
-                    href="#kontakt"
-                    className="inline-flex items-center gap-2 rounded-full bg-black px-6 py-3 text-[14px] font-medium text-white transition-opacity hover:opacity-80"
-                  >
+                  <Button href="#kontakt" className="gap-2">
                     Kontakt aufnehmen <ArrowRight className="h-4 w-4" />
-                  </a>
+                  </Button>
                 </div>
               </div>
             </div>
@@ -96,12 +94,9 @@ export default function Startseite() {
               Fertighaus sorgenfrei zu planen und sicher umzusetzen.
             </p>
             <div className="flex">
-              <a
-                href="#kontakt"
-                className="inline-flex items-center gap-2 rounded-full bg-black px-6 py-3 text-[14px] font-medium text-white transition-opacity hover:opacity-80"
-              >
+              <Button href="#kontakt" className="gap-2">
                 Kontakt aufnehmen <ArrowRight className="h-4 w-4" />
-              </a>
+              </Button>
             </div>
           </div>
         </div>
