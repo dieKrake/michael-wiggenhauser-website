@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Container from "@/components/layout/container";
 import Section from "@/components/layout/section";
 import Heading from "@/components/ui/heading";
+import { siteConfig } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Impressum",
@@ -25,9 +26,9 @@ export default function ImpressumPage() {
               12345 Musterstadt
             </p>
             <p>
-              Telefon: +49 123 456789
+              Telefon: {siteConfig.phone}
               <br />
-              E-Mail: info@michael-wiggenhauser.de
+              E-Mail: {siteConfig.email}
             </p>
             <p>
               <strong>Haftungsausschluss:</strong> Platzhalter – Vollständiges

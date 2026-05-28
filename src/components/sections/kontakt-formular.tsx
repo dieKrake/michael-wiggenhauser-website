@@ -1,5 +1,6 @@
 import { Mail, Phone } from "lucide-react";
 import Button from "@/components/ui/button";
+import { siteConfig } from "@/lib/constants";
 
 const KontaktFormular = () => {
   return (
@@ -25,13 +26,13 @@ const KontaktFormular = () => {
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 shrink-0 text-neutral-400" />
                 <span className="text-[15px] text-neutral-700">
-                  +49 123 456789
+                  {siteConfig.phone}
                 </span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 shrink-0 text-neutral-400" />
                 <span className="text-[15px] text-neutral-700">
-                  info@michael-wiggenhauser.de
+                  {siteConfig.email}
                 </span>
               </div>
             </div>
@@ -67,7 +68,7 @@ const KontaktFormular = () => {
                   id="contact-email"
                   name="email"
                   className="mt-1.5 block w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-[15px] transition-colors focus:border-black focus:bg-white focus:outline-none"
-                  placeholder="ihre@email.de"
+                  placeholder={siteConfig.email}
                 />
               </div>
             </div>

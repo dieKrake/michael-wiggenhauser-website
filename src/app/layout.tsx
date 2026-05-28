@@ -34,7 +34,7 @@ export default function RootLayout({
     >
       <body className="flex min-h-full flex-col">
         <Navbar />
-        <WhatsAppButton variant="floating" phoneNumber="+491766000000" />
+        <WhatsAppButton variant="floating" phoneNumber={siteConfig.phone} />
         <main className="flex-1">{children}</main>
         <KontaktFormularWrapper />
         <Footer />

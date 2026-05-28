@@ -3,6 +3,8 @@ export const siteConfig = {
   description:
     "Ihr Fachberater für ELK Fertighäuser – Verkauf, Bauberatung und individuelle Hausplanung.",
   url: "https://www.michael-wiggenhauser.de",
+  phone: "+49 123 456789",
+  email: "info@michael-wiggenhauser.de",
 };
 
 export const navigation = [

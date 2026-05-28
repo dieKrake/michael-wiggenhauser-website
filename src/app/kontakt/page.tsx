@@ -5,6 +5,7 @@ import Section from "@/components/layout/section";
 import Heading from "@/components/ui/heading";
 import Card from "@/components/ui/card";
 import Button from "@/components/ui/button";
+import { siteConfig } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Kontakt",
@@ -39,16 +40,14 @@ export default function KontaktPage() {
                   <Phone className="text-primary-600 mt-1 h-5 w-5" />
                   <div>
                     <p className="font-medium text-gray-900">Telefon</p>
-                    <p className="text-gray-600">+49 123 456789</p>
+                    <p className="text-gray-600">{siteConfig.phone}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Mail className="text-primary-600 mt-1 h-5 w-5" />
                   <div>
                     <p className="font-medium text-gray-900">E-Mail</p>
-                    <p className="text-gray-600">
-                      info@michael-wiggenhauser.de
-                    </p>
+                    <p className="text-gray-600">{siteConfig.email}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
