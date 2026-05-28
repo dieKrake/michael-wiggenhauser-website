@@ -5,6 +5,7 @@ import Footer from "@/components/layout/footer";
 import KontaktFormularWrapper from "@/components/sections/kontakt-formular-wrapper";
 import { siteConfig } from "@/lib/constants";
 import "./globals.css";
+import WhatsAppButton from "@/components/ui/whatsapp-button";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -33,6 +34,7 @@ export default function RootLayout({
     >
       <body className="flex min-h-full flex-col">
         <Navbar />
+        <WhatsAppButton variant="floating" phoneNumber="+491766000000" />
         <main className="flex-1">{children}</main>
         <KontaktFormularWrapper />
         <Footer />
