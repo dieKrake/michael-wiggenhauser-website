@@ -10,14 +10,14 @@ export const leistungsKarten = [
   {
     title: "Sorgenfrei mit ELK",
     description:
-      "Von der Grundrissplanung über die Konfiguration bis hin zur Behörden-Kommunikation. Umfassende Beratung gepaart mit den Fertighaus-Qualitätsstandards von ELK.",
+      "Von der Grundrissplanung über die Konfiguration bis zur Schlüsselübergabe. Umfassende Beratung gepaart mit den Fertighaus-Qualitätsstandards von ELK.",
     href: "/sorgenfrei-bauen",
   },
   {
     title: "Finanziert. Geplant. Gebaut.",
     description:
       "Profitiert von der Erfahrung hunderter ELK-Bauprojekte – mit bewährten Abläufen, sicherer Finanzierung und einem starken Partner, der euch Schritt für Schritt begleitet.",
-    href: "/sorgenfrei-bauen",
+    href: "/dein-weg-ins-neue-zuhause",
   },
   {
     title: "Immer für euch da",

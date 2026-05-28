@@ -5,7 +5,7 @@ import Heading from "@/components/ui/heading";
 import { finanzierungAbschnitte } from "@/lib/placeholder-data";
 
 export const metadata: Metadata = {
-  title: "Finanzierung & Ablauf",
+  title: "Dein Weg ins Neue Zuhause",
   description:
     "Von der Finanzierung über die Planung bis zum Einzug – so läuft Ihr Hausbau ab.",
 };
@@ -19,7 +19,7 @@ export default function FinanzierungAblaufPage() {
           <Heading as="h1" className="text-white">
             Finanzierung &amp; Ablauf
           </Heading>
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-200">
+          <p className="text-primary-200 mx-auto mt-6 max-w-2xl text-lg">
             Der Weg zum eigenen Fertighaus – Schritt für Schritt erklärt. Von
             der Finanzierung über die Planung bis zur Schlüsselübergabe.
           </p>

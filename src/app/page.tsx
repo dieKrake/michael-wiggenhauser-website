@@ -17,7 +17,7 @@ export default function Startseite() {
       <section className="relative overflow-hidden">
         <div className="grid lg:grid-cols-12">
           {/* Bild links – volle Höhe */}
-          <div className="relative min-h-[50vh] lg:col-span-5 lg:row-span-1 lg:min-h-0">
+          <div className="relative min-h-[28vh] sm:min-h-[50vh] lg:col-span-5 lg:row-span-1 lg:min-h-0">
             <Image
               src="/images/haus-placeholder.webp"
               alt="ELK Fertighaus"
@@ -78,7 +78,7 @@ export default function Startseite() {
         </div>
 
         {/* Mobile: Text unter dem Bild */}
-        <div className="px-6 py-10 lg:hidden">
+        <div className="px-6 py-4 sm:py-10 lg:hidden">
           <h1 className="text-3xl font-bold tracking-tight text-neutral-900 uppercase">
             Sorgenfrei ins neue
             <br />
