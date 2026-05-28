@@ -21,7 +21,7 @@ export default function KontaktPage() {
           <Heading as="h1" className="text-white">
             Kontakt
           </Heading>
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-200">
+          <p className="text-primary-200 mx-auto mt-6 max-w-2xl text-lg">
             Sie haben Fragen? Ich freue mich auf Ihre Anfrage.
           </p>
         </Container>
@@ -36,21 +36,23 @@ export default function KontaktPage() {
               <Heading as="h2">Kontaktdaten</Heading>
               <div className="mt-8 space-y-6">
                 <div className="flex items-start gap-4">
-                  <Phone className="mt-1 h-5 w-5 text-primary-600" />
+                  <Phone className="text-primary-600 mt-1 h-5 w-5" />
                   <div>
                     <p className="font-medium text-gray-900">Telefon</p>
                     <p className="text-gray-600">+49 123 456789</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <Mail className="mt-1 h-5 w-5 text-primary-600" />
+                  <Mail className="text-primary-600 mt-1 h-5 w-5" />
                   <div>
                     <p className="font-medium text-gray-900">E-Mail</p>
-                    <p className="text-gray-600">info@michael-wiggenhauser.de</p>
+                    <p className="text-gray-600">
+                      info@michael-wiggenhauser.de
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <MapPin className="mt-1 h-5 w-5 text-primary-600" />
+                  <MapPin className="text-primary-600 mt-1 h-5 w-5" />
                   <div>
                     <p className="font-medium text-gray-900">Adresse</p>
                     <p className="text-gray-600">
@@ -77,7 +79,7 @@ export default function KontaktPage() {
                     type="text"
                     id="name"
                     name="name"
-                    className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 focus:border-primary-500 focus:ring-primary-500"
+                    className="focus:border-primary-500 focus:ring-primary-500 mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900"
                     placeholder="Ihr vollständiger Name"
                   />
                 </div>
@@ -92,7 +94,7 @@ export default function KontaktPage() {
                     type="email"
                     id="email"
                     name="email"
-                    className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 focus:border-primary-500 focus:ring-primary-500"
+                    className="focus:border-primary-500 focus:ring-primary-500 mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900"
                     placeholder="ihre@email.de"
                   />
                 </div>
@@ -107,7 +109,7 @@ export default function KontaktPage() {
                     id="message"
                     name="message"
                     rows={5}
-                    className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 focus:border-primary-500 focus:ring-primary-500"
+                    className="focus:border-primary-500 focus:ring-primary-500 mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900"
                     placeholder="Ihre Nachricht..."
                   />
                 </div>
@@ -116,7 +118,7 @@ export default function KontaktPage() {
                     type="checkbox"
                     id="datenschutz"
                     name="datenschutz"
-                    className="mt-1 h-4 w-4 rounded border-gray-300 text-primary-600 focus:ring-primary-500"
+                    className="text-primary-600 focus:ring-primary-500 mt-1 h-4 w-4 rounded border-gray-300"
                   />
                   <label
                     htmlFor="datenschutz"
@@ -126,7 +128,7 @@ export default function KontaktPage() {
                     Verarbeitung meiner Daten zu.
                   </label>
                 </div>
-                <Button type="submit" className="w-full">
+                <Button type="submit" variant="accent" className="w-full">
                   Nachricht senden
                 </Button>
               </form>

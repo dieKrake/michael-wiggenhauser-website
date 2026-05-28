@@ -19,6 +19,7 @@ html {
   --color-accent-400: #a3a3a3;
   --color-accent-500: #737373;
   --color-accent-600: #525252;
+  --color-divider: #374151;
   --font-sans: var(--font-inter);
 }
 

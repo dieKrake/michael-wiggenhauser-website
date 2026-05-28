@@ -2,7 +2,7 @@ import { FC, ButtonHTMLAttributes, AnchorHTMLAttributes } from "react";
 import { cn } from "@/lib/utils";
 
 type ButtonBaseProps = {
-  variant?: "primary" | "secondary" | "outline";
+  variant?: "primary" | "secondary" | "outline" | "accent";
   size?: "sm" | "md" | "lg";
   className?: string;
   children?: React.ReactNode;
@@ -34,6 +34,8 @@ const getClasses = (
         variant === "secondary",
       "border border-neutral-900 text-neutral-900 hover:bg-neutral-900 hover:text-white focus-visible:ring-neutral-900":
         variant === "outline",
+      "bg-[var(--color-divider)] text-white hover:opacity-75 focus-visible:ring-[var(--color-divider)]":
+        variant === "accent",
     },
     {
       "px-5 py-2.5 text-xs": size === "sm",

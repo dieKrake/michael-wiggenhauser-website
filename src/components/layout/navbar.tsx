@@ -43,7 +43,7 @@ const Navbar: FC = () => {
               {item.label}
             </Link>
           ))}
-          <Button href="#kontakt" size="sm" className="ml-2">
+          <Button href="#kontakt" variant="accent" size="sm" className="ml-2">
             Kontakt aufnehmen
           </Button>
         </nav>

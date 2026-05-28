@@ -5,7 +5,8 @@ const KontaktFormular = () => {
   return (
     <section
       id="kontakt"
-      className="scroll-mt-20 border-t border-neutral-100 py-24 md:py-32"
+      className="scroll-mt-20 py-24 md:py-32"
+      style={{ borderTop: "1px solid var(--color-divider)" }}
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid gap-16 md:grid-cols-2">
@@ -113,7 +114,7 @@ const KontaktFormular = () => {
                 gelesen und stimme der Verarbeitung meiner Daten zu.
               </label>
             </div>
-            <Button type="submit" className="w-full">
+            <Button type="submit" variant="accent" className="w-full">
               Nachricht senden
             </Button>
           </form>

@@ -61,7 +61,7 @@ export default function Startseite() {
                   umzusetzen.
                 </p>
                 <div className="flex justify-center">
-                  <Button href="#kontakt" className="gap-2">
+                  <Button href="#kontakt" variant="accent" className="gap-2">
                     Kontakt aufnehmen <ArrowRight className="h-4 w-4" />
                   </Button>
                 </div>
@@ -71,7 +71,7 @@ export default function Startseite() {
         </div>
 
         {/* Diagonaler Teiler zwischen den Bildern */}
-        <div className="pointer-events-none absolute inset-y-0 left-[38%] z-10 hidden w-36 -translate-x-1/2 -skew-x-16 bg-gray-700 lg:block">
+        <div className="pointer-events-none absolute inset-y-0 left-[38%] z-10 hidden w-36 -translate-x-1/2 -skew-x-16 bg-(--color-divider) lg:block">
           <div className="pointer-events-none absolute inset-y-0 left-36 w-28 bg-gray-50" />
         </div>
 
@@ -83,7 +83,10 @@ export default function Startseite() {
             Zuhause
           </h1>
 
-          <div className="my-5 h-px bg-neutral-200" />
+          <div
+            className="my-5 h-px"
+            style={{ backgroundColor: "var(--color-divider)" }}
+          />
 
           <div className="grid grid-cols-1 gap-6">
             <p className="text-base leading-relaxed text-neutral-700">
@@ -94,7 +97,7 @@ export default function Startseite() {
               Fertighaus sorgenfrei zu planen und sicher umzusetzen.
             </p>
             <div className="flex">
-              <Button href="#kontakt" className="gap-2">
+              <Button href="#kontakt" variant="accent" className="gap-2">
                 Kontakt aufnehmen <ArrowRight className="h-4 w-4" />
               </Button>
             </div>
@@ -103,7 +106,10 @@ export default function Startseite() {
       </section>
 
       {/* Intro-Text */}
-      <section className="border-b border-neutral-100 px-6 py-14 lg:py-16">
+      <section
+        className="px-6 py-14 lg:py-16"
+        style={{ borderBottom: "1px solid var(--color-divider)" }}
+      >
         <div className="mx-auto max-w-7xl">
           <p className="mx-auto max-w-5xl text-base leading-relaxed text-neutral-700 lg:text-center lg:text-lg lg:font-bold">
             Ob moderner Bungalow, energieeffizientes Einfamilienhaus oder

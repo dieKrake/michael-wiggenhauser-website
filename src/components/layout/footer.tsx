@@ -61,7 +61,10 @@ const Footer: FC = () => {
           </div>
         </div>
 
-        <div className="mt-16 border-t border-neutral-800 pt-8">
+        <div
+          className="mt-16 pt-8"
+          style={{ borderTop: "1px solid var(--color-divider)" }}
+        >
           <p className="text-center text-xs text-neutral-500">
             &copy; {new Date().getFullYear()} {siteConfig.name}. Alle Rechte
             vorbehalten.
