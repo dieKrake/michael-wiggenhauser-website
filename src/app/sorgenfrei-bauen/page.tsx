@@ -9,7 +9,7 @@ import {
   elkGalerie,
   sorgenfreiVerkaufenSchritte,
   faqItems,
-} from "@/lib/placeholder-data";
+} from "@/lib/pages-text-data";
 
 export const metadata: Metadata = {
   title: "Sorgenfrei Bauen",

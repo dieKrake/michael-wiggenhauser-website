@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Container from "@/components/layout/container";
 import Section from "@/components/layout/section";
 import Heading from "@/components/ui/heading";
-import { finanzierungAbschnitte } from "@/lib/placeholder-data";
+import { finanzierungAbschnitte } from "@/lib/pages-text-data";
 
 export const metadata: Metadata = {
   title: "Dein Weg ins Neue Zuhause",

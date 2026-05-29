@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, HardHat, MessageCircle, Home } from "lucide-react";
-import { leistungsKarten, testimonials } from "@/lib/placeholder-data";
+import { leistungsKarten, testimonials } from "@/lib/pages-text-data";
 import Button from "@/components/ui/button";
 
 export const metadata: Metadata = {

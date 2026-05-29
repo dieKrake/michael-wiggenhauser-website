@@ -5,7 +5,7 @@ import Section from "@/components/layout/section";
 import Heading from "@/components/ui/heading";
 import Card from "@/components/ui/card";
 import Button from "@/components/ui/button";
-import { ueberMichData, statistiken } from "@/lib/placeholder-data";
+import { ueberMichData, statistiken } from "@/lib/pages-text-data";
 
 export const metadata: Metadata = {
   title: "Über mich",
