@@ -23,10 +23,6 @@ export default function Startseite() {
         <div className="grid lg:grid-cols-12 lg:grid-rows-[auto_1fr] 2xl:grid-cols-12 2xl:grid-rows-1">
           {/* Bild links – volle Höhe */}
           <div className="relative aspect-video sm:aspect-auto sm:min-h-[50vh] lg:col-span-6 lg:row-span-1 lg:aspect-video lg:min-h-0 2xl:col-span-5 2xl:row-span-1 2xl:aspect-auto 2xl:min-h-0">
-            {/* Diagonaler Teiler – relativ zum Bild positioniert (lg-2xl) */}
-            <div className="pointer-events-none absolute inset-y-0 right-0 left-[80%] z-10 hidden w-36 translate-x-1/2 -skew-x-16 bg-(--color-divider) will-change-transform lg:block 2xl:hidden">
-              <div className="pointer-events-none absolute inset-y-0 left-24 w-16 bg-gray-50" />
-            </div>
             <Image
               src="/images/haus-placeholder.webp"
               alt="ELK Fertighaus"
@@ -41,6 +37,10 @@ export default function Startseite() {
           <div className="hidden lg:col-span-6 lg:flex lg:flex-col 2xl:col-span-7 2xl:flex 2xl:flex-col">
             {/* Bild rechts oben */}
             <div className="relative min-h-[40vh] flex-1 lg:aspect-video lg:min-h-0 lg:flex-none 2xl:aspect-auto 2xl:min-h-[40vh] 2xl:flex-1">
+              {/* Diagonaler Teiler – relativ zur linken Kante des rechten Containers (lg-2xl) */}
+              <div className="pointer-events-none absolute inset-y-0 z-10 hidden w-36 -translate-x-1/2 -skew-x-16 bg-(--color-divider) will-change-transform lg:left-[4%] lg:block 2xl:hidden">
+                <div className="pointer-events-none absolute inset-y-0 left-24 w-16 bg-gray-50" />
+              </div>
               <Image
                 src="/images/haus-placeholder2.webp"
                 alt="ELK Fertighaus"
@@ -73,7 +73,7 @@ export default function Startseite() {
           </div>
 
           {/* Text unter den Bildern lg-2xl */}
-          <div className="hidden bg-gray-50 lg:col-span-12 lg:grid lg:grid-cols-6 lg:grid-rows-2 2xl:hidden">
+          <div className="relative z-20 -mt-2 hidden bg-gray-50 lg:col-span-12 lg:grid lg:grid-cols-6 lg:grid-rows-2 2xl:hidden">
             <h1 className="col-span-6 mt-8 flex justify-center text-center font-bold tracking-tight text-neutral-900 uppercase lg:text-4xl">
               {heroSectionTextTop.titleLine1}
               <br />
