@@ -59,7 +59,7 @@ export default function Startseite() {
                 {heroSectionTextTop.titleLine2}
               </h1>
 
-              <div className="grid grid-cols-[1fr_2fr] items-center gap-8">
+              <div className="3xl:mt-12 grid grid-cols-[1fr_2fr] items-center gap-8 pr-8">
                 <p className="order-last border-l border-neutral-200 pr-4 pl-8 text-base leading-relaxed text-neutral-700">
                   {heroSectionTextTop.description}
                 </p>
@@ -91,8 +91,8 @@ export default function Startseite() {
         </div>
 
         {/* Diagonaler Teiler zwischen den Bildern (2xl) */}
-        <div className="pointer-events-none absolute inset-y-0 left-[38%] z-10 hidden w-36 -translate-x-1/2 -skew-x-16 bg-(--color-divider) 2xl:block">
-          <div className="pointer-events-none absolute inset-y-0 left-36 w-28 bg-gray-50" />
+        <div className="4xl:left-[40%] 4xl:w-52 pointer-events-none absolute inset-y-0 left-[38%] z-10 hidden w-36 -translate-x-1/2 -skew-x-16 bg-(--color-divider) 2xl:block">
+          <div className="3xl:w-40 4xl:w-48 pointer-events-none absolute inset-y-0 left-36 w-28 2xl:bg-gray-50" />
         </div>
 
         {/* Mobile: Text unter dem Bild */}
@@ -122,7 +122,7 @@ export default function Startseite() {
       </section>
 
       {/* Service-Karten */}
-      <section className="py-12 lg:py-24">
+      <section className="3xl:mt-24 mt-12 lg:mt-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-3">
             {landingPageTiles.map((item, index) => {
@@ -152,19 +152,16 @@ export default function Startseite() {
       </section>
 
       {/* Intro-Text */}
-      <section
-        className="px-6 py-14 lg:py-16"
-        style={{ borderBottom: "1px solid var(--color-divider)" }}
-      >
+      <section className="px-6 py-14 lg:py-28">
         <div className="mx-auto max-w-7xl">
-          <p className="mx-auto max-w-5xl text-base leading-relaxed text-neutral-700 lg:text-center lg:text-lg lg:font-bold">
+          <p className="mx-auto max-w-5xl text-base leading-relaxed text-neutral-700 lg:text-center lg:text-lg">
             Ob moderner Bungalow, energieeffizientes Einfamilienhaus oder
             schlüsselfertiges Mehrfamilienhaus – mit ELK setzen wir auf
             nachhaltiges Bauen, hochwertige Architektur und maximale
             Planungssicherheit. Gemeinsam verwirklichen wir euer modernes
             Fertighaus.
           </p>
-          <p className="mx-auto mt-4 max-w-5xl text-base leading-relaxed text-neutral-700 lg:text-center lg:text-lg lg:font-bold">
+          <p className="mx-auto mt-4 max-w-5xl text-base leading-relaxed text-neutral-700 lg:text-center lg:text-lg">
             Lasst uns euren Traum vom eigenen Fertighaus Schritt für Schritt
             angehen: persönlich, planbar und sorgenfrei. Schreibt mir gerne für
             eine kostenlose Erstberatung.

@@ -4,11 +4,7 @@ import { siteConfig } from "@/lib/constants";
 
 const KontaktFormular = () => {
   return (
-    <section
-      id="kontakt"
-      className="scroll-mt-20 py-24 md:py-32"
-      style={{ borderTop: "1px solid var(--color-divider)" }}
-    >
+    <section id="kontakt" className="scroll-mt-20 py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid gap-16 md:grid-cols-2">
           {/* Info-Seite */}
