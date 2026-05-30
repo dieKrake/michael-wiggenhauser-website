@@ -63,7 +63,7 @@ export default function Startseite() {
                 <p className="order-last border-l border-neutral-200 pr-4 pl-8 text-base leading-relaxed text-neutral-700">
                   {heroSectionTextTop.description}
                 </p>
-                <div className="flex justify-center">
+                <div className="justify-left flex">
                   <Button href="#kontakt" variant="accent" className="gap-2">
                     Kontakt aufnehmen <ArrowRight className="h-4 w-4" />
                   </Button>

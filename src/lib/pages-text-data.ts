@@ -28,29 +28,49 @@ export const landingPageTiles = [
 
 export const faqItems = [
   {
-    question: "Was ist ein Fertighaus?",
+    question: "Wie schnell kann ich in mein Fertighaus einziehen?",
     answer:
-      "Ein Fertighaus wird in einer Produktionshalle in Elementen vorgefertigt und am Bauort montiert. Die Bauzeit ist deutlich kürzer als bei Massivbauten.",
+      "Ab dem Zeitpunkt der Baugenehmigung könnt ihr je nach Auslastung meist innerhalb von ca. 8–10 Monaten in euer schlüsselfertiges Fertighaus einziehen. Durch die moderne Fertighausbauweise von ELK profitieren ihr von kurzen Bauzeiten, hoher Planungssicherheit und einem schnellen Weg ins eigene Zuhause.",
   },
   {
-    question: "Kann im Winter gebaut werden?",
+    question: "Kann ich auch Eigenleistungen am Fertighaus übernehmen?",
     answer:
-      "Ja! Durch den hohen Vorfertigungsgrad benötigt ein ELK-Haus lediglich ein bis zwei Tage, um witterungsdicht montiert zu sein.",
+      "Ja – bei ELK könnt ihr selbst entscheiden, wie viel ihr beim Hausbau selbst übernehmen möchtet. Vom bezugsfertigen Fertighaus inklusive Küche bis hin zum Ausbauhaus mit komplettem Innenausbau gibt es verschiedene Ausbaustufen ganz nach euren Vorstellungen und eurem Budget.Wichtig dabei: Die Außenhülle eures Hauses ist immer komplett dicht und fachgerecht ausgeführt – für maximale Sicherheit und Gewährleistung. Auch Bodenplatte oder Keller können auf Wunsch bauseits umgesetzt werden.So verbindet ihr maximale Flexibilität mit der Sicherheit eines modernen ELK Fertighauses.",
   },
   {
-    question: "Wie lange hält ein Fertighaus?",
+    question: "Wie sieht es mit Schallschutz und Brandschutz aus?",
     answer:
-      "Moderne Holzfertighäuser haben eine technische Lebensdauer von mehr als 100 Jahren – vergleichbar mit konventionell gebauten Häusern.",
+      "Moderne Holzfertighäuser von ELK überzeugen nicht nur durch Energieeffizienz, sondern auch durch hervorragenden Schall- und Brandschutz. Dank der innovativen Wand- und Deckenkonstruktionen erreichen ELK Fertighäuser Schallschutzwerte auf höchstem Niveau – vergleichbar mit klassischen Massivhäusern.Durch die präzise Vorfertigung der Bauelemente werden typische Baufehler minimiert, was zusätzlich für eine konstant hohe Qualität sorgt.Auch beim Brandschutz bieten moderne Holzfertighäuser maximale Sicherheit. Holz brennt deutlich langsamer als viele denken und verhält sich im Brandfall sehr berechenbar. Die größte Brandlast entsteht in Wohnhäusern meist durch Möbel, Textilien oder Einrichtung – unabhängig von der Bauweise.",
   },
   {
-    question: "Ist ein Fertighaus wertstabil?",
+    question: "Kann ich schwere Gegenstände an den Innenwänden befestigen?",
     answer:
-      "Ja. Der Sachwert von Holzfertighäusern unterscheidet sich kaum von Mauerwerksbauten. Die Qualität ist in den vergangenen Jahren nochmals deutlich gestiegen.",
+      "Ja – die hochwertigen Fasergipsplatten in ELK Fertighäusern ermöglichen eine sichere Befestigung auch schwerer Gegenstände. Mit der passenden Montageanleitung können beispielsweise Küchenoberschränke, Fernseher oder Regalsysteme problemlos und sicher montiert werden.",
   },
   {
-    question: "Welche Haustypen gibt es?",
+    question: "Kann ich für ein ELK Fertighaus Förderungen beantragen?",
     answer:
-      "Jede Hausart kann als Fertighaus gebaut werden: Einfamilienhaus, Doppelhaus, Bungalow, Stadtvilla – mit verschiedenen Dachformen.",
+      "Ja – ELK Fertighäuser erfüllen hohe energetische Standards und bieten beste Voraussetzungen für verschiedene KfW-Förderungen und attraktive Finanzierungsmöglichkeiten.Bereits auf Bodenplatte erreichen viele Häuser den KfW-40-Standard und überzeugen durch energieeffizientes und nachhaltiges Bauen. Gerne beraten wir euch persönlich zu passenden Förderungen, Finanzierungsmöglichkeiten und individuellen Lösungen für euer Fertighaus.",
+  },
+  {
+    question: "Welche Hausarten kann ich als Fertighaus bauen?",
+    answer:
+      "Mit einem modernen Fertighaus sind nahezu alle Hausarten möglich. Ob Einfamilienhaus, Mehrfamilienhaus, Doppelhaus, Reihenhaus oder Bungalow – ELK bietet flexible Lösungen für unterschiedlichste Wohnwünsche.Auch architektonisch sind Fertighäuser heute vielseitig planbar: von der klassischen Stadtvilla über moderne Flachdachhäuser bis hin zu Häusern mit Sattel-, Walm- oder Pultdach.Als eines der führenden Fertighausunternehmen Europas steht ELK für hochwertige Architektur, nachhaltiges Bauen und jahrzehntelange Erfahrung im Hausbau.",
+  },
+  {
+    question: "Was ist der Unterschied zwischen Fertighaus und Massivhaus?",
+    answer:
+      "Ein Fertighaus wird im Gegensatz zum klassischen Massivhaus größtenteils in einer modernen Produktionshalle vorgefertigt und anschließend auf dem Grundstück montiert. Dadurch verkürzt sich die Bauzeit erheblich und ihr profitiert von hoher Maßgenauigkeit und Planungssicherheit.Ein großer Vorteil moderner Holzfertighäuser liegt außerdem in ihrer hervorragenden Energieeffizienz und Nachhaltigkeit. Holz ist ein nachwachsender Rohstoff, bindet CO₂ und benötigt in der Verarbeitung deutlich weniger Energie als Beton oder Ziegel.Darüber hinaus bieten Fertighäuser bei gleicher Wandstärke oft bessere Dämmwerte und schaffen dadurch zusätzlichen Wohnraum. Mit ELK habt ihr außerdem während des gesamten Hausbaus einen persönlichen Ansprechpartner an eurer Seite – von der Planung bis zur schlüsselfertigen Übergabe.",
+  },
+  {
+    question: "Wie langlebig ist ein Fertighaus?",
+    answer:
+      "Moderne Fertighäuser sind äußerst langlebig und stehen konventionell gebauten Häusern in nichts nach. Wissenschaftliche Studien zeigen, dass moderne Holzfertighäuser eine Lebensdauer von über 100 Jahren erreichen können.Historische Fachwerkhäuser beweisen bereits seit Jahrhunderten die Stabilität und Qualität des Baustoffs Holz. Moderne ELK Fertighäuser verbinden diese bewährte Bauweise mit innovativer Technik, energieeffizienten Materialien und höchster Präzision im Hausbau.Wie bei jedem Haus können nach vielen Jahren kleinere Renovierungsarbeiten an Fassade oder Außenbereichen anfallen.",
+  },
+  {
+    question: "Wie energieeffizient sind Holzfertighäuser von ELK?",
+    answer:
+      "Holzfertighäuser von ELK stehen für modernes, energieeffizientes und nachhaltiges Bauen. Durch die innovative Holzrahmenbauweise und hochwirksame Dämmmaterialien erreichen ELK Häuser hervorragende Wärmedämmwerte und helfen dabei, langfristig Energiekosten zu sparen.Holz besitzt von Natur aus eine geringe Wärmeleitfähigkeit und sorgt dadurch für ein angenehmes Wohnklima zu jeder Jahreszeit. Zusätzlich kommen moderne Heizsysteme und innovative Gebäudetechnik zum Einsatz.Auch ökologisch bieten Holzfertighäuser große Vorteile: Holz ist ein nachwachsender Rohstoff, speichert CO₂ und ermöglicht eine deutlich bessere Umweltbilanz als viele konventionelle Bauweisen. Das verwendete Holz stammt aus nachhaltig bewirtschafteten Wäldern in Österreich und wird regional verarbeitet.",
   },
 ];
 
@@ -121,32 +141,37 @@ export const elkGalery = {
   einfamilienhaus: {
     label: "Einfamilienhaus",
     bilder: [
-      { src: "/images/placeholder-efh-1.jpg", alt: "Einfamilienhaus Modell 1" },
-      { src: "/images/placeholder-efh-2.jpg", alt: "Einfamilienhaus Modell 2" },
-      { src: "/images/placeholder-efh-3.jpg", alt: "Einfamilienhaus Modell 3" },
+      {
+        src: "/images/Einfamilienhaus-2.webp",
+        alt: "Einfamilienhaus Modell 2",
+      },
+      {
+        src: "/images/Einfamilienhaus-3.webp",
+        alt: "Einfamilienhaus Modell 3",
+      },
     ],
   },
   bungalow: {
     label: "Bungalow",
     bilder: [
-      { src: "/images/placeholder-bungalow-1.jpg", alt: "Bungalow Modell 1" },
-      { src: "/images/placeholder-bungalow-2.jpg", alt: "Bungalow Modell 2" },
-      { src: "/images/placeholder-bungalow-3.jpg", alt: "Bungalow Modell 3" },
+      { src: "/images/Bungalow-1.webp", alt: "Bungalow Modell 1" },
+      { src: "/images/Bungalow-2.webp", alt: "Bungalow Modell 2" },
+      { src: "/images/Bungalow-3.webp", alt: "Bungalow Modell 3" },
     ],
   },
   mehrfamilienhaus: {
     label: "Mehrfamilienhaus",
     bilder: [
       {
-        src: "/images/placeholder-mfh-1.jpg",
+        src: "/images/Mehrfamilie-1.webp",
         alt: "Mehrfamilienhaus Modell 1",
       },
       {
-        src: "/images/placeholder-mfh-2.jpg",
+        src: "/images/Mehrfamilie-2.webp",
         alt: "Mehrfamilienhaus Modell 2",
       },
       {
-        src: "/images/placeholder-mfh-3.jpg",
+        src: "/images/Mehrfamilie-3.webp",
         alt: "Mehrfamilienhaus Modell 3",
       },
     ],

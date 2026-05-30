@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Container from "@/components/layout/container";
 import Section from "@/components/layout/section";
 import Heading from "@/components/ui/heading";
@@ -17,16 +18,24 @@ export default function UeberMichPage() {
   return (
     <>
       {/* Hero */}
-      <Section background="primary" className="py-20 md:py-28">
-        <Container className="text-center">
+      <section
+        className="relative py-20 md:py-28"
+        style={{
+          backgroundImage: "url('/images/Hintergrund-Banner-über-mich.webp')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/50" />
+        <Container className="relative z-10 text-center">
           <Heading as="h1" className="text-white">
             Über mich
           </Heading>
-          <p className="text-primary-200 mx-auto mt-6 max-w-2xl text-lg">
+          <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90">
             {aboutMeData.intro}
           </p>
         </Container>
-      </Section>
+      </section>
 
       {/* USPs */}
       <Section background="gray">
@@ -58,7 +67,13 @@ export default function UeberMichPage() {
                 Erfahrungen in die Beratung einfließen.
               </p>
             </div>
-            <div className="aspect-4/3 rounded-2xl bg-gray-200" />
+            <Image
+              src="/images/michi-treppe.JPG"
+              alt="Michael Wiggenhauser"
+              className="aspect-4/3 rounded-2xl object-cover"
+              width={1000}
+              height={750}
+            />
           </div>
         </Container>
       </Section>

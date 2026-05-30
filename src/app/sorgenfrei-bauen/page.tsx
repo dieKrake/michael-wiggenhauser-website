@@ -3,7 +3,8 @@ import { Check } from "lucide-react";
 import Container from "@/components/layout/container";
 import Section from "@/components/layout/section";
 import Heading from "@/components/ui/heading";
-import Card from "@/components/ui/card";
+import { Accordion } from "@/components/ui/accordion";
+import { ImageCarousel } from "@/components/ui/image-carousel";
 import {
   servicesList,
   elkGalery,
@@ -23,17 +24,26 @@ export default function SorgenfreiBauenPage() {
   return (
     <>
       {/* Hero */}
-      <Section background="primary" className="py-20 md:py-28">
-        <Container className="text-center">
+      <section
+        className="relative py-20 md:py-28"
+        style={{
+          backgroundImage:
+            "url('/images/Hintergrund-Banner-Sorgenfrei-bauen.webp')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/50" />
+        <Container className="relative z-10 text-center">
           <Heading as="h1" className="text-white">
             Sorgenfrei Bauen
           </Heading>
-          <p className="text-primary-200 mx-auto mt-6 max-w-2xl text-lg">
+          <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90">
             Von der ersten Idee bis zum Einzug – ich begleite Sie durch alle
             Phasen Ihres Bauvorhabens. Persönlich, kompetent und transparent.
           </p>
         </Container>
-      </Section>
+      </section>
 
       {/* Leistungen */}
       <Section background="white" id="leistungen">
@@ -81,48 +91,12 @@ export default function SorgenfreiBauenPage() {
             <Heading as="h3" className="text-center">
               {kategorie.label}
             </Heading>
-            <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {kategorie.bilder.map((bild) => (
-                <div
-                  key={bild.alt}
-                  className="overflow-hidden rounded-xl border border-gray-200"
-                >
-                  <div className="flex aspect-video items-center justify-center bg-gray-100 text-sm text-gray-400">
-                    {bild.alt}
-                  </div>
-                </div>
-              ))}
+            <div className="mx-auto mt-8 max-w-3xl">
+              <ImageCarousel images={kategorie.bilder} />
             </div>
           </Container>
         </Section>
       ))}
-
-      {/* Sorgenfrei Verkaufen */}
-      <Section background="gray">
-        <Container>
-          <Heading as="h2" className="text-center">
-            Sorgenfrei Verkaufen
-          </Heading>
-          <p className="mx-auto mt-4 max-w-2xl text-center text-gray-600">
-            Sie möchten Ihre Immobilie verkaufen? Ich begleite Sie von der
-            ersten Beratung bis zum erfolgreichen Abschluss – persönlich und
-            professionell.
-          </p>
-          <div className="mx-auto mt-12 max-w-3xl space-y-8">
-            {sellingBulletPoints.map((schritt) => (
-              <div key={schritt.nummer} className="flex gap-6">
-                <span className="text-3xl font-bold text-gray-300">
-                  {schritt.nummer}
-                </span>
-                <div>
-                  <Heading as="h3">{schritt.title}</Heading>
-                  <p className="mt-2 text-gray-600">{schritt.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </Section>
 
       {/* FAQ */}
       <Section background="white">
@@ -130,13 +104,8 @@ export default function SorgenfreiBauenPage() {
           <Heading as="h2" className="text-center">
             Häufig gestellte Fragen
           </Heading>
-          <div className="mx-auto mt-12 max-w-3xl space-y-6">
-            {faqItems.map((item) => (
-              <Card key={item.question}>
-                <Heading as="h3">{item.question}</Heading>
-                <p className="mt-2 text-gray-600">{item.answer}</p>
-              </Card>
-            ))}
+          <div className="mx-auto mt-12 max-w-3xl">
+            <Accordion items={faqItems} />
           </div>
         </Container>
       </Section>
