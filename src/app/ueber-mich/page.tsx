@@ -5,7 +5,7 @@ import Section from "@/components/layout/section";
 import Heading from "@/components/ui/heading";
 import Card from "@/components/ui/card";
 import Button from "@/components/ui/button";
-import { ueberMichData, statistiken } from "@/lib/pages-text-data";
+import { aboutMeData, aboutMeStats } from "@/lib/pages-text-data";
 
 export const metadata: Metadata = {
   title: "Über mich",
@@ -23,7 +23,7 @@ export default function UeberMichPage() {
             Über mich
           </Heading>
           <p className="text-primary-200 mx-auto mt-6 max-w-2xl text-lg">
-            {ueberMichData.intro}
+            {aboutMeData.intro}
           </p>
         </Container>
       </Section>
@@ -35,7 +35,7 @@ export default function UeberMichPage() {
             Warum genau mit mir?
           </Heading>
           <div className="mt-12 grid gap-8 md:grid-cols-2">
-            {ueberMichData.usps.map((usp) => (
+            {aboutMeData.usps.map((usp) => (
               <Card key={usp.title}>
                 <Heading as="h3">{usp.title}</Heading>
                 <p className="mt-2 text-gray-600">{usp.description}</p>
@@ -70,7 +70,7 @@ export default function UeberMichPage() {
             Erfolgsbilanz
           </Heading>
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {statistiken.map((stat) => (
+            {aboutMeStats.map((stat) => (
               <div key={stat.label} className="text-center">
                 <p className="text-4xl font-bold text-white md:text-5xl">
                   {stat.value}

@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, HardHat, MessageCircle, Home } from "lucide-react";
-import { leistungsKarten, testimonials } from "@/lib/pages-text-data";
+import {
+  heroSectionTextTop,
+  landingPageTiles,
+  testimonials,
+} from "@/lib/pages-text-data";
 import Button from "@/components/ui/button";
 
 export const metadata: Metadata = {
@@ -16,9 +20,9 @@ export default function Startseite() {
     <>
       {/* Hero */}
       <section className="relative overflow-hidden">
-        <div className="grid lg:grid-cols-12">
+        <div className="grid lg:grid-cols-12 lg:grid-rows-[auto_1fr] xl:grid-cols-12 xl:grid-rows-1">
           {/* Bild links – volle Höhe */}
-          <div className="relative aspect-video sm:aspect-auto sm:min-h-[50vh] lg:col-span-5 lg:row-span-1 lg:min-h-0">
+          <div className="relative aspect-video sm:aspect-auto sm:min-h-[50vh] lg:col-span-6 lg:row-span-1 xl:col-span-5 xl:row-span-1 xl:min-h-0">
             <Image
               src="/images/haus-placeholder.webp"
               alt="ELK Fertighaus"
@@ -30,7 +34,7 @@ export default function Startseite() {
           </div>
 
           {/* Rechte Seite: Bild oben + Text unten */}
-          <div className="hidden lg:col-span-7 lg:flex lg:flex-col">
+          <div className="hidden lg:col-span-6 lg:flex lg:flex-col xl:col-span-7 xl:flex xl:flex-col">
             {/* Bild rechts oben */}
             <div className="relative min-h-[40vh] flex-1">
               <Image
@@ -44,21 +48,16 @@ export default function Startseite() {
             </div>
 
             {/* Text rechts unten */}
-            <div className="bg-gray-50 py-8 pl-28">
+            <div className="bg-gray-50 py-8 pl-28 sm:hidden lg:hidden xl:block">
               <h1 className="text-3xl font-bold tracking-tight text-neutral-900 uppercase lg:text-5xl">
-                Sorgenfrei ins neue
+                {heroSectionTextTop.titleLine1}
                 <br />
-                Zuhause
+                {heroSectionTextTop.titleLine2}
               </h1>
 
               <div className="grid grid-cols-[1fr_2fr] items-center gap-8">
                 <p className="order-last border-l border-neutral-200 pr-4 pl-8 text-base leading-relaxed text-neutral-700">
-                  Der Bau eines Hauses ist eine der wichtigsten Entscheidungen
-                  im Leben. Umso wichtiger ist ein Partner, der euch zuverlässig
-                  begleitet – von der ersten Idee bis zum Einzug. Als
-                  persönlicher ELK-Fachberater unterstütze ich euch dabei, euer
-                  individuelles Fertighaus sorgenfrei zu planen und sicher
-                  umzusetzen.
+                  {heroSectionTextTop.description}
                 </p>
                 <div className="flex justify-center">
                   <Button href="#kontakt" variant="accent" className="gap-2">
@@ -68,19 +67,36 @@ export default function Startseite() {
               </div>
             </div>
           </div>
+
+          {/* Text unter den Bildern lg-xl */}
+          <div className="hidden lg:col-span-12 lg:flex xl:hidden">
+            <h1 className="text-3xl font-bold tracking-tight text-neutral-900 uppercase lg:text-5xl">
+              {heroSectionTextTop.titleLine1}
+              <br />
+              {heroSectionTextTop.titleLine2}
+            </h1>
+            <div className="grid grid-cols-1 gap-4">
+              <p>{heroSectionTextTop.description}</p>
+              <div>
+                <Button href="#kontakt" variant="accent" className="gap-2">
+                  Kontakt aufnehmen <ArrowRight className="h-4 w-4" />
+                </Button>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Diagonaler Teiler zwischen den Bildern */}
-        <div className="pointer-events-none absolute inset-y-0 left-[38%] z-10 hidden w-36 -translate-x-1/2 -skew-x-16 bg-(--color-divider) lg:block">
+        <div className="pointer-events-none absolute inset-y-0 left-[38%] z-10 hidden w-36 -translate-x-1/2 -skew-x-16 bg-(--color-divider) lg:block xl:block">
           <div className="pointer-events-none absolute inset-y-0 left-36 w-28 bg-gray-50" />
         </div>
 
         {/* Mobile: Text unter dem Bild */}
         <div className="px-6 py-4 sm:py-10 lg:hidden">
           <h1 className="text-3xl font-bold tracking-tight text-neutral-900 uppercase">
-            Sorgenfrei ins neue
+            {heroSectionTextTop.titleLine1}
             <br />
-            Zuhause
+            {heroSectionTextTop.titleLine2}
           </h1>
 
           <div
@@ -90,11 +106,7 @@ export default function Startseite() {
 
           <div className="grid grid-cols-1 gap-6">
             <p className="text-base leading-relaxed text-neutral-700">
-              Der Bau eines Hauses ist eine der wichtigsten Entscheidungen im
-              Leben. Umso wichtiger ist ein Partner, der euch zuverlässig
-              begleitet – von der ersten Idee bis zum Einzug. Als persönlicher
-              ELK-Fachberater unterstütze ich euch dabei, euer individuelles
-              Fertighaus sorgenfrei zu planen und sicher umzusetzen.
+              {heroSectionTextTop.description}
             </p>
             <div className="flex">
               <Button href="#kontakt" variant="accent" className="gap-2">
@@ -105,32 +117,11 @@ export default function Startseite() {
         </div>
       </section>
 
-      {/* Intro-Text */}
-      <section
-        className="px-6 py-14 lg:py-16"
-        style={{ borderBottom: "1px solid var(--color-divider)" }}
-      >
-        <div className="mx-auto max-w-7xl">
-          <p className="mx-auto max-w-5xl text-base leading-relaxed text-neutral-700 lg:text-center lg:text-lg lg:font-bold">
-            Ob moderner Bungalow, energieeffizientes Einfamilienhaus oder
-            schlüsselfertiges Mehrfamilienhaus – mit ELK setzen wir auf
-            nachhaltiges Bauen, hochwertige Architektur und maximale
-            Planungssicherheit. Gemeinsam verwirklichen wir euer modernes
-            Fertighaus.
-          </p>
-          <p className="mx-auto mt-4 max-w-5xl text-base leading-relaxed text-neutral-700 lg:text-center lg:text-lg lg:font-bold">
-            Lasst uns euren Traum vom eigenen Fertighaus Schritt für Schritt
-            angehen: persönlich, planbar und sorgenfrei. Schreibt mir gerne für
-            eine kostenlose Erstberatung.
-          </p>
-        </div>
-      </section>
-
       {/* Service-Karten */}
       <section className="py-12 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-3">
-            {leistungsKarten.map((item, index) => {
+            {landingPageTiles.map((item, index) => {
               const icons = [HardHat, Home, MessageCircle];
               const Icon = icons[index] || Home;
               return (
@@ -153,6 +144,27 @@ export default function Startseite() {
               );
             })}
           </div>
+        </div>
+      </section>
+
+      {/* Intro-Text */}
+      <section
+        className="px-6 py-14 lg:py-16"
+        style={{ borderBottom: "1px solid var(--color-divider)" }}
+      >
+        <div className="mx-auto max-w-7xl">
+          <p className="mx-auto max-w-5xl text-base leading-relaxed text-neutral-700 lg:text-center lg:text-lg lg:font-bold">
+            Ob moderner Bungalow, energieeffizientes Einfamilienhaus oder
+            schlüsselfertiges Mehrfamilienhaus – mit ELK setzen wir auf
+            nachhaltiges Bauen, hochwertige Architektur und maximale
+            Planungssicherheit. Gemeinsam verwirklichen wir euer modernes
+            Fertighaus.
+          </p>
+          <p className="mx-auto mt-4 max-w-5xl text-base leading-relaxed text-neutral-700 lg:text-center lg:text-lg lg:font-bold">
+            Lasst uns euren Traum vom eigenen Fertighaus Schritt für Schritt
+            angehen: persönlich, planbar und sorgenfrei. Schreibt mir gerne für
+            eine kostenlose Erstberatung.
+          </p>
         </div>
       </section>
 

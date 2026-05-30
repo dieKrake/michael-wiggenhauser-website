@@ -5,9 +5,9 @@ import Section from "@/components/layout/section";
 import Heading from "@/components/ui/heading";
 import Card from "@/components/ui/card";
 import {
-  leistungenListe,
-  elkGalerie,
-  sorgenfreiVerkaufenSchritte,
+  servicesList,
+  elkGalery,
+  sellingBulletPoints,
   faqItems,
 } from "@/lib/pages-text-data";
 
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 };
 
 export default function SorgenfreiBauenPage() {
-  const galerieKategorien = Object.values(elkGalerie);
+  const galerieKategorien = Object.values(elkGalery);
 
   return (
     <>
@@ -48,7 +48,7 @@ export default function SorgenfreiBauenPage() {
           </p>
           <div className="mx-auto mt-12 max-w-2xl">
             <ul className="space-y-4">
-              {leistungenListe.map((item) => (
+              {servicesList.map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <Check className="mt-0.5 h-5 w-5 shrink-0 text-gray-800" />
                   <span className="text-gray-700">{item}</span>
@@ -109,7 +109,7 @@ export default function SorgenfreiBauenPage() {
             professionell.
           </p>
           <div className="mx-auto mt-12 max-w-3xl space-y-8">
-            {sorgenfreiVerkaufenSchritte.map((schritt) => (
+            {sellingBulletPoints.map((schritt) => (
               <div key={schritt.nummer} className="flex gap-6">
                 <span className="text-3xl font-bold text-gray-300">
                   {schritt.nummer}

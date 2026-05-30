@@ -1,12 +1,11 @@
-export const heroData = {
-  headline: "Moderne Fertighäuser",
-  subline:
-    "Ihr Partner für nachhaltiges Bauen – von der Beratung bis zur Schlüsselübergabe.",
-  ctaText: "Kontakt aufnehmen",
-  ctaHref: "#kontakt",
+export const heroSectionTextTop = {
+  titleLine1: "Sorgenfrei ins neue",
+  titleLine2: "Zuhause",
+  description:
+    "Der Bau eines Hauses ist eine der wichtigsten Entscheidungen im Leben. Umso wichtiger ist ein Partner, der euch zuverlässig begleitet – von der ersten Idee bis zum Einzug. Als persönlicher ELK-Fachberater unterstütze ich euch dabei, euer individuelles Fertighaus sorgenfrei zu planen und sicher umzusetzen.",
 };
 
-export const leistungsKarten = [
+export const landingPageTiles = [
   {
     title: "Sorgenfrei mit ELK",
     description:
@@ -55,33 +54,6 @@ export const faqItems = [
   },
 ];
 
-export const nachhaltigkeitFeatures = [
-  {
-    title: "Natürlich aus Holz",
-    description:
-      "Nachhaltiges Bauen beginnt bei den Materialien. Wir verwenden sorgfältig ausgewähltes Holz aus nachhaltig bewirtschafteten Wäldern.",
-    icon: "trees" as const,
-  },
-  {
-    title: "Ein echter Klimaschützer",
-    description:
-      "Holz entzieht der Atmosphäre CO₂ während des Wachstums. Mit einem ELK Haus reduzieren Sie die CO₂-Emission erheblich.",
-    icon: "leaf" as const,
-  },
-  {
-    title: "Zum Wohlfühlen",
-    description:
-      "Holz sorgt für ein behagliches Raumklima. Wände in Holzbauweise fühlen sich angenehm warm an.",
-    icon: "heart" as const,
-  },
-  {
-    title: "Effiziente Haustechnik",
-    description:
-      "Kontrollierte Be- und Entlüftung mit Wärmerückgewinnung senkt den Energieverbrauch und sorgt für gesundes Raumklima.",
-    icon: "zap" as const,
-  },
-];
-
 export const testimonials = [
   {
     name: "Familie Müller",
@@ -103,42 +75,14 @@ export const testimonials = [
   },
 ];
 
-export const statistiken = [
+export const aboutMeStats = [
   { label: "Zufriedene Bauherren", value: 50, suffix: "+" },
   { label: "Tonnen nachhaltiges Holz verbaut", value: 150, suffix: "+" },
   { label: "Millionen Euro Fördergelder", value: 3, suffix: "+" },
   { label: "Quadratmeter Wohnfläche", value: 5000, suffix: "+" },
 ];
 
-export const bauberatungDetails = [
-  {
-    title: "Individuelle Finanzberatung",
-    description:
-      "Gemeinsam erarbeiten wir eine maßgeschneiderte Finanzierungslösung.",
-  },
-  {
-    title: "Transparenz und Klarheit",
-    description:
-      "Sie erhalten klare Informationen über Finanzierungsoptionen und Kostenstrukturen.",
-  },
-  {
-    title: "Umfassende Bedarfsanalyse",
-    description:
-      "Durch eine gründliche Analyse ermitteln wir Ihre Anforderungen und Wünsche.",
-  },
-  {
-    title: "Fördermittel und Finanzierungsoptionen",
-    description:
-      "Ich informiere Sie über aktuelle Fördermittel und verschiedene Finanzierungsmodelle.",
-  },
-  {
-    title: "Beratung während des gesamten Prozesses",
-    description:
-      "Vom ersten Gespräch bis zur Schlüsselübergabe stehe ich Ihnen zur Verfügung.",
-  },
-];
-
-export const hausmodelle = [
+export const houseModels = [
   {
     name: "ELK Vision 115",
     flaeche: "115 m²",
@@ -162,23 +106,7 @@ export const hausmodelle = [
   },
 ];
 
-export const events = [
-  {
-    date: "2025-03-29",
-    dateEnd: "2025-03-30",
-    title: "Bauen, Wohnen, Renovieren 2025",
-    location: "Messestand ELK-Haus, Messezentrum Heilbronn",
-    description: "Besuchen Sie uns auf der Messe.",
-  },
-  {
-    date: "2025-04-15",
-    title: "Finanzierungstag im ELK-Musterhaus",
-    location: "ELK-Musterhaus Fellbach",
-    description: "Unverbindlich beraten lassen.",
-  },
-];
-
-export const leistungenListe = [
+export const servicesList = [
   "Kostenlose Erstberatung vor Ort oder telefonisch",
   "Individuelle Bedarfsanalyse und Grundrissplanung",
   "Auswahl und Konfiguration Ihres ELK Fertighauses",
@@ -189,7 +117,7 @@ export const leistungenListe = [
   "After-Sales-Service auch nach dem Einzug",
 ];
 
-export const elkGalerie = {
+export const elkGalery = {
   einfamilienhaus: {
     label: "Einfamilienhaus",
     bilder: [
@@ -225,7 +153,7 @@ export const elkGalerie = {
   },
 };
 
-export const sorgenfreiVerkaufenSchritte = [
+export const sellingBulletPoints = [
   {
     nummer: "01",
     title: "Kostenlose Erstberatung",
@@ -264,7 +192,7 @@ export const sorgenfreiVerkaufenSchritte = [
   },
 ];
 
-export const finanzierungAbschnitte = [
+export const financingSections = [
   {
     title: "Finanzierungsberatung",
     content:
@@ -297,7 +225,7 @@ export const finanzierungAbschnitte = [
   },
 ];
 
-export const ueberMichData = {
+export const aboutMeData = {
   intro:
     "Mein Name ist Michael Wiggenhauser – ich bin Ihr erfahrener Fachberater für Fertighäuser von ELK Fertighaus. Ich begleite Sie mit Expertise durch alle Facetten des Hausbaus.",
   usps: [

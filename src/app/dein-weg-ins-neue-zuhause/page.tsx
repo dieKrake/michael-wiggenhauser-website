@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Container from "@/components/layout/container";
 import Section from "@/components/layout/section";
 import Heading from "@/components/ui/heading";
-import { finanzierungAbschnitte } from "@/lib/pages-text-data";
+import { financingSections } from "@/lib/pages-text-data";
 
 export const metadata: Metadata = {
   title: "Dein Weg ins Neue Zuhause",
@@ -27,7 +27,7 @@ export default function FinanzierungAblaufPage() {
       </Section>
 
       {/* Abschnitte */}
-      {finanzierungAbschnitte.map((abschnitt, index) => (
+      {financingSections.map((abschnitt, index) => (
         <Section
           key={abschnitt.title}
           background={index % 2 === 0 ? "white" : "gray"}
