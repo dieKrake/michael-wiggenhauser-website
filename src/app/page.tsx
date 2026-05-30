@@ -20,12 +20,12 @@ export default function Startseite() {
     <>
       {/* Hero */}
       <section className="relative overflow-hidden">
-        <div className="grid lg:grid-cols-12 lg:grid-rows-[auto_1fr] xl:grid-cols-12 xl:grid-rows-1">
+        <div className="grid lg:grid-cols-12 lg:grid-rows-[auto_1fr] 2xl:grid-cols-12 2xl:grid-rows-1">
           {/* Bild links – volle Höhe */}
-          <div className="relative aspect-video sm:aspect-auto sm:min-h-[50vh] lg:col-span-6 lg:row-span-1 lg:aspect-video lg:min-h-0 xl:col-span-5 xl:row-span-1 xl:aspect-auto xl:min-h-0">
-            {/* Diagonaler Teiler – relativ zum Bild positioniert (lg-xl) */}
-            <div className="pointer-events-none absolute inset-y-0 right-0 left-[70%] z-10 hidden w-24 translate-x-1/2 -skew-x-16 bg-(--color-divider) lg:block xl:hidden">
-              <div className="pointer-events-none absolute inset-y-0 left-24 w-24 bg-gray-50" />
+          <div className="relative aspect-video sm:aspect-auto sm:min-h-[50vh] lg:col-span-6 lg:row-span-1 lg:aspect-video lg:min-h-0 2xl:col-span-5 2xl:row-span-1 2xl:aspect-auto 2xl:min-h-0">
+            {/* Diagonaler Teiler – relativ zum Bild positioniert (lg-2xl) */}
+            <div className="pointer-events-none absolute inset-y-0 right-0 left-[80%] z-10 hidden w-36 translate-x-1/2 -skew-x-16 bg-(--color-divider) will-change-transform lg:block 2xl:hidden">
+              <div className="pointer-events-none absolute inset-y-0 left-24 w-16 bg-gray-50" />
             </div>
             <Image
               src="/images/haus-placeholder.webp"
@@ -38,9 +38,9 @@ export default function Startseite() {
           </div>
 
           {/* Rechte Seite: Bild oben + Text unten */}
-          <div className="hidden lg:col-span-6 lg:flex lg:flex-col xl:col-span-7 xl:flex xl:flex-col">
+          <div className="hidden lg:col-span-6 lg:flex lg:flex-col 2xl:col-span-7 2xl:flex 2xl:flex-col">
             {/* Bild rechts oben */}
-            <div className="relative min-h-[40vh] flex-1 lg:aspect-video lg:min-h-0 lg:flex-none xl:aspect-auto xl:min-h-[40vh] xl:flex-1">
+            <div className="relative min-h-[40vh] flex-1 lg:aspect-video lg:min-h-0 lg:flex-none 2xl:aspect-auto 2xl:min-h-[40vh] 2xl:flex-1">
               <Image
                 src="/images/haus-placeholder2.webp"
                 alt="ELK Fertighaus"
@@ -52,7 +52,7 @@ export default function Startseite() {
             </div>
 
             {/* Text rechts unten */}
-            <div className="bg-gray-50 py-8 pl-28 sm:hidden lg:hidden xl:block">
+            <div className="bg-gray-50 py-8 pl-28 sm:hidden lg:hidden 2xl:block">
               <h1 className="text-3xl font-bold tracking-tight text-neutral-900 uppercase lg:text-5xl">
                 {heroSectionTextTop.titleLine1}
                 <br />
@@ -72,14 +72,14 @@ export default function Startseite() {
             </div>
           </div>
 
-          {/* Text unter den Bildern lg-xl */}
-          <div className="hidden bg-gray-50 lg:col-span-12 lg:grid lg:grid-cols-6 lg:grid-rows-2 xl:hidden">
+          {/* Text unter den Bildern lg-2xl */}
+          <div className="hidden bg-gray-50 lg:col-span-12 lg:grid lg:grid-cols-6 lg:grid-rows-2 2xl:hidden">
             <h1 className="col-span-6 mt-8 flex justify-center text-center font-bold tracking-tight text-neutral-900 uppercase lg:text-4xl">
               {heroSectionTextTop.titleLine1}
               <br />
               {heroSectionTextTop.titleLine2}
             </h1>
-            <div className="col-span-6 mt-4 grid grid-cols-1 gap-4 px-16 text-center">
+            <div className="col-span-6 mt-4 grid grid-cols-1 gap-4 px-28 text-center">
               <p>{heroSectionTextTop.description}</p>
             </div>
             <div className="col-span-6 flex items-center justify-center pb-8">
@@ -90,8 +90,8 @@ export default function Startseite() {
           </div>
         </div>
 
-        {/* Diagonaler Teiler zwischen den Bildern (xl) */}
-        <div className="pointer-events-none absolute inset-y-0 left-[38%] z-10 hidden w-36 -translate-x-1/2 -skew-x-16 bg-(--color-divider) xl:block">
+        {/* Diagonaler Teiler zwischen den Bildern (2xl) */}
+        <div className="pointer-events-none absolute inset-y-0 left-[38%] z-10 hidden w-36 -translate-x-1/2 -skew-x-16 bg-(--color-divider) 2xl:block">
           <div className="pointer-events-none absolute inset-y-0 left-36 w-28 bg-gray-50" />
         </div>
 
