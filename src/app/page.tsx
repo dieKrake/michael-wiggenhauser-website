@@ -135,16 +135,16 @@ export default function Startseite() {
                   href={item.href}
                   className="group flex flex-col justify-between rounded-2xl border border-neutral-200 bg-white p-6 shadow-lg shadow-neutral-200/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-neutral-200/60 sm:p-8"
                 >
-                  <div className="text-left sm:text-center">
-                    <Icon className="h-12 w-12 stroke-[1.2] text-neutral-800 transition-transform duration-300 group-hover:scale-110 sm:mx-auto" />
+                  <div className="text-left lg:text-center">
+                    <Icon className="h-12 w-12 stroke-[1.2] text-neutral-800 transition-transform duration-300 group-hover:scale-110 lg:mx-auto" />
                     <h3 className="mt-6 text-sm font-bold tracking-wider uppercase">
                       {item.title}
                     </h3>
-                    <p className="mt-3 text-base leading-relaxed text-neutral-600 sm:mx-auto sm:max-w-xs">
+                    <p className="mt-3 text-base leading-relaxed text-neutral-600 lg:mx-auto lg:max-w-xs">
                       {item.description}
                     </p>
                   </div>
-                  <div className="mt-6 border-t border-neutral-100 pt-4 text-left sm:text-center">
+                  <div className="mt-6 border-t border-neutral-100 pt-4 text-left lg:text-center">
                     <span className="inline-flex items-center gap-1.5 text-sm font-bold tracking-wider text-neutral-800 uppercase transition-colors group-hover:text-black">
                       Mehr erfahren{" "}
                       <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
@@ -229,7 +229,7 @@ export default function Startseite() {
               </p>
               <Link
                 href="/sorgenfrei-bauen"
-                className="mt-8 hidden items-center gap-1.5 text-sm font-bold tracking-wider text-neutral-800 uppercase sm:inline-flex"
+                className="mt-8 hidden items-center gap-1.5 text-sm font-bold tracking-wider text-neutral-800 uppercase lg:inline-flex"
               >
                 Mehr erfahren <ArrowRight className="h-3.5 w-3.5" />
               </Link>
@@ -251,7 +251,7 @@ export default function Startseite() {
               ))}
               <Link
                 href="/sorgenfrei-bauen#leistungen"
-                className="mt-8 inline-flex items-center gap-1.5 text-sm font-bold tracking-wider text-neutral-800 uppercase sm:mt-0 sm:hidden"
+                className="mt-8 inline-flex items-center gap-1.5 text-sm font-bold tracking-wider text-neutral-800 uppercase lg:mt-0 lg:hidden"
               >
                 Mehr erfahren <ArrowRight className="h-3.5 w-3.5" />
               </Link>
