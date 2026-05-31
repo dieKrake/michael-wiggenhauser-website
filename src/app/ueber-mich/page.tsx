@@ -18,14 +18,15 @@ export default function UeberMichPage() {
   return (
     <>
       {/* Hero */}
-      <section
-        className="relative py-20 md:py-28"
-        style={{
-          backgroundImage: "url('/images/Hintergrund-Banner-über-mich.webp')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <section className="relative overflow-hidden py-20 md:py-28">
+        <Image
+          src="/images/Hintergrund-Banner-über-mich.webp"
+          alt="Michael Wiggenhauser – Persönliche Bauberatung für ELK Fertighäuser"
+          fill
+          className="object-cover object-center"
+          priority
+          sizes="100vw"
+        />
         <div className="absolute inset-0 bg-black/50" />
         <Container className="relative z-10 text-center">
           <Heading as="h1" className="text-white">
@@ -73,6 +74,7 @@ export default function UeberMichPage() {
               className="aspect-4/3 rounded-2xl object-cover"
               width={1000}
               height={750}
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
         </Container>

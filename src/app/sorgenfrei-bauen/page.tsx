@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Check } from "lucide-react";
 import Container from "@/components/layout/container";
 import Section from "@/components/layout/section";
@@ -24,15 +25,15 @@ export default function SorgenfreiBauenPage() {
   return (
     <>
       {/* Hero */}
-      <section
-        className="relative py-20 md:py-28"
-        style={{
-          backgroundImage:
-            "url('/images/Hintergrund-Banner-Sorgenfrei-bauen.webp')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <section className="relative overflow-hidden py-20 md:py-28">
+        <Image
+          src="/images/Hintergrund-Banner-Sorgenfrei-bauen.webp"
+          alt="Moderne ELK Fertighäuser – Sorgenfrei Bauen mit persönlicher Bauberatung"
+          fill
+          className="object-cover object-center"
+          priority
+          sizes="100vw"
+        />
         <div className="absolute inset-0 bg-black/50" />
         <Container className="relative z-10 text-center">
           <Heading as="h1" className="text-white">
@@ -92,7 +93,10 @@ export default function SorgenfreiBauenPage() {
               {kategorie.label}
             </Heading>
             <div className="mx-auto mt-8 max-w-3xl">
-              <ImageCarousel images={kategorie.bilder} />
+              <ImageCarousel
+                images={kategorie.bilder}
+                sizes="(max-width: 768px) 100vw, 768px"
+              />
             </div>
           </Container>
         </Section>

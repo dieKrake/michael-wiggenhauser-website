@@ -9,9 +9,16 @@ import { cn } from "@/lib/utils";
 interface ImageCarouselProps {
   images: Array<{ src: string; alt: string }>;
   className?: string;
+  sizes?: string;
+  quality?: number;
 }
 
-export function ImageCarousel({ images, className }: ImageCarouselProps) {
+export function ImageCarousel({
+  images,
+  className,
+  sizes = "(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px",
+  quality = 80,
+}: ImageCarouselProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
   const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -36,7 +43,7 @@ export function ImageCarousel({ images, className }: ImageCarouselProps) {
     <div className={cn("relative", className)}>
       <div className="overflow-hidden rounded-2xl" ref={emblaRef}>
         <div className="flex">
-          {images.map((image) => (
+          {images.map((image, index) => (
             <div key={image.alt} className="relative min-w-0 flex-[0_0_100%]">
               <Image
                 src={image.src}
@@ -44,7 +51,9 @@ export function ImageCarousel({ images, className }: ImageCarouselProps) {
                 width={1200}
                 height={675}
                 className="aspect-video w-full object-cover"
-                priority={false}
+                sizes={sizes}
+                quality={quality}
+                priority={index === 0}
               />
             </div>
           ))}

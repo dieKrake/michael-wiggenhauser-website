@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Container from "@/components/layout/container";
 import Section from "@/components/layout/section";
 import Heading from "@/components/ui/heading";
@@ -14,15 +15,15 @@ export default function FinanzierungAblaufPage() {
   return (
     <>
       {/* Hero */}
-      <section
-        className="relative py-20 md:py-28"
-        style={{
-          backgroundImage:
-            "url('/images/Hintergrund Banner-Weg–ins-neue-ZuHause.webp')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <section className="relative overflow-hidden py-20 md:py-28">
+        <Image
+          src="/images/Hintergrund Banner-Weg–ins-neue-ZuHause.webp"
+          alt="Finanzierung &amp; Ablauf beim ELK Fertighausbau – Schritt für Schritt zum neuen Zuhause"
+          fill
+          className="object-cover object-center"
+          priority
+          sizes="100vw"
+        />
         <div className="absolute inset-0 bg-black/50" />
         <Container className="relative z-10 text-center">
           <Heading as="h1" className="text-white">
