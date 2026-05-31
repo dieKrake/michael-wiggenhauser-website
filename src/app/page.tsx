@@ -135,16 +135,16 @@ export default function Startseite() {
                   href={item.href}
                   className="group flex flex-col justify-between rounded-2xl border border-neutral-200 bg-white p-6 shadow-lg shadow-neutral-200/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-neutral-200/60 sm:p-8"
                 >
-                  <div className="text-center">
-                    <Icon className="mx-auto h-12 w-12 stroke-[1.2] text-neutral-800 transition-transform duration-300 group-hover:scale-110" />
+                  <div className="text-left sm:text-center">
+                    <Icon className="h-12 w-12 stroke-[1.2] text-neutral-800 transition-transform duration-300 group-hover:scale-110 sm:mx-auto" />
                     <h3 className="mt-6 text-sm font-bold tracking-wider uppercase">
                       {item.title}
                     </h3>
-                    <p className="mx-auto mt-3 max-w-xs text-base leading-relaxed text-neutral-600">
+                    <p className="mt-3 text-base leading-relaxed text-neutral-600 sm:mx-auto sm:max-w-xs">
                       {item.description}
                     </p>
                   </div>
-                  <div className="mt-6 border-t border-neutral-100 pt-4 text-center">
+                  <div className="mt-6 border-t border-neutral-100 pt-4 text-left sm:text-center">
                     <span className="inline-flex items-center gap-1.5 text-sm font-bold tracking-wider text-neutral-800 uppercase transition-colors group-hover:text-black">
                       Mehr erfahren{" "}
                       <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
