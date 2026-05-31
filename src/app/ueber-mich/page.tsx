@@ -22,6 +22,7 @@ export default function UeberMichPage() {
         <Image
           src="/images/Hintergrund-Banner-über-mich.webp"
           alt="Michael Wiggenhauser – Persönliche Bauberatung für ELK Fertighäuser"
+          fetchPriority="high"
           fill
           className="object-cover object-center"
           priority

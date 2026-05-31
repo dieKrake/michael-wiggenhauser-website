@@ -21,6 +21,7 @@ export default function FinanzierungAblaufPage() {
           alt="Finanzierung &amp; Ablauf beim ELK Fertighausbau – Schritt für Schritt zum neuen Zuhause"
           fill
           className="object-cover object-center"
+          fetchPriority="high"
           priority
           sizes="100vw"
         />

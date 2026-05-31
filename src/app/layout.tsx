@@ -31,6 +31,7 @@ export default function RootLayout({
       lang="de"
       className={`${inter.variable} h-full scroll-smooth antialiased`}
       style={{ scrollPaddingTop: "80px" }}
+      data-scroll-behavior="smooth"
     >
       <body className="flex min-h-full flex-col">
         <Navbar />

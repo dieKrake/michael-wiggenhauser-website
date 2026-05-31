@@ -31,6 +31,7 @@ export default function Startseite() {
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 42vw"
               priority
+              fetchPriority="high"
             />
           </div>
 
@@ -48,6 +49,7 @@ export default function Startseite() {
                 fill
                 className="object-cover"
                 sizes="58vw"
+                fetchPriority="high"
                 priority
               />
             </div>
@@ -206,6 +208,7 @@ export default function Startseite() {
               <Image
                 src="/images/michi-gespraech.webp"
                 alt="Michael Wiggenhauser"
+                priority
                 fill
                 className="object-cover object-[center_20%] transition-transform duration-700 hover:scale-105"
                 sizes="(max-width: 1024px) 100vw, 50vw"
