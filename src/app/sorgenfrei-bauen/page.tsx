@@ -36,11 +36,11 @@ export default function SorgenfreiBauenPage() {
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-black/50" />
-        <Container className="relative z-10 text-center">
+        <Container className="relative z-10 lg:text-center">
           <Heading as="h1" className="text-white">
             Sorgenfrei Bauen
           </Heading>
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90">
+          <p className="mt-6 max-w-2xl text-lg text-white/90 lg:mx-auto lg:text-center">
             Von der ersten Idee bis zum Einzug – ich begleite Sie durch alle
             Phasen Ihres Bauvorhabens. Persönlich, kompetent und transparent.
           </p>
@@ -50,18 +50,18 @@ export default function SorgenfreiBauenPage() {
       {/* Leistungen */}
       <Section background="white" id="leistungen">
         <Container>
-          <Heading as="h2" className="text-center">
+          <Heading as="h2" className="lg:text-center">
             Unsere Leistungen
           </Heading>
-          <p className="mx-auto mt-4 max-w-2xl text-center text-gray-600">
+          <p className="mt-4 max-w-2xl text-gray-600 lg:mx-auto lg:text-center">
             Als Ihr Fachberater übernehme ich die komplette Koordination und
             Begleitung Ihres Hausbau-Projekts – damit Sie sich auf das
             Wesentliche konzentrieren können.
           </p>
-          <div className="mx-auto mt-12 max-w-2xl">
-            <ul className="space-y-4">
+          <div className="mt-12 max-w-2xl lg:mx-auto">
+            <ul className="space-y-4 lg:mx-auto lg:w-fit">
               {servicesList.map((item) => (
-                <li key={item} className="flex items-start gap-3">
+                <li key={item} className="flex items-center gap-3">
                   <Check className="mt-0.5 h-5 w-5 shrink-0 text-gray-800" />
                   <span className="text-gray-700">{item}</span>
                 </li>
@@ -74,10 +74,10 @@ export default function SorgenfreiBauenPage() {
       {/* ELK Fertighäuser */}
       <Section background="gray">
         <Container>
-          <Heading as="h2" className="text-center">
+          <Heading as="h2" className="lg:text-center">
             ELK Fertighäuser
           </Heading>
-          <p className="mx-auto mt-4 max-w-2xl text-center text-gray-600">
+          <p className="mt-4 max-w-2xl text-gray-600 lg:mx-auto lg:text-center">
             Als einer der führenden Hersteller Europas steht ELK für über 60
             Jahre Erfahrung, schnelle Lieferzeiten zum Festpreis und komplette
             Individualisierbarkeit. Jedes Haus wird exakt nach Ihren Wünschen
@@ -90,7 +90,7 @@ export default function SorgenfreiBauenPage() {
       {galerieKategorien.map((kategorie) => (
         <Section key={kategorie.label} background="white">
           <Container>
-            <Heading as="h3" className="text-center">
+            <Heading as="h3" className="lg:text-center">
               {kategorie.label}
             </Heading>
             <div className="mx-auto mt-8 max-w-3xl">
@@ -106,7 +106,7 @@ export default function SorgenfreiBauenPage() {
       {/* FAQ */}
       <Section background="white">
         <Container>
-          <Heading as="h2" className="text-center">
+          <Heading as="h2" className="lg:text-center">
             Häufig gestellte Fragen
           </Heading>
           <div className="mx-auto mt-12 max-w-3xl">
