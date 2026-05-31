@@ -69,7 +69,7 @@ export default function UeberMichPage() {
               </p>
             </div>
             <Image
-              src="/images/michi-treppe.JPG"
+              src="/images/michi-treppe.webp"
               alt="Michael Wiggenhauser"
               className="aspect-4/3 rounded-2xl object-cover"
               width={1000}

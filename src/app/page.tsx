@@ -204,7 +204,7 @@ export default function Startseite() {
           <div className="relative overflow-hidden lg:min-h-full">
             <div className="aspect-3/4 w-full lg:absolute lg:inset-0 lg:aspect-auto">
               <Image
-                src="/images/michi-gespraech.JPG"
+                src="/images/michi-gespraech.webp"
                 alt="Michael Wiggenhauser"
                 fill
                 className="object-cover object-[center_20%] transition-transform duration-700 hover:scale-105"
