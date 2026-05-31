@@ -18,11 +18,11 @@ const Navbar: FC = () => {
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
         <Link href="/" className="flex items-center">
           <Image
-            src="/images/Wiggenhauser.png"
+            src="/images/Wiggenhauser-Logo-dark.png"
             alt={siteConfig.name}
-            width={160}
+            width={110}
             height={40}
-            className="h-16 w-auto object-contain"
+            className="object-contain"
             priority
           />
         </Link>

@@ -19,7 +19,8 @@ html {
   --color-accent-400: #a3a3a3;
   --color-accent-500: #737373;
   --color-accent-600: #525252;
-  --color-divider: #374151;
+  --color-divider: #3d2a20;
+  --color-dark-element: #1f140d;
   --font-sans: var(--font-inter);
   --breakpoint-3xl: 160rem;
   --breakpoint-4xl: 240rem;

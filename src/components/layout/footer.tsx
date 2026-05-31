@@ -5,17 +5,17 @@ import { siteConfig, footerLinks } from "@/lib/constants";
 
 const Footer: FC = () => {
   return (
-    <footer className="bg-neutral-950 text-white">
+    <footer className="bg-(--color-dark-element) text-white">
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div className="grid gap-12 md:grid-cols-3">
           {/* Brand */}
           <div>
             <Image
-              src="/images/Wiggenhauser.png"
+              src="/images/Wiggenhauser-Logo-light.png"
               alt={siteConfig.name}
               width={160}
               height={40}
-              className="h-20 w-auto object-contain"
+              className="object-contain"
             />
             <p className="mt-3 text-sm leading-relaxed text-neutral-400">
               {siteConfig.description}
