@@ -4,9 +4,12 @@ import { siteConfig } from "@/lib/constants";
 
 const KontaktFormular = () => {
   return (
-    <section id="kontakt" className="scroll-mt-20 py-24 md:py-32">
+    <section
+      id="kontakt"
+      className="scroll-mt-20 bg-linear-to-b from-white via-neutral-50 to-neutral-100 py-24 md:py-32"
+    >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid gap-16 md:grid-cols-2">
+        <div className="grid items-start gap-16 md:grid-cols-2">
           {/* Info-Seite */}
           <div>
             <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
@@ -35,7 +38,7 @@ const KontaktFormular = () => {
           </div>
 
           {/* Formular */}
-          <form className="space-y-5">
+          <form className="space-y-5 rounded-2xl border border-neutral-200 bg-white p-6 shadow-lg shadow-neutral-200/50 sm:p-8">
             <div className="grid gap-5 sm:grid-cols-2">
               <div>
                 <label
