@@ -125,7 +125,7 @@ export default function Startseite() {
       {/* Service-Karten */}
       <section className="3xl:mt-24 mt-12 lg:mt-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-3">
+          <div className="grid gap-8 lg:grid-cols-3">
             {landingPageTiles.map((item, index) => {
               const icons = [HardHat, Home, MessageCircle];
               const Icon = icons[index] || Home;
@@ -133,18 +133,23 @@ export default function Startseite() {
                 <Link
                   key={item.title}
                   href={item.href}
-                  className="group text-center"
+                  className="group flex flex-col justify-between rounded-2xl border border-neutral-200 bg-white p-6 shadow-lg shadow-neutral-200/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-neutral-200/60 sm:p-8"
                 >
-                  <Icon className="mx-auto h-12 w-12 stroke-[1.2] text-neutral-800" />
-                  <h3 className="mt-6 text-sm font-bold tracking-wider uppercase">
-                    {item.title}
-                  </h3>
-                  <p className="mx-auto mt-3 max-w-xs text-base leading-relaxed text-neutral-600">
-                    {item.description}
-                  </p>
-                  <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-bold tracking-wider text-neutral-800 uppercase">
-                    Mehr erfahren <ArrowRight className="h-3.5 w-3.5" />
-                  </span>
+                  <div className="text-center">
+                    <Icon className="mx-auto h-12 w-12 stroke-[1.2] text-neutral-800 transition-transform duration-300 group-hover:scale-110" />
+                    <h3 className="mt-6 text-sm font-bold tracking-wider uppercase">
+                      {item.title}
+                    </h3>
+                    <p className="mx-auto mt-3 max-w-xs text-base leading-relaxed text-neutral-600">
+                      {item.description}
+                    </p>
+                  </div>
+                  <div className="mt-6 border-t border-neutral-100 pt-4 text-center">
+                    <span className="inline-flex items-center gap-1.5 text-sm font-bold tracking-wider text-neutral-800 uppercase transition-colors group-hover:text-black">
+                      Mehr erfahren{" "}
+                      <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
+                    </span>
+                  </div>
                 </Link>
               );
             })}
