@@ -94,7 +94,7 @@ export default function Startseite() {
         </div>
 
         {/* Diagonaler Teiler zwischen den Bildern (2xl) */}
-        <div className="4xl:left-[40%] 4xl:w-52 pointer-events-none absolute inset-y-0 left-[38%] z-10 hidden w-36 -translate-x-1/2 -skew-x-16 bg-(--color-divider) 2xl:block">
+        <div className="4xl:left-[40%] 4xl:w-52 pointer-events-none absolute inset-y-0 left-[38%] z-10 hidden w-36 -translate-x-1/2 -skew-x-16 bg-(--color-dark-element) 2xl:block">
           <div className="3xl:w-40 4xl:w-48 pointer-events-none absolute inset-y-0 left-36 w-28 2xl:bg-gray-50" />
         </div>
 

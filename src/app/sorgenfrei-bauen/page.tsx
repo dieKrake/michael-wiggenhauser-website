@@ -9,8 +9,8 @@ import { ImageCarousel } from "@/components/ui/image-carousel";
 import {
   servicesList,
   elkGalery,
-  sellingBulletPoints,
   faqItems,
+  whyElkSectionData,
 } from "@/lib/pages-text-data";
 
 export const metadata: Metadata = {
@@ -41,8 +41,8 @@ export default function SorgenfreiBauenPage() {
             Sorgenfrei Bauen
           </Heading>
           <p className="mt-6 max-w-2xl text-lg text-white/90 lg:mx-auto lg:text-center">
-            Von der ersten Idee bis zum Einzug – ich begleite Sie durch alle
-            Phasen Ihres Bauvorhabens. Persönlich, kompetent und transparent.
+            Von der ersten Idee bis zum Einzug – ich begleite euch durch alle
+            Phasen eures Bauvorhabens. Persönlich, kompetent und transparent.
           </p>
         </Container>
       </section>
@@ -51,12 +51,12 @@ export default function SorgenfreiBauenPage() {
       <Section background="white" id="leistungen">
         <Container>
           <Heading as="h2" className="lg:text-center">
-            Unsere Leistungen
+            Meine Leistungen
           </Heading>
           <p className="mt-4 max-w-2xl text-gray-600 lg:mx-auto lg:text-center">
-            Als Ihr Fachberater übernehme ich die komplette Koordination und
-            Begleitung Ihres Hausbau-Projekts – damit Sie sich auf das
-            Wesentliche konzentrieren können.
+            Als euer ELK-Fachberater übernehme ich die komplette Koordination
+            und Begleitung (Begleitung?) eures Fertighaus-Projekts. Damit ihr
+            euch auf das Wesentliche konzentrieren könnt.
           </p>
           <div className="mt-12 max-w-2xl lg:mx-auto">
             <ul className="space-y-4 lg:mx-auto lg:w-fit">
@@ -80,7 +80,7 @@ export default function SorgenfreiBauenPage() {
           <p className="mt-4 max-w-2xl text-gray-600 lg:mx-auto lg:text-center">
             Als einer der führenden Hersteller Europas steht ELK für über 60
             Jahre Erfahrung, schnelle Lieferzeiten zum Festpreis und komplette
-            Individualisierbarkeit. Jedes Haus wird exakt nach Ihren Wünschen
+            Individualisierbarkeit. Jedes Haus wird exakt nach euren Wünschen
             konfiguriert.
           </p>
         </Container>
@@ -90,7 +90,7 @@ export default function SorgenfreiBauenPage() {
       {galerieKategorien.map((kategorie) => (
         <Section key={kategorie.label} background="white">
           <Container>
-            <Heading as="h3" className="lg:text-center">
+            <Heading as="h2" className="sm:text-center lg:text-center">
               {kategorie.label}
             </Heading>
             <div className="mx-auto mt-8 max-w-3xl">
@@ -102,6 +102,42 @@ export default function SorgenfreiBauenPage() {
           </Container>
         </Section>
       ))}
+
+      {/* Warum ein ELK-Haus? */}
+      <Section key={whyElkSectionData.title}>
+        <Container>
+          <Heading as="h2" className="lg:text-center">
+            {whyElkSectionData.title}
+          </Heading>
+          <p className="mt-4 max-w-2xl text-gray-600 lg:mx-auto lg:text-center">
+            {whyElkSectionData.description}
+          </p>
+        </Container>
+        <div className="mt-8 flex flex-row items-stretch">
+          <div className="relative overflow-hidden md:w-1/3">
+            <Image
+              src="/images/Bungalow-1.webp"
+              alt="ELK Haus"
+              fill
+              className="hidden object-cover object-left md:block"
+              sizes="(max-width: 1024px) 33vw, 500px"
+            />
+          </div>
+          <div className="relative w-1/5 overflow-hidden md:hidden">
+            <div className="block h-full w-full rounded-r-sm bg-(--color-dark-element) md:hidden" />
+          </div>
+          <div className="flex w-full flex-col py-4 pr-4 pl-8 sm:pr-6 md:w-2/3 md:pl-16 lg:pr-8">
+            {whyElkSectionData.usps.map((usp) => (
+              <div key={usp.title} className="mb-6">
+                <h3 className="mt-4 text-left text-lg font-semibold">
+                  {usp.title}
+                </h3>
+                <p className="text-gray-600">{usp.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Section>
 
       {/* FAQ */}
       <Section background="white">

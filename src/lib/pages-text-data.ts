@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export const heroSectionTextTop = {
   titleLine1: "Sorgenfrei ins neue",
   titleLine2: "Zuhause",
@@ -129,12 +131,13 @@ export const houseModels = [
 export const servicesList = [
   "Kostenlose Erstberatung vor Ort oder telefonisch",
   "Individuelle Bedarfsanalyse und Grundrissplanung",
-  "Auswahl und Konfiguration Ihres ELK Fertighauses",
+  "Auswahl und Konfiguration eures ELK Fertighauses",
   "Finanzierungsberatung und Fördermittelprüfung",
   "Koordination mit Architekten und Behörden",
   "Begleitung vom Erstgespräch bis zur Schlüsselübergabe",
   "Bemusterung und Ausstattungsberatung",
   "After-Sales-Service auch nach dem Einzug",
+  "Betrachtung aller Herausforderungen des gesamten Bauprojekts",
 ];
 
 export const elkGalery = {
@@ -273,6 +276,39 @@ export const aboutMeData = {
       title: "Fertighausexperte mit Herz",
       description:
         "Ihre erste Wahl für maßgeschneiderte Wohnträume – partnerschaftliche Beratung für Ihre individuellen Bedürfnisse.",
+    },
+  ],
+};
+
+export const whyElkSectionData = {
+  title: "Warum ein ELK Fertighaus?",
+  description:
+    "Kurze Bauzeiten, nachhaltige Bauweise und über 60 Jahre Erfahrung: Entdeckt die Vorteile eines modernen ELK Fertighauses und profitiert von maximaler Planungssicherheit auf dem Weg in euer neues Zuhause.",
+  usps: [
+    {
+      title: "SCHNELLER INS EIGENE FERTIGHAUS",
+      description:
+        "Kurze Bauzeiten, transparente Festpreise und maximale Planungssicherheit: Dank der modernen Fertighausbauweise von ELK gelangt ihr schneller und sicherer in euer neues Zuhause. Gleichzeitig bleibt euer Haus vollständig individuell planbar – abgestimmt auf eure Wünsche und euren Lebensstil.",
+    },
+    {
+      title: "ÜBER 60 JAHRE FERTIGHAUS-ERFAHRUNG",
+      description:
+        "Mit mehr als 26.000 realisierten Häusern zählt ELK zu den erfolgreichsten Fertighausunternehmen Europas. Diese jahrzehntelange Erfahrung fließt in jedes neue Bauprojekt ein und gibt euch die Sicherheit, auf einen bewährten Partner beim Hausbau zu setzen.",
+    },
+    {
+      title: "NACHHALTIG BAUEN, ZUKUNFT SICHERN",
+      description:
+        "Ein modernes Holzfertighaus verbindet nachhaltiges Bauen mit langfristiger Energieeffizienz. Durch den Einsatz nachwachsender Rohstoffe, intelligenter Bauweisen und moderner Energiekonzepte schafft ELK die Grundlage für ein Zuhause mit Zukunft.",
+    },
+    {
+      title: "ENERGIEEFFIZIENZ AB WERK",
+      description:
+        "Jedes ELK Fertighaus erfüllt höchste Anforderungen an Energieeffizienz und Wohnkomfort. Mit moderner Wärmepumpe, kontrollierter Wohnraumlüftung und Wärmerückgewinnung profitiert ihr von niedrigen Energiekosten und einem angenehmen Raumklima – bereits auf Effizienzhaus-40-Niveau.",
+    },
+    {
+      title: "GEPRÜFTE QUALITÄT FÜR EUER ZUHAUSE",
+      description:
+        "Beim Hausbau zählt jedes Detail. Deshalb werden Materialien, Produkte und Prozesse regelmäßig von unabhängigen Instituten geprüft. So entsteht ein Fertighaus, auf das ihr euch heute und in Zukunft verlassen könnt.",
     },
   ],
 };
