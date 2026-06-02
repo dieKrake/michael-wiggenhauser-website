@@ -11,6 +11,7 @@ import {
   elkGalery,
   faqItems,
   whyElkSectionData,
+  sliderFactsData,
 } from "@/lib/pages-text-data";
 
 export const metadata: Metadata = {
@@ -137,6 +138,21 @@ export default function SorgenfreiBauenPage() {
             ))}
           </div>
         </div>
+      </Section>
+
+      {/* Slider Facts */}
+      <Section>
+        <Container>
+          <ImageCarousel
+            autoplay={true}
+            showArrows={false}
+            bgImage="/images/Bungalow-3.webp"
+            slides={sliderFactsData.map((fact) => ({
+              title: fact.title,
+              text: fact.text,
+            }))}
+          />
+        </Container>
       </Section>
 
       {/* FAQ */}
