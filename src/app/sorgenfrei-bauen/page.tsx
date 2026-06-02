@@ -6,6 +6,7 @@ import Section from "@/components/layout/section";
 import Heading from "@/components/ui/heading";
 import { Accordion } from "@/components/ui/accordion";
 import { ImageCarousel } from "@/components/ui/image-carousel";
+import ClimateFriendlyHouses from "@/components/sections/climate-friendly-houses";
 import {
   servicesList,
   elkGalery,
@@ -154,6 +155,9 @@ export default function SorgenfreiBauenPage() {
           />
         </Container>
       </Section>
+
+      {/* Climate friendly houses */}
+      <ClimateFriendlyHouses />
 
       {/* FAQ */}
       <Section background="white">

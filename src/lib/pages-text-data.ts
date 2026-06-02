@@ -315,18 +315,45 @@ export const whyElkSectionData = {
 
 export const sliderFactsData = [
   {
-    title: "7 Fichten für ein Haus",
+    title: "7 FICHTEN FÜR EIN HAUS",
     text: "Bei einem ELK Haus kommen rund 30 m³ Vollholz zum Einsatz – das entspricht etwa 7 Fichten. In unseren heimischen Wäldern wachsen diese 30 m³ Holz bereits in rund 30 Sekunden nach.",
     styling: "bg-(--color-dark-element) text-white",
   },
   {
-    title: "30 Tonnen CO₂ gespeichert",
+    title: "30 TONNEN CO₂ GESPEICHERT",
     text: "Das verbaute Holz in einem ELK Fertighaus speichert dauerhaft rund 30 Tonnen CO₂ – etwa so viel, wie ein Auto auf 190.000 Kilometern ausstößt. ",
     styling: "bg-(--color-dark-element) text-white",
   },
   {
-    title: "Nur vier LKW-Ladungen",
-    text: " Durch die präzise Vorfertigung werden für die Lieferung eines ELK Hauses durchschnittlich nur vier LKW-Fahrten benötigt. Das spart Zeit, Verkehr und Emissionen.",
+    title: "NUR VIER LKW-LADUNGEN",
+    text: "Durch die präzise Vorfertigung werden für die Lieferung eines ELK Hauses durchschnittlich nur vier LKW-Fahrten benötigt. Das spart Zeit, Verkehr und Emissionen.",
     styling: "bg-(--color-dark-element) text-white",
+  },
+];
+
+export const climateFriendlyHousesData = [
+  {
+    image: "/images/Bungalow-2.webp",
+    title: "NACHHALTIGES BAUEN MIT HOLZ",
+    description:
+      "Nachhaltiges Bauen beginnt beim richtigen Baustoff. ELK Holzfertighäuser werden in moderner Holzrahmenbauweise gefertigt und verbinden höchste Qualität mit einem natürlichen Wohngefühl. Das verwendete Holz stammt aus nachhaltig bewirtschafteten Wäldern und sorgt für ein gesundes Zuhause mit hervorragenden Dämmeigenschaften.",
+  },
+  {
+    image: "/images/Bungalow-3.webp",
+    title: "KLIMAFREUNDLICHES FERTIGHAUS",
+    description:
+      "Wer sich für ein Holzfertighaus entscheidet, baut nachhaltig und ressourcenschonend. Holz ist ein nachwachsender Rohstoff, speichert CO₂ und verbessert die Umweltbilanz eures Hauses deutlich. So verbindet ihr modernes Wohnen mit energieeffizientem Bauen und einem aktiven Beitrag zum Klimaschutz.",
+  },
+  {
+    image: "/images/Einfamilienhaus-2.webp",
+    title: "GESUNDES WOHNEN & RAUMKLIMA",
+    description:
+      "Holz schafft ein angenehmes Raumklima und sorgt das ganze Jahr über für ein natürliches Wohngefühl. Die besondere Bauweise moderner Fertighäuser reguliert Feuchtigkeit auf natürliche Weise und schafft eine behagliche Atmosphäre, in der ihr euch vom ersten Tag an zuhause fühlt.",
+  },
+  {
+    image: "/images/Einfamilienhaus-3.webp",
+    title: "ENERGIEEFFIZIENTE HAUSTECHNIK",
+    description:
+      "Jedes ELK Fertighaus ist mit moderner und energieeffizienter Haustechnik ausgestattet. Intelligente Heiz- und Lüftungssysteme mit Wärmerückgewinnung senken langfristig die Energiekosten und sorgen gleichzeitig für ein gesundes Raumklima sowie höchsten Wohnkomfort.",
   },
 ];
