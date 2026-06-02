@@ -116,17 +116,17 @@ export default function SorgenfreiBauenPage() {
           </p>
         </Container>
         <div className="mt-8 flex flex-row items-stretch">
-          <div className="relative overflow-hidden md:w-1/3">
+          <div className="relative overflow-hidden sm:w-1/3">
             <Image
-              src="/images/Bungalow-1.webp"
+              src="/images/elk-haus.webp"
               alt="ELK Haus"
               fill
-              className="hidden object-cover object-left md:block"
+              className="hidden object-cover object-left sm:block"
               sizes="(max-width: 1024px) 33vw, 500px"
             />
           </div>
-          <div className="relative w-1/5 overflow-hidden md:hidden">
-            <div className="block h-full w-full rounded-r-sm bg-(--color-dark-element) md:hidden" />
+          <div className="relative w-1/6 overflow-hidden sm:hidden">
+            <div className="block h-full w-full bg-(--color-dark-element) sm:hidden" />
           </div>
           <div className="flex w-full flex-col py-4 pr-4 pl-8 sm:pr-6 md:w-2/3 md:pl-16 lg:pr-8">
             {whyElkSectionData.usps.map((usp) => (

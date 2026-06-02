@@ -333,25 +333,25 @@ export const sliderFactsData = [
 
 export const climateFriendlyHousesData = [
   {
-    image: "/images/Bungalow-2.webp",
+    image: "/images/holz.webp",
     title: "NACHHALTIGES BAUEN MIT HOLZ",
     description:
       "Nachhaltiges Bauen beginnt beim richtigen Baustoff. ELK Holzfertighäuser werden in moderner Holzrahmenbauweise gefertigt und verbinden höchste Qualität mit einem natürlichen Wohngefühl. Das verwendete Holz stammt aus nachhaltig bewirtschafteten Wäldern und sorgt für ein gesundes Zuhause mit hervorragenden Dämmeigenschaften.",
   },
   {
-    image: "/images/Bungalow-3.webp",
+    image: "/images/pflanze.webp",
     title: "KLIMAFREUNDLICHES FERTIGHAUS",
     description:
       "Wer sich für ein Holzfertighaus entscheidet, baut nachhaltig und ressourcenschonend. Holz ist ein nachwachsender Rohstoff, speichert CO₂ und verbessert die Umweltbilanz eures Hauses deutlich. So verbindet ihr modernes Wohnen mit energieeffizientem Bauen und einem aktiven Beitrag zum Klimaschutz.",
   },
   {
-    image: "/images/Einfamilienhaus-2.webp",
+    image: "/images/wintergarten.webp",
     title: "GESUNDES WOHNEN & RAUMKLIMA",
     description:
       "Holz schafft ein angenehmes Raumklima und sorgt das ganze Jahr über für ein natürliches Wohngefühl. Die besondere Bauweise moderner Fertighäuser reguliert Feuchtigkeit auf natürliche Weise und schafft eine behagliche Atmosphäre, in der ihr euch vom ersten Tag an zuhause fühlt.",
   },
   {
-    image: "/images/Einfamilienhaus-3.webp",
+    image: "/images/paar.webp",
     title: "ENERGIEEFFIZIENTE HAUSTECHNIK",
     description:
       "Jedes ELK Fertighaus ist mit moderner und energieeffizienter Haustechnik ausgestattet. Intelligente Heiz- und Lüftungssysteme mit Wärmerückgewinnung senken langfristig die Energiekosten und sorgen gleichzeitig für ein gesundes Raumklima sowie höchsten Wohnkomfort.",

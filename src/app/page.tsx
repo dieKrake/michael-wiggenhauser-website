@@ -203,7 +203,7 @@ export default function Startseite() {
           </div>
 
           {/* Bild */}
-          <div className="relative overflow-hidden lg:min-h-full">
+          <div className="relative max-h-[600px] overflow-hidden lg:min-h-full">
             <div className="aspect-3/4 w-full lg:absolute lg:inset-0 lg:aspect-auto">
               <Image
                 src="/images/michi-gespraech.webp"
@@ -270,15 +270,15 @@ export default function Startseite() {
           {/* Background image */}
           <div className="absolute inset-0">
             <Image
-              src="/images/placeholder-stock-family.jpg"
+              src="/images/testimonials.webp"
               alt="Zufriedene Bauherren"
               fill
-              className="object-cover object-[center_100%]"
+              className="object-cover"
               sizes="100vw"
             />
           </div>
           {/* Overlay */}
-          <div className="absolute inset-0 bg-black/35" />
+          <div className="absolute inset-0 bg-black/40" />
 
           {/* Content */}
           <div className="relative px-6 py-16 lg:px-12 lg:py-24">
