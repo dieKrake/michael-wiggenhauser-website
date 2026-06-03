@@ -94,7 +94,7 @@ export default function UeberMichPage() {
         </Container>
       </Section>
 
-      <Section className="mt-0 pt-8 md:pt-12">
+      <Section className="mt-0 pt-8 md:pt-12" background="gray">
         <Container>
           <Heading as="h2" className="lg:text-center">
             Immer für euch da. <br className="sm:hidden" /> Dort, wo ihr seid.

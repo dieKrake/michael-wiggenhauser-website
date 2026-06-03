@@ -264,7 +264,7 @@ export default function Startseite() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-12 lg:py-16">
+      <section className="bg-gray-50 py-12 lg:py-16">
         {/* Constrained + rounded on desktop, full-width on mobile */}
         <div className="relative overflow-hidden md:rounded-none lg:mx-auto lg:max-w-7xl xl:rounded-3xl">
           {/* Background image */}

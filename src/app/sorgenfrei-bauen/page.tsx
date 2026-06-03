@@ -116,7 +116,7 @@ export default function SorgenfreiBauenPage() {
       ))}
 
       {/* Warum ein ELK-Haus? */}
-      <Section key={whyElkSectionData.title}>
+      <Section key={whyElkSectionData.title} background="gray">
         <Container>
           <Heading as="h2" className="lg:text-center">
             {whyElkSectionData.title}
@@ -172,7 +172,7 @@ export default function SorgenfreiBauenPage() {
       <ClimateFriendlyHouses />
 
       {/* FAQ */}
-      <Section background="white">
+      <Section background="gray">
         <Container>
           <Heading as="h2" className="lg:text-center">
             Häufig gestellte Fragen

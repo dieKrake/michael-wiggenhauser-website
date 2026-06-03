@@ -176,7 +176,7 @@ export default function FinanzierungAblaufPage() {
           </p>
         </Container>
       </Section>
-      <Section>
+      <Section background="gray">
         <Container>
           <p className="text-lg lg:text-center lg:text-xl">
             Den ersten Schritt bildet eine{" "}
