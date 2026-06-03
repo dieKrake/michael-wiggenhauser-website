@@ -2,7 +2,6 @@ import { FC } from "react";
 import Image from "next/image";
 import Container from "@/components/layout/container";
 import Section from "@/components/layout/section";
-import Heading from "@/components/ui/heading";
 import { climateFriendlyHousesData } from "@/lib/pages-text-data";
 
 export const ClimateFriendlyHouses: FC = () => {

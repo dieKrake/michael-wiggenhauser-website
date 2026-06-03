@@ -95,7 +95,7 @@ export default function SorgenfreiBauenPage() {
             <Heading as="h2" className="sm:text-center lg:text-center">
               {kategorie.label}
             </Heading>
-            <div className="mx-auto mt-8 max-w-3xl">
+            <div className="mx-auto max-w-4xl">
               <ImageCarousel
                 images={kategorie.bilder}
                 sizes="(max-width: 768px) 100vw, 768px"
@@ -128,13 +128,15 @@ export default function SorgenfreiBauenPage() {
           <div className="relative w-1/6 overflow-hidden sm:hidden">
             <div className="block h-full w-full bg-(--color-dark-element) sm:hidden" />
           </div>
-          <div className="flex w-full flex-col py-4 pr-4 pl-8 sm:pr-6 md:w-2/3 md:pl-16 lg:pr-8">
+          <div className="flex w-full flex-col pr-4 pl-8 sm:pr-6 md:w-2/3 md:pl-16 lg:pr-8">
             {whyElkSectionData.usps.map((usp) => (
               <div key={usp.title} className="mb-6">
                 <h3 className="mt-4 text-left text-lg font-semibold">
                   {usp.title}
                 </h3>
-                <p className="text-gray-600">{usp.description}</p>
+                <p className="pr-0 text-gray-600 md:pr-12 lg:pr-16 xl:pr-32">
+                  {usp.description}
+                </p>
               </div>
             ))}
           </div>
