@@ -62,18 +62,18 @@ export default function UeberMichPage() {
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
               <Heading as="h2">Sorgenfrei bauen auf Augenhöhe</Heading>
-              <p className="mt-4 text-gray-600 md:mt-8 lg:text-lg xl:text-xl">
+              <p className="mt-4 text-gray-600 md:mt-8">
                 Viele Hausberater kennen den Bauprozess nur aus
                 Kundengesprächen. Ich habe ihn selbst erlebt. <br />
                 Als ich mein eigenes ELK Fertighaus gebaut habe, stand ich vor
                 denselben Fragen wie meine Kunden heute: Welche Hausgröße passt
                 zu uns? Welche Ausstattungsdetails sind wirklich sinnvoll? Wie
                 läuft die Finanzierung ab? Worauf muss man bei Grundstück,
-                Planung und Bemusterung achten? <br />
+                Planung und Bemusterung achten? <br /> <br />
                 Genau deshalb weiß ich, wie wichtig eine ehrliche Beratung und
                 ein klarer Fahrplan sind. Ich kenne die Herausforderungen, die
                 Unsicherheiten und die vielen Entscheidungen, die auf dem Weg
-                zum eigenen Zuhause getroffen werden müssen. <br />
+                zum eigenen Zuhause getroffen werden müssen. <br /> <br />
                 Heute profitiert ihr von dieser Erfahrung. Gemeinsam besprechen
                 wir eure Wünsche, Anforderungen und Möglichkeiten und entwickeln
                 Schritt für Schritt ein Fertighaus, das wirklich zu euch passt.
@@ -94,12 +94,12 @@ export default function UeberMichPage() {
         </Container>
       </Section>
 
-      <Section className="mt-0">
+      <Section className="mt-0 pt-8 md:pt-12">
         <Container>
-          <Heading className="lg:text-center">
+          <Heading as="h2" className="lg:text-center">
             Immer für euch da. <br className="sm:hidden" /> Dort, wo ihr seid.
           </Heading>
-          <p className="mt-4 text-base sm:mt-8 lg:mt-12 lg:text-center lg:text-lg xl:text-xl">
+          <p className="mt-4 sm:mt-8 lg:mt-12 lg:text-center">
             Der Bau eines Hauses wirft viele Fragen auf – nicht nur während der
             Planungsphase, sondern auch zwischendurch. Deshalb lege ich großen
             Wert darauf, für meine Kunden jederzeit erreichbar zu sein. <br />

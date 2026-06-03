@@ -50,15 +50,38 @@ export function TestimonialCarousel({
           {items.map((item) => (
             <div
               key={item.name}
-              className="min-w-0 flex-[0_0_85%] sm:flex-[0_0_70%] lg:flex-[0_0_calc(33.333%-1rem)]"
+              className="flex min-w-0 flex-[0_0_85%] flex-col sm:flex-[0_0_70%] lg:flex-[0_0_calc(33.333%-1rem)]"
             >
-              <div className="rounded-2xl bg-white p-6 shadow-sm lg:p-8">
-                <p className="text-base leading-relaxed text-neutral-600">
-                  &ldquo;{item.quote}&rdquo;
-                </p>
+              <div className="flex flex-1 flex-col justify-between rounded-3xl border border-white/20 bg-white/95 p-6 shadow-md backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl lg:p-8">
+                <div className="flex flex-1 flex-col">
+                  {/* Subtle Quotation mark and Stars row */}
+                  <div className="mb-4 flex items-center justify-between">
+                    <span className="font-serif text-4xl leading-none text-neutral-400/35 select-none">
+                      „
+                    </span>
+                    <div className="flex gap-0.5">
+                      {[...Array(5)].map((_, i) => (
+                        <svg
+                          key={i}
+                          className="h-4 w-4 fill-current text-amber-500"
+                          viewBox="0 0 20 20"
+                        >
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                  </div>
+                  <p className="-mt-2 text-base leading-relaxed font-medium text-neutral-700 italic">
+                    &ldquo;{item.quote}&rdquo;
+                  </p>
+                </div>
                 <div className="mt-6 border-t border-neutral-100 pt-4">
-                  <p className="text-sm font-semibold">{item.name}</p>
-                  <p className="text-sm text-neutral-500">{item.location}</p>
+                  <p className="text-sm font-bold text-neutral-900">
+                    {item.name}
+                  </p>
+                  <p className="mt-0.5 text-xs font-semibold text-neutral-500">
+                    {item.location}
+                  </p>
                 </div>
               </div>
             </div>

@@ -178,7 +178,7 @@ export default function FinanzierungAblaufPage() {
       </Section>
       <Section>
         <Container>
-          <p className="pr-0 text-lg md:pr-32 lg:pr-0 lg:text-center lg:text-xl">
+          <p className="text-lg lg:text-center lg:text-xl">
             Den ersten Schritt bildet eine{" "}
             <strong>kostenlose und unverbindliche Wertermittlung</strong>, bei
             der ich eure Immobilie anhand aktueller Marktpreise und regionaler
