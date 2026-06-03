@@ -258,28 +258,37 @@ export const financingSections = [
 ];
 
 export const aboutMeData = {
-  intro:
-    "Mein Name ist Michael Wiggenhauser – ich bin Ihr erfahrener Fachberater für Fertighäuser von ELK Fertighaus. Ich begleite Sie mit Expertise durch alle Facetten des Hausbaus.",
+  intro: "Euer persönlicher Ansprechpartner für sorgenfreies Bauen mit ELK",
   usps: [
     {
-      title: "Positive Resonanzen",
+      title: "Eigene Bauerfahrung",
       description:
-        "Die Zufriedenheit meiner Kunden steht im Mittelpunkt meiner Arbeit. Zahlreiche positive Rückmeldungen bestätigen die Qualität.",
+        "Ich habe mein eigenes Zuhause selbst mit ELK gebaut und kenne jede Phase des Hausbaus aus eigener Erfahrung.",
     },
     {
-      title: "Beratung auf Augenhöhe",
+      title: "Persönliche Begleitung",
       description:
-        "Ihre Bedürfnisse und Wünsche sind der Ausgangspunkt meiner Beratung. Offene Kommunikation und Vertrauen sind mir wichtig.",
+        "Vom ersten Gespräch bis zur Schlüsselübergabe habt ihr einen festen Ansprechpartner an eurer Seite.",
     },
     {
-      title: "Kompetenz & Erfahrung",
+      title: "Sorgenfrei bauen",
       description:
-        "Fachkundige Beratung basierend auf umfassender Erfahrung, engagierte Begleitung vom ersten Gespräch bis zur Schlüsselübergabe.",
+        "Mit meiner Erfahrung und Expertise helfe ich euch dabei, typische Fehler zu vermeiden und den Hausbau planbar und stressfrei umzusetzen.",
     },
     {
-      title: "Fertighausexperte mit Herz",
+      title: "Finanzierung & Planung",
       description:
-        "Ihre erste Wahl für maßgeschneiderte Wohnträume – partnerschaftliche Beratung für Ihre individuellen Bedürfnisse.",
+        "Gemeinsam finden wir die passende Finanzierung und entwickeln ein Hauskonzept, das zu euren Wünschen und eurem Budget passt.",
+    },
+    {
+      title: "Bewährter Partner ELK",
+      description:
+        "Mit über 60 Jahren Erfahrung und mehr als 26.000 realisierten Häusern steht ELK für Qualität, Nachhaltigkeit und Planungssicherheit.",
+    },
+    {
+      title: "Immer erreichbar",
+      description:
+        "Ob telefonisch, per E-Mail, WhatsApp oder persönlich – ich bin für eure Fragen da, wenn ihr mich braucht.",
     },
   ],
 };

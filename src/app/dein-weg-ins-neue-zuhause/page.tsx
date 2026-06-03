@@ -32,7 +32,7 @@ export default function FinanzierungAblaufPage() {
           <Heading as="h1" className="text-white">
             6 Schritte zum neuen Zuhause
           </Heading>
-          <p className="mt-6 max-w-2xl text-lg text-white/90 lg:mx-auto lg:text-center">
+          <p className="mt-6 max-w-2xl text-lg text-white/90 md:text-2xl lg:mx-auto lg:text-center">
             Ich begleite euren Weg zum ELK Fertighaus Schritt für Schritt. Von
             der Finanzierung über die Planung bis hin zur Schlüsselübergabe.
           </p>

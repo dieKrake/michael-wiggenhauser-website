@@ -42,7 +42,7 @@ export default function SorgenfreiBauenPage() {
           <Heading as="h1" className="text-white">
             Sorgenfrei Bauen
           </Heading>
-          <p className="mt-6 max-w-2xl text-lg text-white/90 lg:mx-auto lg:text-center">
+          <p className="mt-6 max-w-2xl text-lg text-white/90 md:text-2xl lg:mx-auto lg:text-center">
             Von der ersten Idee bis zum Einzug – ich begleite euch durch alle
             Phasen eures Bauvorhabens. Persönlich, kompetent und transparent.
           </p>
@@ -63,7 +63,10 @@ export default function SorgenfreiBauenPage() {
           <div className="mt-12 max-w-2xl lg:mx-auto">
             <ul className="space-y-4 lg:mx-auto lg:w-fit">
               {servicesList.map((item) => (
-                <li key={item} className="flex items-center gap-3">
+                <li
+                  key={item}
+                  className="flex items-center gap-3 lg:justify-center"
+                >
                   <Check className="mt-0.5 h-5 w-5 shrink-0 text-gray-800" />
                   <span className="text-gray-700">{item}</span>
                 </li>
@@ -90,7 +93,11 @@ export default function SorgenfreiBauenPage() {
 
       {/* Bildergalerie */}
       {galerieKategorien.map((kategorie) => (
-        <Section key={kategorie.label} background="white">
+        <Section
+          key={kategorie.label}
+          background="white"
+          className="py-8 md:py-16 lg:py-24"
+        >
           <Container>
             <Heading as="h2" className="sm:text-center lg:text-center">
               {kategorie.label}
