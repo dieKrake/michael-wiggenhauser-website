@@ -222,34 +222,38 @@ export const sellingBulletPoints = [
 
 export const financingSections = [
   {
-    title: "Finanzierungsberatung",
-    content:
-      "Die richtige Finanzierung ist das Fundament Ihres Bauvorhabens. Gemeinsam analysieren wir Ihre finanzielle Situation, ermitteln die optimale Darlehenshöhe und finden die besten Konditionen bei namhaften Banken und Kreditinstituten. Dabei berücksichtigen wir staatliche Förderprogramme wie KfW-Kredite, BAFA-Zuschüsse und regionale Fördermittel.",
+    title: "Umfassende Bedarfsanalyse",
+    content: [
+      "Durch eine gründliche Bedarfsanalyse ermitteln wir eure Anforderungen und Wünsche, um die bestmögliche Lösung für euer Traumhaus zu finden.",
+      "Wir analysieren zudem gemeinsam die baurechtlichen Gegebenheiten eures Bauplatzes, um die Basis für einen sorgenfreien Verlauf des Projekts zu schaffen.",
+    ],
   },
   {
-    title: "Grundstückssuche",
-    content:
-      "Noch kein Grundstück? Kein Problem. Durch unser Netzwerk und unsere Erfahrung in der Region unterstützen wir Sie bei der Suche nach dem passenden Baugrund. Wir prüfen Bebauungspläne, Bodengutachten und Erschließungskosten, damit Sie eine fundierte Entscheidung treffen können.",
+    title: "Finanzierungsberatung & Fördermittel",
+    content: [
+      "Gemeinsam erarbeiten wir eine maßgeschneiderte Finanzierungslösung, die euren Bedürfnissen und finanziellen Möglichkeiten entspricht.",
+      "Ich informiere euch über aktuelle Fördermittel und verschiedenen Finanzierungsmodelle, damit ihr die besten Entscheidungen für euer Bauvorhaben treffen könnt.",
+    ],
   },
   {
     title: "Planung & Konfiguration",
     content:
-      "Ihr ELK Fertighaus wird exakt nach Ihren Wünschen konfiguriert. Vom Grundriss über die Fassade bis zur Innenausstattung – in der Bemusterung wählen Sie aus einer Vielzahl hochwertiger Materialien und Optionen. Dabei stehe ich Ihnen beratend zur Seite.",
+      "Wir konfigurieren ein ELK Fertighaus nach euren Wünschen. Vom Grundriss über die Fassade bis zur Innenausstattung - in der Bemusterung wählt ihr aus einer Vielzahl hochwertiger Materialien und Optionen. Dabei stehe ich euch beratend zur Seite.",
   },
   {
     title: "Genehmigung & Vorbereitung",
     content:
-      "Wir unterstützen Sie bei der Einreichung des Bauantrags und koordinieren die notwendigen Schritte mit Architekten, Statikern und Behörden. Parallel beginnt die Produktion Ihres Hauses im ELK Werk.",
+      "Ich unterstütze euch bei der Einreichung des Bauantrags und koordiniere die notwendigen Schritte mit Architekten, Statikern und Behörden. Parallel beginnt bereits die Produktion eures Hauses im ELK Werk.",
   },
   {
     title: "Bau & Montage",
     content:
-      "Die vorgefertigten Hauselemente werden in nur ein bis zwei Tagen auf Ihrem Grundstück montiert und witterungsdicht aufgestellt. Anschließend folgt der Innenausbau – je nach Ausbaustufe von ELK oder in Eigenleistung.",
+      "Die vorgefertigten Hauselemente werden in nur ein bis zwei Tagen auf eurem Grundstück montiert und witterungsdicht aufgestellt. Anschließend folgt der Innenausbau - je nach Ausbaustufe von ELK oder auch in Eigenleistung. ",
   },
   {
-    title: "Übergabe & Einzug",
+    title: "Qualitätsprüfung & Einzug",
     content:
-      "Nach einer gründlichen Qualitätsprüfung übergeben wir Ihnen die Schlüssel zu Ihrem neuen Zuhause. Auch danach stehe ich Ihnen als Ansprechpartner für alle Fragen zur Verfügung.",
+      "Nach einer gründlichen Qualitätsprüfung übergeben wir euch die Schlüssel zu eurem neuen Zuhause. Auch danach stehe ich euch als Ansprechpartner für alle Fragen zur Verfügung. ",
   },
 ];
 
