@@ -4,7 +4,7 @@ import Container from "@/components/layout/container";
 import Section from "@/components/layout/section";
 import Heading from "@/components/ui/heading";
 import { financingSections, sellingBulletPoints } from "@/lib/pages-text-data";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Home, Key } from "lucide-react";
 import Button from "@/components/ui/button";
 
 export const metadata: Metadata = {
@@ -43,12 +43,13 @@ export default function FinanzierungAblaufPage() {
       {financingSections.map((abschnitt, index) => (
         <Section
           key={abschnitt.title}
+          className="py-8 md:py-16 lg:py-24"
           background={index % 2 === 0 ? "gray" : "white"}
         >
           <Container>
             <div className="max-w-3xl lg:mx-auto">
-              <div className="flex items-baseline gap-4 lg:justify-center">
-                <span className="text-4xl font-bold text-gray-200">
+              <div className="flex flex-col items-baseline gap-4 lg:flex-row lg:justify-center">
+                <span className="text-3xl font-bold text-gray-200 md:text-4xl">
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 <Heading as="h2" className="lg:text-center">
@@ -68,7 +69,7 @@ export default function FinanzierungAblaufPage() {
         </Section>
       ))}
 
-      <section className="relative overflow-hidden bg-neutral-100">
+      <section className="relative mt-16 overflow-hidden bg-neutral-100">
         <div className="mx-auto grid max-w-7xl lg:grid-cols-2">
           {/* Text */}
           <div className="flex flex-col justify-center px-6 py-20 lg:px-16 lg:py-28">
@@ -115,8 +116,42 @@ export default function FinanzierungAblaufPage() {
         </div>
       </section>
 
-      {/* Divider */}
-      <div className="mt-16 h-32 bg-(--color-dark-element)"></div>
+      {/* Übergang: Vom neuen Haus zum Verkauf des alten */}
+      <section className="hidden bg-(--color-dark-element) text-white sm:block">
+        <Container className="py-16 text-center lg:py-20">
+          <div className="mx-auto flex max-w-3xl flex-col items-center">
+            <div className="flex items-center gap-4 text-white/60">
+              <Key className="h-6 w-6" />
+              <ArrowRight className="h-5 w-5" />
+              <Home className="h-6 w-6" />
+            </div>
+            <span className="mt-6 text-xs font-semibold tracking-[0.25em] text-white/50 uppercase">
+              Und euer altes Zuhause?
+            </span>
+            <h2 className="mt-4 text-2xl leading-snug font-bold tracking-tight uppercase lg:text-3xl">
+              Ihr habt euer Traumhaus gefunden –{" "}
+              <br className="hidden sm:block" />
+              was passiert mit dem alten?
+            </h2>
+          </div>
+        </Container>
+      </section>
+
+      {/* === VERGLEICH: Divider-Option B – Label-Linie === */}
+      <div className="mt-8 block bg-white py-12 sm:hidden">
+        <Container>
+          <div className="flex items-center gap-6">
+            <span className="h-px flex-1 bg-gray-300" />
+            <div className="flex items-center gap-3 text-(--color-dark-element)">
+              <Home className="h-5 w-5" />
+              <span className="text-sm font-semibold tracking-[0.2em] uppercase">
+                Und euer altes Zuhause?
+              </span>
+            </div>
+            <span className="h-px flex-1 bg-gray-300" />
+          </div>
+        </Container>
+      </div>
 
       {/* Sorgenfrei Verkaufen */}
       <Section background="gray">
