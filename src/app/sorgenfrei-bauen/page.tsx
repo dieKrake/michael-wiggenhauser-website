@@ -99,7 +99,10 @@ export default function SorgenfreiBauenPage() {
           className="py-8 md:py-16 lg:py-24"
         >
           <Container>
-            <Heading as="h2" className="sm:text-center lg:text-center">
+            <Heading
+              as="h2"
+              className="mb-2 sm:mb-4 sm:text-center lg:mb-8 lg:text-center"
+            >
               {kategorie.label}
             </Heading>
             <div className="mx-auto max-w-4xl">
