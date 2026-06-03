@@ -52,7 +52,7 @@ export function TestimonialCarousel({
               key={item.name}
               className="flex min-w-0 flex-[0_0_85%] flex-col sm:flex-[0_0_70%] lg:flex-[0_0_calc(33.333%-1rem)]"
             >
-              <div className="flex flex-1 flex-col justify-between rounded-3xl border border-white/20 bg-white/95 p-6 shadow-md backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl lg:p-8">
+              <div className="hlg:p-8 flex flex-1 flex-col justify-between rounded-3xl border border-white/20 bg-white/95 p-6 shadow-md backdrop-blur-sm transition-all duration-300">
                 <div className="flex flex-1 flex-col">
                   {/* Subtle Quotation mark and Stars row */}
                   <div className="mb-4 flex items-center justify-between">

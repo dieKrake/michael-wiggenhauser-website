@@ -204,7 +204,7 @@ export default function Startseite() {
 
           {/* Bild */}
           <div className="relative max-h-[600px] overflow-hidden lg:min-h-full">
-            <div className="aspect-3/4 w-full lg:absolute lg:inset-0 lg:aspect-auto">
+            <div className="relative aspect-3/4 w-full lg:absolute lg:inset-0 lg:aspect-auto">
               <Image
                 src="/images/michi-gespraech.webp"
                 alt="Michael Wiggenhauser"
@@ -266,7 +266,7 @@ export default function Startseite() {
       {/* Testimonials */}
       <section className="py-12 lg:py-16">
         {/* Constrained + rounded on desktop, full-width on mobile */}
-        <div className="relative overflow-hidden lg:mx-auto lg:max-w-7xl lg:rounded-3xl">
+        <div className="relative overflow-hidden md:rounded-none lg:mx-auto lg:max-w-7xl xl:rounded-3xl">
           {/* Background image */}
           <div className="absolute inset-0">
             <Image

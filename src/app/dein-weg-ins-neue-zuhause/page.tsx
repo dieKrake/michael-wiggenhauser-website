@@ -102,7 +102,7 @@ export default function FinanzierungAblaufPage() {
 
           {/* Bild */}
           <div className="relative max-h-[600px] overflow-hidden lg:min-h-full">
-            <div className="aspect-3/4 w-full lg:absolute lg:inset-0 lg:aspect-auto">
+            <div className="relative aspect-3/4 w-full lg:absolute lg:inset-0 lg:aspect-auto">
               <Image
                 src="/images/michi-gespraech.webp"
                 alt="Michael Wiggenhauser"
