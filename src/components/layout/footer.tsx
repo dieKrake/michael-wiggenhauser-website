@@ -18,14 +18,14 @@ const Footer: FC = () => {
               className="object-contain"
               style={{ height: "auto" }}
             />
-            <p className="mt-3 text-sm leading-relaxed text-neutral-400">
+            <p className="mt-3 text-sm leading-relaxed text-gray-200">
               {siteConfig.description}
             </p>
           </div>
 
           {/* Navigation */}
           <div>
-            <p className="text-sm font-semibold tracking-wider text-neutral-500 uppercase">
+            <p className="text-sm font-semibold tracking-wider text-gray-100 uppercase">
               Navigation
             </p>
             <ul className="mt-4 flex flex-col gap-3">
@@ -33,7 +33,7 @@ const Footer: FC = () => {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-neutral-400 transition-colors hover:text-white"
+                    className="text-sm text-gray-200 transition-colors hover:text-white"
                   >
                     {item.label}
                   </Link>
@@ -44,7 +44,7 @@ const Footer: FC = () => {
 
           {/* Legal */}
           <div>
-            <p className="text-sm font-semibold tracking-wider text-neutral-500 uppercase">
+            <p className="text-sm font-semibold tracking-wider text-gray-100 uppercase">
               Rechtliches
             </p>
             <ul className="mt-4 flex flex-col gap-3">
@@ -52,7 +52,7 @@ const Footer: FC = () => {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-neutral-400 transition-colors hover:text-white"
+                    className="text-sm text-gray-200 transition-colors hover:text-white"
                   >
                     {item.label}
                   </Link>
@@ -66,7 +66,7 @@ const Footer: FC = () => {
           className="mt-16 pt-8"
           style={{ borderTop: "1px solid var(--color-divider)" }}
         >
-          <p className="text-center text-xs text-neutral-500">
+          <p className="text-center text-xs text-gray-300">
             &copy; {new Date().getFullYear()} {siteConfig.name}. Alle Rechte
             vorbehalten.
           </p>
