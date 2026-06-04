@@ -10,70 +10,63 @@ const KontaktFormular = () => {
       className="scroll-mt-20 bg-linear-to-b from-white via-neutral-50 to-neutral-100 py-24 md:py-32"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid items-start gap-16 md:grid-cols-2">
+        <div className="grid gap-16 md:grid-cols-2 md:items-stretch">
           {/* Info-Seite (Personal Trust & Quote) */}
-          <div className="lg:pr-4">
-            {/* Profil-Header */}
-            <div className="flex items-center gap-5">
-              <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl border border-neutral-200 shadow-md">
-                <Image
-                  src="/images/michi-kontakt.jpg"
-                  alt="Michael Wiggenhauser"
-                  fill
-                  className="object-cover"
-                />
+          <div className="flex h-full flex-col justify-between lg:pr-4">
+            <div>
+              {/* Profil-Header */}
+              <div className="flex items-center gap-5">
+                <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl border border-neutral-200 shadow-md">
+                  <Image
+                    src="/images/michi-kontakt.jpg"
+                    alt="Michael Wiggenhauser"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div>
+                  <span className="text-dark-brown inline-block text-[11px] font-bold tracking-widest uppercase">
+                    Euer ELK Bauberater
+                  </span>
+                  <h3 className="mt-1 text-xl leading-none font-bold text-neutral-900">
+                    Michael Wiggenhauser
+                  </h3>
+                  <p className="mt-1.5 text-xs font-semibold text-neutral-500">
+                    Region Bodensee, Allgäu & Oberschwaben
+                  </p>
+                </div>
               </div>
-              <div>
-                <span className="inline-block text-[11px] font-bold tracking-widest text-amber-600 uppercase">
-                  Euer ELK Bauberater
+
+              {/* Zitat-Box */}
+              <div className="border-dark-brown/10 bg-dark-brown/5 relative mt-6 rounded-2xl border p-6 text-neutral-700 italic">
+                <span className="text-dark-brown/15 absolute -top-4 -left-1 font-serif text-6xl leading-none select-none">
+                  „
                 </span>
-                <h3 className="mt-1 text-xl leading-none font-bold text-neutral-900">
-                  Michael Wiggenhauser
-                </h3>
-                <p className="mt-1.5 text-xs font-semibold text-neutral-500">
-                  Region Bodensee, Allgäu & Oberschwaben
+                <p className="relative z-10 text-[15px] leading-relaxed font-medium">
+                  Ein Haus baut man meistens nur einmal im Leben. Lasst uns
+                  diesen Weg von Anfang an gemeinsam gehen – ehrlich,
+                  transparent und völlig sorgenfrei.
+                </p>
+                <p className="text-dark-brown relative z-10 mt-3 text-xs font-bold tracking-wider uppercase not-italic">
+                  — Michael Wiggenhauser
                 </p>
               </div>
-            </div>
-
-            <h2 className="mt-8 text-3xl font-semibold tracking-tight md:text-4xl">
-              Sorgenfrei bauen beginnt mit einem Gespräch.
-            </h2>
-            <p className="mt-4 text-base leading-relaxed text-neutral-600">
-              Ich freue mich darauf, euch kennenzulernen. Vereinbart jetzt euer
-              kostenloses, unverbindliches Erstgespräch – ganz entspannt per
-              Telefon, E-Mail oder direkt über das Formular.
-            </p>
-
-            {/* Zitat-Box */}
-            <div className="relative mt-8 rounded-2xl border border-amber-500/10 bg-amber-50/40 p-6 text-neutral-700 italic">
-              <span className="absolute -top-4 -left-1 font-serif text-6xl leading-none text-amber-500/15 select-none">
-                „
-              </span>
-              <p className="relative z-10 text-[15px] leading-relaxed font-medium">
-                Ein Haus baut man meistens nur einmal im Leben. Lasst uns diesen
-                Weg von Anfang an gemeinsam gehen – ehrlich, transparent und
-                völlig sorgenfrei.
-              </p>
-              <p className="relative z-10 mt-3 text-xs font-bold tracking-wider text-amber-700 uppercase not-italic">
-                — Michael Wiggenhauser
-              </p>
             </div>
 
             {/* Premium Klickbare Kontakt-Karten */}
             <div className="mt-8 space-y-3 border-t border-neutral-200/60 pt-6">
               <a
                 href={`tel:${siteConfig.phone}`}
-                className="group flex items-center gap-4 rounded-xl border border-neutral-200/50 bg-white/50 p-3.5 transition-all duration-300 hover:border-amber-500/20 hover:bg-white hover:shadow-md"
+                className="group hover:border-dark-brown/20 flex items-center gap-4 rounded-xl border border-neutral-200/50 bg-white/50 p-3.5 transition-all duration-300 hover:bg-white hover:shadow-md"
               >
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-amber-50 text-amber-600 transition-colors group-hover:bg-amber-100">
+                <div className="bg-dark-brown/5 text-dark-brown group-hover:bg-dark-brown flex h-11 w-11 shrink-0 items-center justify-center rounded-lg transition-colors group-hover:text-white">
                   <Phone className="h-5 w-5" />
                 </div>
                 <div>
                   <p className="text-[11px] font-bold tracking-wider text-neutral-400 uppercase">
                     Telefonisch erreichbar
                   </p>
-                  <p className="mt-0.5 text-sm font-bold text-neutral-900 transition-colors group-hover:text-amber-700">
+                  <p className="group-hover:text-dark-brown mt-0.5 text-sm font-bold text-neutral-900 transition-colors">
                     {siteConfig.phone}
                   </p>
                 </div>
@@ -81,16 +74,16 @@ const KontaktFormular = () => {
 
               <a
                 href={`mailto:${siteConfig.email}`}
-                className="group flex items-center gap-4 rounded-xl border border-neutral-200/50 bg-white/50 p-3.5 transition-all duration-300 hover:border-amber-500/20 hover:bg-white hover:shadow-md"
+                className="group hover:border-dark-brown/20 flex items-center gap-4 rounded-xl border border-neutral-200/50 bg-white/50 p-3.5 transition-all duration-300 hover:bg-white hover:shadow-md"
               >
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-amber-50 text-amber-600 transition-colors group-hover:bg-amber-100">
+                <div className="bg-dark-brown/5 text-dark-brown group-hover:bg-dark-brown flex h-11 w-11 shrink-0 items-center justify-center rounded-lg transition-colors group-hover:text-white">
                   <Mail className="h-5 w-5" />
                 </div>
                 <div>
                   <p className="text-[11px] font-bold tracking-wider text-neutral-400 uppercase">
                     E-Mail schreiben
                   </p>
-                  <p className="mt-0.5 text-sm font-bold text-neutral-900 transition-colors group-hover:text-amber-700">
+                  <p className="group-hover:text-dark-brown mt-0.5 text-sm font-bold text-neutral-900 transition-colors">
                     {siteConfig.email}
                   </p>
                 </div>
@@ -100,6 +93,9 @@ const KontaktFormular = () => {
 
           {/* Formular */}
           <form className="space-y-5 rounded-2xl border border-neutral-200 bg-white p-6 shadow-lg shadow-neutral-200/50 sm:p-8">
+            <h3 className="text-dark-brown mb-6 text-2xl font-bold tracking-tight">
+              Kontakt
+            </h3>
             <div className="grid gap-5 sm:grid-cols-2">
               <div>
                 <label

@@ -60,15 +60,19 @@ export default function SorgenfreiBauenPage() {
             und Begleitung (Begleitung?) eures Fertighaus-Projekts. Damit ihr
             euch auf das Wesentliche konzentrieren könnt.
           </p>
-          <div className="mt-12 max-w-2xl lg:mx-auto">
-            <ul className="space-y-4 lg:mx-auto lg:w-fit">
+          <div className="mt-12">
+            <ul className="mx-auto max-w-md space-y-3">
               {servicesList.map((item) => (
                 <li
                   key={item}
-                  className="flex items-center gap-3 lg:justify-center"
+                  className="flex items-center gap-2 rounded-lg border border-neutral-100 bg-white p-2 shadow-sm"
                 >
-                  <Check className="mt-0.5 h-5 w-5 shrink-0 text-gray-800" />
-                  <span className="text-gray-700">{item}</span>
+                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg">
+                    <Check className="h-4 w-4 text-gray-600" />
+                  </div>
+                  <span className="text-[14px] leading-snug font-semibold text-neutral-700">
+                    {item}
+                  </span>
                 </li>
               ))}
             </ul>

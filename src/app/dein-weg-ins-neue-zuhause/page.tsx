@@ -194,11 +194,11 @@ export default function FinanzierungAblaufPage() {
             <br />
             <br />
             Von der <strong>Vermarktung</strong> über{" "}
-            <strong>Besichtigungen</strong> bis hin zur
-            <strong>Auswahl</strong> geeigneter Käufer stehe ich euch mit meiner
-            Erfahrung und Marktkenntnis zur Seite. Ihr könnt euch entspannt
-            zurücklehnen, während ich mich um die Details kümmere und euch bis
-            zum Notartermin und darüber hinaus begleite.
+            <strong>Besichtigungen</strong> bis hin zur <strong>Auswahl</strong>{" "}
+            geeigneter Käufer stehe ich euch mit meiner Erfahrung und
+            Marktkenntnis zur Seite. Ihr könnt euch entspannt zurücklehnen,
+            während ich mich um die Details kümmere und euch bis zum Notartermin
+            und darüber hinaus begleite.
             <br />
             <br />
             Auch wenn ihr nur ein Grundstück verkaufen möchtet, unterstütze ich
