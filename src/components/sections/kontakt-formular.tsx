@@ -18,7 +18,7 @@ const KontaktFormular = () => {
               <div className="flex items-center gap-5">
                 <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl border border-neutral-200 shadow-md">
                   <Image
-                    src="/images/michi-kontakt.jpg"
+                    src="/images/michi-kontakt.webp"
                     alt="Michael Wiggenhauser"
                     fill
                     className="object-cover"
