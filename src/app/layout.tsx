@@ -6,6 +6,7 @@ import KontaktFormularWrapper from "@/components/sections/kontakt-formular-wrapp
 import { siteConfig } from "@/lib/constants";
 import "./globals.css";
 import WhatsAppButton from "@/components/ui/whatsapp-button";
+import CookieConsent from "@/components/ui/cookie-consent";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -39,6 +40,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <KontaktFormularWrapper />
         <Footer />
+        <CookieConsent />
       </body>
     </html>
   );
