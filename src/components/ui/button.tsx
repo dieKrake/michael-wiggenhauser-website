@@ -34,7 +34,7 @@ const getClasses = (
         variant === "secondary",
       "border border-neutral-900 text-neutral-900 hover:bg-neutral-900 hover:text-white focus-visible:ring-neutral-900":
         variant === "outline",
-      "bg-[var(--color-divider)] text-white hover:opacity-90 focus-visible:ring-[var(--color-divider)]":
+      "bg-[var(--color-dark-brown)] text-white hover:opacity-80 focus-visible:ring-[var(--color-divider)]":
         variant === "accent",
     },
     {

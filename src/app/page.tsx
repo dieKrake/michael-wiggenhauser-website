@@ -40,7 +40,7 @@ export default function Startseite() {
             {/* Bild rechts oben */}
             <div className="relative min-h-[40vh] flex-1 lg:aspect-video lg:min-h-0 lg:flex-none 2xl:aspect-auto 2xl:min-h-[40vh] 2xl:flex-1">
               {/* Diagonaler Teiler – relativ zur linken Kante des rechten Containers (lg-2xl) */}
-              <div className="pointer-events-none absolute inset-y-0 z-10 hidden w-36 -translate-x-1/2 -skew-x-16 bg-(--color-divider) will-change-transform lg:left-[4%] lg:block 2xl:hidden">
+              <div className="pointer-events-none absolute inset-y-0 z-10 hidden w-36 -translate-x-1/2 -skew-x-16 bg-(--color-dark-brown) will-change-transform lg:left-[4%] lg:block 2xl:hidden">
                 <div className="pointer-events-none absolute inset-y-0 left-24 w-16 bg-gray-50" />
               </div>
               <Image
@@ -94,7 +94,7 @@ export default function Startseite() {
         </div>
 
         {/* Diagonaler Teiler zwischen den Bildern (2xl) */}
-        <div className="4xl:left-[40%] 4xl:w-52 pointer-events-none absolute inset-y-0 left-[38%] z-10 hidden w-36 -translate-x-1/2 -skew-x-16 bg-(--color-dark-element) 2xl:block">
+        <div className="4xl:left-[40%] 4xl:w-52 pointer-events-none absolute inset-y-0 left-[38%] z-10 hidden w-36 -translate-x-1/2 -skew-x-16 bg-(--color-dark-brown) 2xl:block">
           <div className="3xl:w-40 4xl:w-48 pointer-events-none absolute inset-y-0 left-36 w-28 2xl:bg-gray-50" />
         </div>
 
@@ -108,7 +108,7 @@ export default function Startseite() {
 
           <div
             className="my-5 h-px"
-            style={{ backgroundColor: "var(--color-divider)" }}
+            style={{ backgroundColor: "var(--color-dark-brown)" }}
           />
 
           <div className="grid grid-cols-1 gap-6">
@@ -196,9 +196,10 @@ export default function Startseite() {
             </div>
             <a
               href="#kontakt"
-              className="mt-10 inline-flex items-center gap-2 text-sm font-bold tracking-wider uppercase"
+              className="group mt-10 inline-flex items-center gap-2 text-sm font-bold tracking-wider uppercase hover:underline"
             >
-              Jetzt Kontakt aufnehmen <ArrowRight className="h-4 w-4" />
+              Jetzt Kontakt aufnehmen{" "}
+              <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
           </div>
 
@@ -232,9 +233,10 @@ export default function Startseite() {
               </p>
               <Link
                 href="/sorgenfrei-bauen"
-                className="mt-8 hidden items-center gap-1.5 text-sm font-bold tracking-wider text-neutral-800 uppercase lg:inline-flex"
+                className="group mt-10 inline-flex items-center gap-2 text-sm font-bold tracking-wider uppercase hover:underline"
               >
-                Mehr erfahren <ArrowRight className="h-3.5 w-3.5" />
+                Mehr erfahren{" "}
+                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
             </div>
             <ul className="space-y-4">

@@ -117,7 +117,7 @@ export default function FinanzierungAblaufPage() {
       </section>
 
       {/* Übergang: Vom neuen Haus zum Verkauf des alten */}
-      <section className="hidden bg-(--color-dark-element) text-white lg:block">
+      <section className="hidden bg-(--color-dark-brown) text-white lg:block">
         <Container className="py-16 text-center lg:py-20">
           <div className="mx-auto flex max-w-3xl flex-col items-center">
             <div className="flex items-center gap-4 text-white/60">
@@ -138,7 +138,7 @@ export default function FinanzierungAblaufPage() {
       </section>
 
       {/* === VERGLEICH: Divider-Option B – Label-Linie === */}
-      <div className="block bg-(--color-dark-element) py-12 sm:py-16 md:py-20 lg:hidden">
+      <div className="block bg-(--color-dark-brown) py-12 sm:py-16 md:py-20 lg:hidden">
         <Container>
           <div className="flex items-center gap-6">
             <span className="h-px flex-1 bg-gray-300" />

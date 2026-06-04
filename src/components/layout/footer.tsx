@@ -5,7 +5,7 @@ import { siteConfig, footerLinks } from "@/lib/constants";
 
 const Footer: FC = () => {
   return (
-    <footer className="bg-(--color-dark-element) text-white">
+    <footer className="bg-(--color-dark-brown) text-white">
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div className="grid gap-12 md:grid-cols-3">
           {/* Brand */}

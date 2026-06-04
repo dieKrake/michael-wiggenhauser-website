@@ -136,7 +136,7 @@ export default function SorgenfreiBauenPage() {
             />
           </div>
           <div className="relative w-1/6 overflow-hidden sm:hidden">
-            <div className="block h-full w-full bg-(--color-dark-element) sm:hidden" />
+            <div className="block h-full w-full bg-(--color-dark-brown) sm:hidden" />
           </div>
           <div className="flex w-full flex-col pr-4 pl-8 sm:pr-6 md:w-2/3 md:pl-16 lg:pr-8">
             {whyElkSectionData.usps.map((usp) => (

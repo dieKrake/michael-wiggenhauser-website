@@ -12,7 +12,7 @@ export const ClimateFriendlyHouses: FC = () => {
           {climateFriendlyHousesData.map((item, index) => (
             <div
               key={index}
-              className="flex h-full flex-col overflow-hidden rounded-lg bg-(--color-dark-element) text-white shadow-md transition-transform duration-300 hover:-translate-y-1"
+              className="flex h-full flex-col overflow-hidden rounded-lg bg-(--color-dark-brown) text-white shadow-md transition-transform duration-300 hover:-translate-y-1"
             >
               <div className="relative aspect-4/3 max-h-[400px] w-full shrink-0">
                 <Image

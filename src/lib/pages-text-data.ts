@@ -330,17 +330,17 @@ export const sliderFactsData = [
   {
     title: "7 FICHTEN FÜR EIN HAUS",
     text: "Bei einem ELK Haus kommen rund 30 m³ Vollholz zum Einsatz – das entspricht etwa 7 Fichten. In unseren heimischen Wäldern wachsen diese 30 m³ Holz bereits in rund 30 Sekunden nach.",
-    styling: "bg-(--color-dark-element) text-white",
+    styling: "bg-(--color-dark-brown) text-white",
   },
   {
     title: "30 TONNEN CO₂ GESPEICHERT",
     text: "Das verbaute Holz in einem ELK Fertighaus speichert dauerhaft rund 30 Tonnen CO₂ – etwa so viel, wie ein Auto auf 190.000 Kilometern ausstößt. ",
-    styling: "bg-(--color-dark-element) text-white",
+    styling: "bg-(--color-dark-brown) text-white",
   },
   {
     title: "NUR VIER LKW-LADUNGEN",
     text: "Durch die präzise Vorfertigung werden für die Lieferung eines ELK Hauses durchschnittlich nur vier LKW-Fahrten benötigt. Das spart Zeit, Verkehr und Emissionen.",
-    styling: "bg-(--color-dark-element) text-white",
+    styling: "bg-(--color-dark-brown) text-white",
   },
 ];
 

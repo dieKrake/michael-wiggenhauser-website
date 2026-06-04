@@ -115,7 +115,7 @@ export function ImageCarousel({
           "relative overflow-hidden rounded-2xl",
           isTextOnly &&
             !bgImage &&
-            (items[0]?.bgClass || "bg-(--color-dark-element) text-white")
+            (items[0]?.bgClass || "bg-(--color-dark-brown) text-white")
         )}
       >
         {/* Statisches Hintergrundbild mit Abdunkelung – außerhalb von emblaRef */}
@@ -166,8 +166,7 @@ export function ImageCarousel({
                         ? "bg-transparent text-white"
                         : isTextOnly
                           ? "bg-transparent text-current"
-                          : item.bgClass ||
-                            "bg-(--color-dark-element) text-white"
+                          : item.bgClass || "bg-(--color-dark-brown) text-white"
                     )}
                   >
                     {item.title && (

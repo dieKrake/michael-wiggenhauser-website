@@ -125,7 +125,7 @@ export default function UeberMichPage() {
       </Section>
 
       {/* Statistiken */}
-      <Section className="bg-(--color-dark-element)">
+      <Section className="bg-(--color-dark-brown)">
         <Container>
           <Heading as="h2" className="text-center text-white">
             Erfolgsbilanz
