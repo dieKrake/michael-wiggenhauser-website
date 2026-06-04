@@ -15,17 +15,32 @@ const Navbar: FC = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:h-28 lg:px-8 xl:h-32">
         <Link href="/" className="flex items-center">
-          <Image
-            src="/images/Wiggenhauser-Logo-dark.png"
-            alt={siteConfig.name}
-            width={110}
-            height={40}
-            className="object-contain"
-            style={{ height: "auto" }}
-            priority
-          />
+          {/* Mobil & Tablet: Kleines Logo (unter lg) */}
+          <div className="block lg:hidden">
+            <Image
+              src="/images/Wiggenhauser-Logo-dark-small.png"
+              alt={siteConfig.name}
+              width={125}
+              height={40}
+              className="w-[60px] object-contain md:w-[70px]"
+              style={{ height: "auto" }}
+              priority
+            />
+          </div>
+          {/* Desktop & Große Bildschirme: Großes Logo (ab lg) */}
+          <div className="hidden lg:block">
+            <Image
+              src="/images/Wiggenhauser-Logo-dark.png"
+              alt={siteConfig.name}
+              width={100}
+              height={30}
+              className="w-[130px] object-contain xl:w-[150px]"
+              style={{ height: "auto" }}
+              priority
+            />
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
