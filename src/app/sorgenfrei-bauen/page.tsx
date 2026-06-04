@@ -61,7 +61,7 @@ export default function SorgenfreiBauenPage() {
             euch auf das Wesentliche konzentrieren könnt.
           </p>
           <div className="mt-12">
-            <ul className="mx-auto max-w-md space-y-3">
+            <ul className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:mx-auto lg:max-w-4xl lg:grid-cols-3">
               {servicesList.map((item) => (
                 <li
                   key={item}
