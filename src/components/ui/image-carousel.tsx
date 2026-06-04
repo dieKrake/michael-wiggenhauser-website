@@ -34,7 +34,7 @@ export function ImageCarousel({
   sizes = "(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px",
   quality = 80,
   autoplay = false,
-  autoplayInterval = 4000,
+  autoplayInterval = 6000,
   showArrows = true,
   bgImage,
   bgOverlayClass = "bg-black/60",

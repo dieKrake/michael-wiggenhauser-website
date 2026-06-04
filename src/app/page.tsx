@@ -249,9 +249,10 @@ export default function Startseite() {
               ].map((item) => (
                 <li
                   key={item}
-                  className="border-b border-neutral-100 pb-4 text-base text-neutral-700 md:text-lg"
+                  className="flex items-start gap-2 border-b border-neutral-100 pb-4 text-base text-neutral-700 md:text-lg"
                 >
-                  <strong>- {item}</strong>
+                  <strong className="shrink-0">—</strong>
+                  <strong>{item}</strong>
                 </li>
               ))}
               <Link
