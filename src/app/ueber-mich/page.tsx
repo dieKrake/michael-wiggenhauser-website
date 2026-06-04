@@ -11,7 +11,7 @@ import { aboutMeData, aboutMeStats } from "@/lib/pages-text-data";
 export const metadata: Metadata = {
   title: "Über mich",
   description:
-    "Michael Wiggenhauser – Ihr erfahrener Fachberater für ELK Fertighäuser.",
+    "Michael Wiggenhauser – Euer erfahrener Fachberater für ELK Fertighäuser.",
 };
 
 export default function UeberMichPage() {

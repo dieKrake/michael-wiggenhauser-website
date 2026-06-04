@@ -186,19 +186,19 @@ export const sellingBulletPoints = [
     nummer: "01",
     title: "Kostenlose Erstberatung",
     description:
-      "Wir lernen uns kennen und besprechen Ihre Situation. Was ist Ihnen beim Verkauf wichtig? Welche Ziele verfolgen Sie? Dieses Gespräch ist selbstverständlich kostenfrei und unverbindlich.",
+      "Wir lernen uns kennen und besprechen eure Situation. Was ist euch beim Verkauf wichtig? Welche Ziele verfolgt ihr? Dieses Gespräch ist selbstverständlich kostenfrei und unverbindlich.",
   },
   {
     nummer: "02",
-    title: "Bewertung Ihrer Immobilie",
+    title: "Bewertung eurer Immobilie",
     description:
-      "Eine realistische und marktgerechte Bewertung bildet die Grundlage für einen erfolgreichen Verkauf. Wir berücksichtigen aktuelle Marktpreise, regionale Gegebenheiten und die Besonderheiten Ihres Objekts.",
+      "Eine realistische und marktgerechte Bewertung bildet die Grundlage für einen erfolgreichen Verkauf. Wir berücksichtigen aktuelle Marktpreise, regionale Gegebenheiten und die Besonderheiten eures Objekts.",
   },
   {
     nummer: "03",
     title: "Professionelle Vermarktung",
     description:
-      "Hochwertige Fotos, ein ansprechendes Exposé und die passende Vermarktungsstrategie – wir sorgen dafür, dass Ihre Immobilie die richtigen Interessenten erreicht.",
+      "Hochwertige Fotos, ein ansprechendes Exposé und die passende Vermarktungsstrategie – wir sorgen dafür, dass eure Immobilie die richtigen Interessenten erreicht.",
   },
   {
     nummer: "04",
@@ -210,13 +210,13 @@ export const sellingBulletPoints = [
     nummer: "05",
     title: "Verhandlung & Abschluss",
     description:
-      "Von der Preisverhandlung über den Kaufvertrag bis zum Notartermin – wir begleiten Sie durch den gesamten Prozess und sorgen für einen reibungslosen Ablauf.",
+      "Von der Preisverhandlung über den Kaufvertrag bis zum Notartermin – wir begleiten euch durch den gesamten Prozess und sorgen für einen reibungslosen Ablauf.",
   },
   {
     nummer: "06",
     title: "After-Sales-Service",
     description:
-      "Auch nach dem erfolgreichen Verkauf stehen wir Ihnen als Ansprechpartner zur Verfügung und unterstützen Sie bei allen weiteren Anliegen.",
+      "Auch nach dem erfolgreichen Verkauf stehen wir Ihnen als Ansprechpartner zur Verfügung und unterstützen euch bei allen weiteren Anliegen.",
   },
 ];
 

@@ -13,7 +13,7 @@ import { TestimonialCarousel } from "@/components/ui/testimonial-carousel";
 export const metadata: Metadata = {
   title: "Startseite",
   description:
-    "Ihr Fachberater für ELK Fertighäuser – Bauberatung, Finanzierung und individuelle Hausplanung.",
+    "Euer Fachberater für ELK Fertighäuser – Bauberatung, Finanzierung und individuelle Hausplanung.",
 };
 
 export default function Startseite() {
@@ -245,7 +245,7 @@ export default function Startseite() {
                 "Individuelle Grundrissplanung und Konfiguration",
                 "Finanzierungsberatung inkl. Fördermittelprüfung",
                 "Begleitung vom Erstgespräch bis zur Schlüsselübergabe",
-                "Verkauf Ihrer bestehenden Immobilie",
+                "Verkauf Eurer bestehenden Immobilie",
               ].map((item) => (
                 <li
                   key={item}

@@ -109,7 +109,7 @@ const KontaktFormular = () => {
                   id="contact-name"
                   name="name"
                   className="mt-1.5 block w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-[15px] transition-colors focus:border-black focus:bg-white focus:outline-none"
-                  placeholder="Ihr Name"
+                  placeholder="Dein Name"
                 />
               </div>
               <div>
@@ -140,7 +140,7 @@ const KontaktFormular = () => {
                 name="message"
                 rows={5}
                 className="mt-1.5 block w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-[15px] transition-colors focus:border-black focus:bg-white focus:outline-none"
-                placeholder="Ihre Nachricht..."
+                placeholder="Deine Nachricht..."
               />
             </div>
             <div className="flex items-start gap-2.5">

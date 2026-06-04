@@ -10,7 +10,7 @@ import { siteConfig } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Kontakt",
   description:
-    "Kontaktieren Sie Michael Wiggenhauser für ein unverbindliches Beratungsgespräch.",
+    "Kontaktiert Michael Wiggenhauser für ein unverbindliches Beratungsgespräch.",
 };
 
 export default function KontaktPage() {
@@ -23,7 +23,7 @@ export default function KontaktPage() {
             Kontakt
           </Heading>
           <p className="text-primary-200 mx-auto mt-6 max-w-2xl text-lg">
-            Sie haben Fragen? Ich freue mich auf Ihre Anfrage.
+            Ihr habt Fragen? Ich freue mich auf eure Anfrage.
           </p>
         </Container>
       </Section>
@@ -65,7 +65,7 @@ export default function KontaktPage() {
 
             {/* Formular */}
             <Card hover={false}>
-              <Heading as="h2">Schreiben Sie mir</Heading>
+              <Heading as="h2">Schreibt mir</Heading>
               <form className="mt-6 space-y-4">
                 <div>
                   <label
@@ -79,7 +79,7 @@ export default function KontaktPage() {
                     id="name"
                     name="name"
                     className="focus:border-primary-500 focus:ring-primary-500 mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900"
-                    placeholder="Ihr vollständiger Name"
+                    placeholder="Dein vollständiger Name"
                   />
                 </div>
                 <div>
@@ -94,7 +94,7 @@ export default function KontaktPage() {
                     id="email"
                     name="email"
                     className="focus:border-primary-500 focus:ring-primary-500 mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900"
-                    placeholder="ihre@email.de"
+                    placeholder="deine@email.de"
                   />
                 </div>
                 <div>
@@ -109,7 +109,7 @@ export default function KontaktPage() {
                     name="message"
                     rows={5}
                     className="focus:border-primary-500 focus:ring-primary-500 mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900"
-                    placeholder="Ihre Nachricht..."
+                    placeholder="Deine Nachricht..."
                   />
                 </div>
                 <div className="flex items-start gap-2">
