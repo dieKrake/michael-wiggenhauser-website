@@ -233,7 +233,7 @@ export default function Startseite() {
               </p>
               <Link
                 href="/sorgenfrei-bauen"
-                className="group mt-10 inline-flex items-center gap-2 text-sm font-bold tracking-wider uppercase hover:underline"
+                className="group mt-10 hidden items-center gap-2 text-sm font-bold tracking-wider uppercase hover:underline lg:inline-flex"
               >
                 Mehr erfahren{" "}
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -251,7 +251,7 @@ export default function Startseite() {
                   key={item}
                   className="border-b border-neutral-100 pb-4 text-base text-neutral-700"
                 >
-                  {item}
+                  <strong>-{item}</strong>
                 </li>
               ))}
               <Link
