@@ -156,7 +156,7 @@ export default function FinanzierungAblaufPage() {
       {/* Sorgenfrei Verkaufen */}
       <Section className="relative overflow-hidden py-24 text-white sm:py-32 lg:py-40">
         <Image
-          src="/images/Bild 6.png"
+          src="/images/sell-house.webp"
           alt="Sorgenfrei Verkaufen"
           fill
           className="object-cover object-top"
