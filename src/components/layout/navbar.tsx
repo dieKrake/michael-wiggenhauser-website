@@ -106,7 +106,7 @@ const Navbar: FC = () => {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "text-[15px] font-medium transition-colors duration-200",
+                  "text-[15px] font-medium transition-colors duration-200 lg:text-[16px]",
                   pathname === item.href
                     ? "text-black"
                     : "text-neutral-500 hover:text-black"

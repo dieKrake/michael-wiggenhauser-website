@@ -86,7 +86,7 @@ export default function SorgenfreiBauenPage() {
           <Heading as="h2" className="lg:text-center">
             ELK Fertighäuser
           </Heading>
-          <p className="mt-4 max-w-2xl text-gray-600 lg:mx-auto lg:text-center">
+          <p className="mt-4 max-w-2xl lg:mx-auto lg:text-center lg:text-xl">
             Als einer der führenden Hersteller Europas steht ELK für über 60
             Jahre Erfahrung, schnelle Lieferzeiten zum Festpreis und komplette
             Individualisierbarkeit. Jedes Haus wird exakt nach euren Wünschen
@@ -125,7 +125,7 @@ export default function SorgenfreiBauenPage() {
           <Heading as="h2" className="lg:text-center">
             {whyElkSectionData.title}
           </Heading>
-          <p className="mt-4 max-w-2xl text-gray-600 lg:mx-auto lg:text-center">
+          <p className="mt-4 max-w-2xl lg:mx-auto lg:text-center">
             {whyElkSectionData.description}
           </p>
         </Container>
