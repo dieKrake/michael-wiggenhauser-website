@@ -57,14 +57,14 @@ const Navbar: FC = () => {
               />
             </div>
             {/* Desktop & Große Bildschirme: Logo mit geschmeidigem Wechsel (ab lg) */}
-            <div className="hidden lg:relative lg:flex lg:items-center">
+            <div className="hidden lg:relative lg:block lg:h-10 lg:w-[130px] xl:w-[150px]">
               {/* Großes Logo (sichtbar wenn nicht gescrollt) */}
               <div
                 className={cn(
-                  "origin-left transition-all duration-300 ease-in-out",
+                  "absolute top-1/2 left-0 -translate-y-1/2 transition-all ease-in-out",
                   isScrolled
-                    ? "pointer-events-none absolute scale-90 opacity-0"
-                    : "scale-100 opacity-100"
+                    ? "pointer-events-none opacity-0 delay-0 duration-300"
+                    : "opacity-100 delay-300 duration-500"
                 )}
               >
                 <Image
@@ -80,10 +80,10 @@ const Navbar: FC = () => {
               {/* Kleines Logo (sichtbar wenn gescrollt) */}
               <div
                 className={cn(
-                  "origin-left transition-all duration-300 ease-in-out",
+                  "absolute top-1/2 left-0 -translate-y-1/2 transition-all ease-in-out",
                   isScrolled
-                    ? "scale-100 opacity-100"
-                    : "pointer-events-none absolute scale-90 opacity-0"
+                    ? "opacity-100 delay-300 duration-500"
+                    : "pointer-events-none opacity-0 delay-0 duration-300"
                 )}
               >
                 <Image

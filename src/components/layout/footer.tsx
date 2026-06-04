@@ -15,7 +15,7 @@ const Footer: FC = () => {
               alt={siteConfig.name}
               width={160}
               height={40}
-              className="object-contain"
+              className="scale-80 object-contain md:scale-90 lg:scale-100"
               style={{ height: "auto" }}
             />
             <p className="mt-3 text-sm leading-relaxed text-gray-200">
