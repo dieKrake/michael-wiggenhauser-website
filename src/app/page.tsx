@@ -25,7 +25,7 @@ export default function Startseite() {
           {/* Bild links – volle Höhe */}
           <div className="relative aspect-video sm:aspect-auto sm:min-h-[50vh] lg:col-span-6 lg:row-span-1 lg:aspect-video lg:min-h-0 2xl:col-span-5 2xl:row-span-1 2xl:aspect-auto 2xl:min-h-0">
             <Image
-              src="/images/haus-placeholder.webp"
+              src="/images/titelbild-front.webp"
               alt="ELK Fertighaus"
               fill
               className="object-cover"
@@ -44,7 +44,7 @@ export default function Startseite() {
                 <div className="pointer-events-none absolute inset-y-0 left-24 w-16 bg-gray-50" />
               </div>
               <Image
-                src="/images/haus-placeholder2.webp"
+                src="/images/titelbild-back.webp"
                 alt="ELK Fertighaus"
                 fill
                 className="object-cover"
@@ -125,7 +125,7 @@ export default function Startseite() {
       </section>
 
       {/* Service-Karten */}
-      <section className="3xl:mt-24 mt-12 lg:mt-16">
+      <section className="py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid gap-8 lg:grid-cols-3">
             {landingPageTiles.map((item, index) => {
@@ -162,8 +162,8 @@ export default function Startseite() {
       {/* Wrapper to swap order on mobile/tablet but keep normal order on desktop (lg) */}
       <div className="flex flex-col-reverse lg:block">
         {/* Intro-Text */}
-        <section className="px-6 py-14 lg:py-28">
-          <div className="mx-auto max-w-7xl">
+        <section className="px-6 pt-16 pb-4 lg:py-24 lg:pt-0 lg:pb-0">
+          <div className="mx-auto max-w-7xl pb-0 lg:pb-28">
             <p className="mx-auto max-w-5xl text-base leading-relaxed text-neutral-700 lg:text-center lg:text-lg">
               Ob moderner Bungalow, energieeffizientes Einfamilienhaus oder
               schlüsselfertiges Mehrfamilienhaus – mit ELK setzen wir auf
@@ -183,7 +183,7 @@ export default function Startseite() {
         <section className="relative overflow-hidden bg-neutral-100">
           <div className="mx-auto grid max-w-7xl lg:grid-cols-2">
             {/* Text */}
-            <div className="flex flex-col justify-center px-6 py-20 lg:px-16 lg:py-28">
+            <div className="flex flex-col justify-center px-6 py-16 lg:px-16 lg:py-24">
               <h2 className="text-3xl leading-tight font-bold tracking-tight uppercase lg:text-3xl">
                 Sorgenfrei bauen beginnt mit einem Gespräch.
               </h2>
@@ -223,9 +223,9 @@ export default function Startseite() {
       </div>
 
       {/* Leistungen als elegante Liste */}
-      <section className="py-24 lg:py-32">
+      <section className="py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid gap-16 lg:grid-cols-2">
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
             <div>
               <h2 className="text-3xl font-semibold tracking-tight lg:text-4xl">
                 Meine Dienstleistungen
@@ -270,7 +270,7 @@ export default function Startseite() {
       </section>
 
       {/* Testimonials */}
-      <section className="bg-gray-50 py-12 lg:py-16">
+      <section className="bg-neutral-100 py-0 lg:py-0">
         {/* Constrained + rounded on desktop, full-width on mobile */}
         <div className="relative overflow-hidden md:rounded-none lg:mx-auto lg:max-w-7xl xl:rounded-3xl">
           {/* Background image */}

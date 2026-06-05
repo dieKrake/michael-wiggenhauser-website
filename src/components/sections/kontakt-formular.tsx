@@ -132,9 +132,6 @@ const KontaktFormular = () => {
                   <h3 className="mt-1 text-xl leading-none font-bold text-neutral-900">
                     Michael Wiggenhauser
                   </h3>
-                  <p className="mt-1.5 text-xs font-semibold text-neutral-500">
-                    Region Bodensee, Allgäu & Oberschwaben
-                  </p>
                 </div>
               </div>
 
@@ -147,9 +144,6 @@ const KontaktFormular = () => {
                   Ein Haus baut man meistens nur einmal im Leben. Lasst uns
                   diesen Weg von Anfang an gemeinsam gehen – ehrlich,
                   transparent und völlig sorgenfrei.
-                </p>
-                <p className="text-dark-brown relative z-10 mt-3 text-xs font-bold tracking-wider uppercase not-italic">
-                  — Michael Wiggenhauser
                 </p>
               </div>
             </div>
