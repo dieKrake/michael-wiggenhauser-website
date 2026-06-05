@@ -103,30 +103,6 @@ export const aboutMeStats = [
   { label: "Quadratmeter Wohnfläche", value: 5000, suffix: "+" },
 ];
 
-export const houseModels = [
-  {
-    name: "ELK Vision 115",
-    flaeche: "115 m²",
-    dach: "Spitzdach",
-    href: "https://vision.elkhaus.de/vision-115/",
-    image: "/images/placeholder-haus-1.jpg",
-  },
-  {
-    name: "ELK Life 143 SD",
-    flaeche: "143 m²",
-    dach: "Satteldach",
-    href: "https://www.elkhaus.de/fertighaus/einfamilienhaeuser/elk-life-143/",
-    image: "/images/placeholder-haus-2.jpg",
-  },
-  {
-    name: "ELK Design Bungalow 122",
-    flaeche: "122 m²",
-    dach: "Flachdach",
-    href: "https://www.elkhaus.de/fertighaus/bungalow/elk-design-edition-bungalow-122/",
-    image: "/images/placeholder-haus-3.jpg",
-  },
-];
-
 export const servicesList = [
   "Kostenlose Erstberatung vor Ort oder telefonisch",
   "Individuelle Bedarfsanalyse und Grundrissplanung",
@@ -143,6 +119,10 @@ export const elkGalery = {
   einfamilienhaus: {
     label: "Einfamilienhaus",
     bilder: [
+      {
+        src: "/images/Einfamilienhaus-1.webp",
+        alt: "Einfamilienhaus Modell 1",
+      },
       {
         src: "/images/Einfamilienhaus-2.webp",
         alt: "Einfamilienhaus Modell 2",

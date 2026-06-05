@@ -81,7 +81,7 @@ export default function SorgenfreiBauenPage() {
       </Section>
 
       {/* ELK Fertighäuser */}
-      <Section background="gray">
+      <Section className="bg-neutral-100">
         <Container>
           <Heading as="h2" className="lg:text-center">
             ELK Fertighäuser
@@ -163,7 +163,7 @@ export default function SorgenfreiBauenPage() {
           <ImageCarousel
             autoplay={true}
             showArrows={false}
-            bgImage="/images/Bungalow-3.webp"
+            bgImage="/images/Elk-Haus-Zimmer.webp"
             slides={sliderFactsData.map((fact) => ({
               title: fact.title,
               text: fact.text,
