@@ -18,13 +18,13 @@ export default function UeberMichPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden py-20 md:py-28">
+      <section className="relative overflow-hidden py-32 md:py-60 lg:py-68">
         <Image
-          src="/images/Hintergrund-Banner-über-mich.webp"
+          src="/images/michi-treppe.webp"
           alt="Michael Wiggenhauser – Persönliche Bauberatung für ELK Fertighäuser"
           fetchPriority="high"
           fill
-          className="object-cover object-center"
+          className="scale-200 object-cover object-center sm:scale-180 sm:object-[center_50%] lg:scale-100 lg:object-[center_50%]"
           priority
           sizes="100vw"
         />
