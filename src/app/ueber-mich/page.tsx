@@ -94,6 +94,26 @@ export default function UeberMichPage() {
         </Container>
       </Section>
 
+      {/* Statistiken */}
+      <Section className="bg-(--color-dark-brown)">
+        <Container>
+          <Heading as="h2" className="text-center text-white">
+            Erfolgsbilanz
+          </Heading>
+          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            {aboutMeStats.map((stat) => (
+              <div key={stat.label} className="text-center">
+                <p className="text-4xl font-bold text-white md:text-5xl">
+                  {stat.value}
+                  {stat.suffix}
+                </p>
+                <p className="text-primary-200 mt-2 text-sm">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </Section>
+
       <Section className="mt-0 pt-8 md:pt-12" background="gray">
         <Container>
           <Heading as="h2" className="lg:text-center">
@@ -121,26 +141,6 @@ export default function UeberMichPage() {
             möchtet: Ich freue mich darauf, euch kennenzulernen und euch auf dem
             Weg zu eurem Traumhaus zu begleiten.
           </p>
-        </Container>
-      </Section>
-
-      {/* Statistiken */}
-      <Section className="bg-(--color-dark-brown)">
-        <Container>
-          <Heading as="h2" className="text-center text-white">
-            Erfolgsbilanz
-          </Heading>
-          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {aboutMeStats.map((stat) => (
-              <div key={stat.label} className="text-center">
-                <p className="text-4xl font-bold text-white md:text-5xl">
-                  {stat.value}
-                  {stat.suffix}
-                </p>
-                <p className="text-primary-200 mt-2 text-sm">{stat.label}</p>
-              </div>
-            ))}
-          </div>
         </Container>
       </Section>
     </>

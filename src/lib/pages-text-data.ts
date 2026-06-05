@@ -84,10 +84,9 @@ export const testimonials = [
       "Die Beratung war von Anfang an persönlich und kompetent. Wir fühlen uns in unserem neuen Zuhause rundum wohl.",
   },
   {
-    name: "Thomas Weber",
-    location: "Bauherr aus Stuttgart",
-    quote:
-      "Vom Erstgespräch bis zur Schlüsselübergabe – alles lief reibungslos. Absolute Empfehlung!",
+    name: "Nils Kurz",
+    location: "Bauherr aus Saverwang",
+    quote: "Michi ist toll!",
   },
   {
     name: "Familie Schmidt",
