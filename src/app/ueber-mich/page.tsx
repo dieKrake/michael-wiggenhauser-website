@@ -80,11 +80,11 @@ export default function UeberMichPage() {
                 Persönlich, transparent und immer auf Augenhöhe.
               </p>
             </div>
-            <div className="aspect-4/3 overflow-hidden rounded-2xl">
+            <div className="order-first aspect-4/3 overflow-hidden rounded-2xl lg:order-0">
               <Image
-                src="/images/michi-treppe.webp"
+                src="/images/michi-about-2.webp"
                 alt="Michael Wiggenhauser"
-                className="h-full w-full scale-160 object-cover sm:scale-140 lg:scale-120"
+                className="h-full w-full scale-120 object-cover object-[center_44%] sm:scale-110 lg:scale-110"
                 width={1000}
                 height={600}
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -114,33 +114,50 @@ export default function UeberMichPage() {
         </Container>
       </Section>
 
-      <Section className="mt-0 pt-8 md:pt-12" background="gray">
+      {/* Persönliche Geschichte */}
+      <Section background="white">
         <Container>
-          <Heading as="h2" className="lg:text-center">
-            Immer für euch da. <br className="sm:hidden" /> Dort, wo ihr seid.
-          </Heading>
-          <p className="mt-4 sm:mt-8 lg:mt-12 lg:text-center">
-            Der Bau eines Hauses wirft viele Fragen auf – nicht nur während der
-            Planungsphase, sondern auch zwischendurch. Deshalb lege ich großen
-            Wert darauf, für meine Kunden jederzeit erreichbar zu sein. <br />
-            <br />
-            Ob telefonisch, per E-Mail, WhatsApp oder bei einem persönlichen
-            Termin: Ich unterstütze euch bei allen Fragen rund um Fertighaus,
-            Finanzierung, Grundstück, Hausplanung und Bauablauf. Besonders
-            empfehlen kann ich einen gemeinsamen Besuch in der FertighausWelt
-            Günzburg. Dort könnt ihr mit mir gemeinsam ein ELK-Musterhaus
-            erleben, Ideen sammeln und ein besseres Gefühl dafür bekommen, wie
-            euer zukünftiges Zuhause aussehen könnte. <br /> <br /> Mir ist der
-            persönliche Austausch vor Ort besonders wichtig. Egal, wo ihr seid -
-            ob in Aalen, Heidenheim, Ulm, Memmingen, Illertissen, ob in Kempten
-            oder im Allgäu. Ich bin dort, wo ihr seid - und betreue auch
-            regelmäßig Projekte in Augsburg, Günzburg, Neu-Ulm, Dillingen,
-            Nördlingen, Donauwörth, Ravensburg, Biberach, Landsberg am Lech und
-            vielen weiteren Regionen. <br /> <br /> Egal, ob ihr bereits
-            konkrete Pläne habt oder euch erst einmal unverbindlich informieren
-            möchtet: Ich freue mich darauf, euch kennenzulernen und euch auf dem
-            Weg zu eurem Traumhaus zu begleiten.
-          </p>
+          <div className="grid items-center gap-12 lg:grid-cols-2">
+            <div className="aspect-4/3 overflow-hidden rounded-2xl">
+              <Image
+                src="/images/michi-about-3.webp"
+                alt="Michael Wiggenhauser"
+                className="h-full w-full scale-120 object-cover object-[center_38%] sm:scale-110 lg:scale-110"
+                width={1000}
+                height={600}
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
+            <div>
+              <Heading as="h2" className="text-left">
+                Immer für euch da. <br /> Dort, wo ihr seid.
+              </Heading>
+              <p className="mt-4 text-left text-gray-600 md:mt-8">
+                Der Bau eines Hauses wirft viele Fragen auf – nicht nur während
+                der Planungsphase, sondern auch zwischendurch. Deshalb lege ich
+                großen Wert darauf, für meine Kunden jederzeit erreichbar zu
+                sein. <br />
+                <br />
+                Ob telefonisch, per E-Mail, WhatsApp oder bei einem persönlichen
+                Termin: Ich unterstütze euch bei allen Fragen rund um
+                Fertighaus, Finanzierung, Grundstück, Hausplanung und Bauablauf.
+                Besonders empfehlen kann ich einen gemeinsamen Besuch in der
+                FertighausWelt Günzburg. Dort könnt ihr mit mir gemeinsam ein
+                ELK-Musterhaus erleben, Ideen sammeln und ein besseres Gefühl
+                dafür bekommen, wie euer zukünftiges Zuhause aussehen könnte.{" "}
+                <br /> <br /> Mir ist der persönliche Austausch vor Ort
+                besonders wichtig. Egal, wo ihr seid - ob in Aalen, Heidenheim,
+                Ulm, Memmingen, Illertissen, ob in Kempten oder im Allgäu. Ich
+                bin dort, wo ihr seid - und betreue auch regelmäßig Projekte in
+                Augsburg, Günzburg, Neu-Ulm, Dillingen, Nördlingen, Donauwörth,
+                Ravensburg, Biberach, Landsberg am Lech und vielen weiteren
+                Regionen. <br /> <br /> Egal, ob ihr bereits konkrete Pläne habt
+                oder euch erst einmal unverbindlich informieren möchtet: Ich
+                freue mich darauf, euch kennenzulernen und euch auf dem Weg zu
+                eurem Traumhaus zu begleiten.
+              </p>
+            </div>
+          </div>
         </Container>
       </Section>
     </>
