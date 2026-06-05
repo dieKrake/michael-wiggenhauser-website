@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, HardHat, MessageCircle, Home } from "lucide-react";
+import { ArrowRight, HardHat, MessageCircle, Home, Check } from "lucide-react";
 import {
   heroSectionTextTop,
   landingPageTiles,
@@ -162,7 +162,7 @@ export default function Startseite() {
       {/* Wrapper to swap order on mobile/tablet but keep normal order on desktop (lg) */}
       <div className="flex flex-col-reverse lg:block">
         {/* Intro-Text */}
-        <section className="px-6 pt-16 pb-4 lg:py-24 lg:pt-0 lg:pb-0">
+        <section className="px-6 pt-16 pb-0 lg:py-24 lg:pt-0 lg:pb-0">
           <div className="mx-auto max-w-7xl pb-0 lg:pb-28">
             <p className="mx-auto max-w-5xl text-base leading-relaxed text-neutral-700 lg:text-center lg:text-lg">
               Ob moderner Bungalow, energieeffizientes Einfamilienhaus oder
@@ -242,7 +242,7 @@ export default function Startseite() {
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
             </div>
-            <ul className="space-y-4">
+            <ul className="space-y-5">
               {[
                 "Neubau von Einfamilien-, Doppel- und Mehrfamilienhäusern",
                 "Individuelle Grundrissplanung und Konfiguration",
@@ -252,10 +252,14 @@ export default function Startseite() {
               ].map((item) => (
                 <li
                   key={item}
-                  className="flex items-start gap-2 border-b border-neutral-100 pb-4 text-base text-neutral-700 md:text-lg"
+                  className="group flex items-start gap-4 border-b border-neutral-100 pt-1 pb-4 transition-all duration-300 hover:border-neutral-200"
                 >
-                  <strong className="shrink-0">—</strong>
-                  <strong>{item}</strong>
+                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-neutral-100 text-neutral-800 transition-colors duration-300 group-hover:bg-neutral-900 group-hover:text-white">
+                    <Check className="h-3.5 w-3.5 stroke-[2.5]" />
+                  </div>
+                  <span className="text-base font-medium text-neutral-700 transition-colors duration-300 group-hover:text-neutral-900 md:text-lg">
+                    {item}
+                  </span>
                 </li>
               ))}
               <Link

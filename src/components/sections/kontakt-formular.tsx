@@ -154,7 +154,7 @@ const KontaktFormular = () => {
                 href={`tel:${siteConfig.phone}`}
                 className="group hover:border-dark-brown/20 flex items-center gap-4 rounded-xl border border-neutral-200/50 bg-white/50 p-3.5 transition-all duration-300 hover:bg-white hover:shadow-md"
               >
-                <div className="bg-dark-brown/5 text-dark-brown group-hover:bg-dark-brown flex h-11 w-11 shrink-0 items-center justify-center rounded-lg transition-colors group-hover:text-white">
+                <div className="bg-dark-brown/5 text-dark-brown group-hover:bg-dark-brown flex h-11 w-11 shrink-0 items-center justify-center rounded-lg transition-colors duration-300 group-hover:text-white">
                   <Phone className="h-5 w-5" />
                 </div>
                 <div>
@@ -171,7 +171,7 @@ const KontaktFormular = () => {
                 href={`mailto:${siteConfig.email}`}
                 className="group hover:border-dark-brown/20 flex items-center gap-4 rounded-xl border border-neutral-200/50 bg-white/50 p-3.5 transition-all duration-300 hover:bg-white hover:shadow-md"
               >
-                <div className="bg-dark-brown/5 text-dark-brown group-hover:bg-dark-brown flex h-11 w-11 shrink-0 items-center justify-center rounded-lg transition-colors group-hover:text-white">
+                <div className="bg-dark-brown/5 text-dark-brown group-hover:bg-dark-brown flex h-11 w-11 shrink-0 items-center justify-center rounded-lg transition-colors duration-300 group-hover:text-white">
                   <Mail className="h-5 w-5" />
                 </div>
                 <div>
