@@ -159,65 +159,68 @@ export default function Startseite() {
         </div>
       </section>
 
-      {/* Intro-Text */}
-      <section className="px-6 py-14 lg:py-28">
-        <div className="mx-auto max-w-7xl">
-          <p className="mx-auto max-w-5xl text-base leading-relaxed text-neutral-700 lg:text-center lg:text-lg">
-            Ob moderner Bungalow, energieeffizientes Einfamilienhaus oder
-            schlüsselfertiges Mehrfamilienhaus – mit ELK setzen wir auf
-            nachhaltiges Bauen, hochwertige Architektur und maximale
-            Planungssicherheit. Gemeinsam verwirklichen wir euer modernes
-            Fertighaus.
-          </p>
-          <p className="mx-auto mt-4 max-w-5xl text-base leading-relaxed text-neutral-700 lg:text-center lg:text-lg">
-            Lasst uns euren Traum vom eigenen Fertighaus Schritt für Schritt
-            angehen: persönlich, planbar und sorgenfrei. Schreibt mir gerne für
-            eine kostenlose Erstberatung.
-          </p>
-        </div>
-      </section>
-
-      {/* Willkommens-Text */}
-      <section className="relative overflow-hidden bg-neutral-100">
-        <div className="mx-auto grid max-w-7xl lg:grid-cols-2">
-          {/* Text */}
-          <div className="flex flex-col justify-center px-6 py-20 lg:px-16 lg:py-28">
-            <h2 className="text-3xl leading-tight font-bold tracking-tight uppercase lg:text-3xl">
-              Sorgenfrei bauen beginnt mit einem Gespräch.
-            </h2>
-            <div className="mt-8 border-l-[3px] border-black pl-6">
-              <p className="text-base leading-relaxed text-neutral-600">
-                In einem kostenlosen Erstgespräch klären wir eure Wünsche,
-                Möglichkeiten und die nächsten Schritte auf dem Weg zum eigenen
-                Fertighaus. Gemeinsam sprechen wir über Finanzierung,
-                Hausplanung und den Ablauf eures Bauvorhabens – und klären alle
-                offenen Fragen.
-              </p>
-            </div>
-            <a
-              href="#kontakt"
-              className="group mt-10 inline-flex items-center gap-2 text-sm font-bold tracking-wider uppercase hover:underline"
-            >
-              Jetzt Kontakt aufnehmen{" "}
-              <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-            </a>
+      {/* Wrapper to swap order on mobile/tablet but keep normal order on desktop (lg) */}
+      <div className="flex flex-col-reverse lg:block">
+        {/* Intro-Text */}
+        <section className="px-6 py-14 lg:py-28">
+          <div className="mx-auto max-w-7xl">
+            <p className="mx-auto max-w-5xl text-base leading-relaxed text-neutral-700 lg:text-center lg:text-lg">
+              Ob moderner Bungalow, energieeffizientes Einfamilienhaus oder
+              schlüsselfertiges Mehrfamilienhaus – mit ELK setzen wir auf
+              nachhaltiges Bauen, hochwertige Architektur und maximale
+              Planungssicherheit. Gemeinsam verwirklichen wir euer modernes
+              Fertighaus.
+            </p>
+            <p className="mx-auto mt-4 max-w-5xl text-base leading-relaxed text-neutral-700 lg:text-center lg:text-lg">
+              Lasst uns euren Traum vom eigenen Fertighaus Schritt für Schritt
+              angehen: persönlich, planbar und sorgenfrei. Schreibt mir gerne
+              für eine kostenlose Erstberatung.
+            </p>
           </div>
+        </section>
 
-          {/* Bild */}
-          <div className="relative max-h-[600px] overflow-hidden lg:min-h-full">
-            <div className="relative aspect-3/4 w-full lg:absolute lg:inset-0 lg:aspect-auto">
-              <Image
-                src="/images/michi-gespraech.webp"
-                alt="Michael Wiggenhauser"
-                priority
-                fill
-                className="object-cover object-[center_20%] transition-transform duration-700 hover:scale-105"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
+        {/* Willkommens-Text */}
+        <section className="relative overflow-hidden bg-neutral-100">
+          <div className="mx-auto grid max-w-7xl lg:grid-cols-2">
+            {/* Text */}
+            <div className="flex flex-col justify-center px-6 py-20 lg:px-16 lg:py-28">
+              <h2 className="text-3xl leading-tight font-bold tracking-tight uppercase lg:text-3xl">
+                Sorgenfrei bauen beginnt mit einem Gespräch.
+              </h2>
+              <div className="mt-8 border-l-[3px] border-black pl-6">
+                <p className="text-base leading-relaxed text-neutral-600">
+                  In einem kostenlosen Erstgespräch klären wir eure Wünsche,
+                  Möglichkeiten und die nächsten Schritte auf dem Weg zum
+                  eigenen Fertighaus. Gemeinsam sprechen wir über Finanzierung,
+                  Hausplanung und den Ablauf eures Bauvorhabens – und klären
+                  alle offenen Fragen.
+                </p>
+              </div>
+              <a
+                href="#kontakt"
+                className="group mt-10 inline-flex items-center gap-2 text-sm font-bold tracking-wider uppercase hover:underline"
+              >
+                Jetzt Kontakt aufnehmen{" "}
+                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+              </a>
+            </div>
+
+            {/* Bild */}
+            <div className="relative max-h-[600px] overflow-hidden lg:min-h-full">
+              <div className="relative aspect-3/4 w-full lg:absolute lg:inset-0 lg:aspect-auto">
+                <Image
+                  src="/images/michi-gespraech.webp"
+                  alt="Michael Wiggenhauser"
+                  priority
+                  fill
+                  className="object-cover object-[center_20%] transition-transform duration-700 hover:scale-105"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       {/* Leistungen als elegante Liste */}
       <section className="py-24 lg:py-32">
