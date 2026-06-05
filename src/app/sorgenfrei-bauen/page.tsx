@@ -61,16 +61,16 @@ export default function SorgenfreiBauenPage() {
             euch auf das Wesentliche konzentrieren könnt.
           </p>
           <div className="mt-12">
-            <ul className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:mx-auto lg:max-w-4xl lg:grid-cols-3">
+            <ul className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:mx-auto lg:max-w-6xl lg:grid-cols-3">
               {servicesList.map((item) => (
                 <li
                   key={item}
-                  className="flex items-center gap-2 rounded-lg border border-neutral-100 bg-white p-2 shadow-sm"
+                  className="group flex items-center gap-4 rounded-xl border border-neutral-100 bg-white p-5 shadow-sm transition-all duration-300 hover:border-neutral-200"
                 >
-                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg">
-                    <Check className="h-4 w-4 text-gray-600" />
+                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-neutral-100 text-neutral-800 transition-colors duration-300 group-hover:bg-neutral-900 group-hover:text-white">
+                    <Check className="h-3.5 w-3.5 stroke-[2.5]" />
                   </div>
-                  <span className="text-[14px] leading-snug font-semibold text-neutral-700">
+                  <span className="text-base font-medium text-neutral-700 transition-colors duration-300 group-hover:text-neutral-900 md:text-lg">
                     {item}
                   </span>
                 </li>
