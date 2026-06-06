@@ -49,7 +49,11 @@ export function ImageCarousel({
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [fullscreenStartIndex, setFullscreenStartIndex] = useState(0);
-  const [fullscreenRef, fullscreenApi] = useEmblaCarousel({ loop: true });
+  const [fullscreenSelectedIndex, setFullscreenSelectedIndex] = useState(0);
+  const [fullscreenRef, fullscreenApi] = useEmblaCarousel({
+    loop: true,
+    startIndex: fullscreenStartIndex,
+  });
 
   const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
@@ -113,6 +117,7 @@ export function ImageCarousel({
   const openFullscreen = (index: number) => {
     if (!allowFullscreen) return;
     setFullscreenStartIndex(index);
+    setFullscreenSelectedIndex(index);
     setIsFullscreen(true);
     document.body.style.overflow = "hidden";
   };
@@ -138,12 +143,18 @@ export function ImageCarousel({
     };
   }, [isFullscreen]);
 
-  // Sync fullscreen carousel to start index when opening
+  // Listen to fullscreen carousel select events
   useEffect(() => {
-    if (isFullscreen && fullscreenApi) {
-      fullscreenApi.scrollTo(fullscreenStartIndex);
-    }
-  }, [isFullscreen, fullscreenStartIndex, fullscreenApi]);
+    if (!fullscreenApi) return;
+    const onSelect = () => {
+      setFullscreenSelectedIndex(fullscreenApi.selectedScrollSnap());
+    };
+    fullscreenApi.on("select", onSelect);
+    onSelect();
+    return () => {
+      fullscreenApi.off("select", onSelect);
+    };
+  }, [fullscreenApi, isFullscreen]);
 
   // Cleanup on unmount
   useEffect(() => {
@@ -404,7 +415,7 @@ export function ImageCarousel({
                   }}
                   className={cn(
                     "h-2 rounded-full transition-all duration-300",
-                    i === (fullscreenApi?.selectedScrollSnap() ?? 0)
+                    i === fullscreenSelectedIndex
                       ? "w-6 bg-white"
                       : "w-2 bg-white/40 hover:bg-white/60"
                   )}
