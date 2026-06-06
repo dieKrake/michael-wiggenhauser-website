@@ -122,6 +122,7 @@ const KontaktFormular = () => {
                     src="/images/michi-kontakt.webp"
                     alt="Michael Wiggenhauser"
                     fill
+                    sizes="80px"
                     className="object-cover"
                   />
                 </div>

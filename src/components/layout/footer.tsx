@@ -15,8 +15,7 @@ const Footer: FC = () => {
               alt={siteConfig.name}
               width={160}
               height={40}
-              className="w-32 object-contain md:w-36 lg:w-40"
-              style={{ height: "auto" }}
+              className="h-auto w-32 object-contain md:w-36 lg:w-40"
             />
             <p className="mt-3 text-sm leading-relaxed text-gray-200">
               {siteConfig.description}
