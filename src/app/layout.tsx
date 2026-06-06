@@ -7,6 +7,7 @@ import { siteConfig } from "@/lib/constants";
 import "./globals.css";
 import WhatsAppButton from "@/components/ui/whatsapp-button";
 import CookieConsent from "@/components/ui/cookie-consent";
+import ExitPopup from "@/components/ui/exit-popup";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -41,6 +42,7 @@ export default function RootLayout({
         <KontaktFormularWrapper />
         <Footer />
         <CookieConsent />
+        <ExitPopup />
       </body>
     </html>
   );
