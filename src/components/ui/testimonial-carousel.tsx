@@ -21,6 +21,7 @@ export function TestimonialCarousel({
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [canScrollPrev, setCanScrollPrev] = useState(false);
   const [canScrollNext, setCanScrollNext] = useState(false);
+  const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
 
   const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
@@ -31,6 +32,7 @@ export function TestimonialCarousel({
       setSelectedIndex(emblaApi.selectedScrollSnap());
       setCanScrollPrev(emblaApi.canScrollPrev());
       setCanScrollNext(emblaApi.canScrollNext());
+      setScrollSnaps(emblaApi.scrollSnapList());
     };
     emblaApi.on("select", onUpdate);
     emblaApi.on("reInit", onUpdate);
@@ -100,7 +102,7 @@ export function TestimonialCarousel({
           </button>
 
           <div className="flex gap-2">
-            {items.map((_, i) => (
+            {scrollSnaps.map((_, i) => (
               <button
                 key={i}
                 onClick={() => emblaApi?.scrollTo(i)}
