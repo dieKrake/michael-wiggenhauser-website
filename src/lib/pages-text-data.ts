@@ -40,6 +40,26 @@ export const faqItems = [
       "Ja – bei ELK könnt ihr selbst entscheiden, wie viel ihr beim Hausbau selbst übernehmen möchtet. Vom bezugsfertigen Fertighaus inklusive Küche bis hin zum Ausbauhaus mit komplettem Innenausbau gibt es verschiedene Ausbaustufen ganz nach euren Vorstellungen und eurem Budget.Wichtig dabei: Die Außenhülle eures Hauses ist immer komplett dicht und fachgerecht ausgeführt – für maximale Sicherheit und Gewährleistung. Auch Bodenplatte oder Keller können auf Wunsch bauseits umgesetzt werden.So verbindet ihr maximale Flexibilität mit der Sicherheit eines modernen ELK Fertighauses.",
   },
   {
+    question: "Ich habe kein Grundstück.",
+    answer:
+      "Das ist völlig normal. Tatsächlich haben viele meiner Bauherren zu Beginn noch kein passendes Grundstück gefunden. Durch mein regionales Netzwerk und meine Erfahrung im Fertighausbau kann ich euch bei der Grundstückssuche unterstützen und gemeinsam mit euch prüfen, welche Möglichkeiten in eurer Wunschregion bestehen. Oft ergeben sich Chancen, die man bei der eigenen Recherche nicht sofort entdeckt. ",
+  },
+  {
+    question: "Bin ich überhaupt förderfähig?",
+    answer:
+      "Viele Familien sind überrascht, welche Fördermöglichkeiten tatsächlich für sie infrage kommen. Ob KfW-Förderung, regionale Programme oder individuelle Finanzierungslösungen – die Voraussetzungen sind oft besser als gedacht. In einem persönlichen Gespräch prüfen wir gemeinsam eure Situation und finden heraus, welche Förderungen und Finanzierungsmöglichkeiten zu eurem Hausbau passen.",
+  },
+  {
+    question: "Habe ich zu wenig Eigenkapital?",
+    answer:
+      "Diese Frage höre ich fast täglich. Die gute Nachricht: Der Traum vom eigenen Fertighaus scheitert nicht zwangsläufig an einer bestimmten Summe auf dem Konto. Entscheidend ist immer die individuelle Gesamtsituation. Gemeinsam betrachten wir eure Möglichkeiten, kalkulieren realistisch und zeigen auf, welche Wege für euch sinnvoll und umsetzbar sind. ",
+  },
+  {
+    question: "Ich habe Angst vor laufenden, dauerhaften Kosten.",
+    answer:
+      "Gerade deshalb ist eine sorgfältige Planung so wichtig. Moderne ELK Fertighäuser überzeugen durch hohe Energieeffizienz, niedrige Heizkosten und eine langfristig planbare Kostenstruktur. Gemeinsam schauen wir uns eure monatlichen Möglichkeiten an und entwickeln eine Finanzierung, bei der ihr euch auch in Zukunft wohl fühlt. Mein Ziel ist, dass ihr nicht nur sorgenfrei baut, sondern auch sorgenfrei wohnt. ",
+  },
+  {
     question: "Wie sieht es mit Schallschutz und Brandschutz aus?",
     answer:
       "Moderne Holzfertighäuser von ELK überzeugen nicht nur durch Energieeffizienz, sondern auch durch hervorragenden Schall- und Brandschutz. Dank der innovativen Wand- und Deckenkonstruktionen erreichen ELK Fertighäuser Schallschutzwerte auf höchstem Niveau – vergleichbar mit klassischen Massivhäusern.Durch die präzise Vorfertigung der Bauelemente werden typische Baufehler minimiert, was zusätzlich für eine konstant hohe Qualität sorgt.Auch beim Brandschutz bieten moderne Holzfertighäuser maximale Sicherheit. Holz brennt deutlich langsamer als viele denken und verhält sich im Brandfall sehr berechenbar. Die größte Brandlast entsteht in Wohnhäusern meist durch Möbel, Textilien oder Einrichtung – unabhängig von der Bauweise.",

@@ -31,19 +31,17 @@ export default function ExitPopup() {
         {/* Content Section */}
         <div className="flex flex-col">
           <h2 className="mb-2 text-3xl leading-tight font-bold text-gray-900">
-            Warte kurz!
+            Noch kein Grundstück?
           </h2>
           <h3 className="mb-4 text-lg font-semibold text-(--color-dark-brown)">
-            Hast du noch offene Fragen zu deinem Bauvorhaben?
+            Perfekt für ein erstes Gespräch.
           </h3>
           <p className="mb-8 text-sm leading-relaxed text-gray-600 md:text-base">
-            Bevor du gehst: Ein Hausbau wirft viele Fragen auf. Nutze die Chance
-            auf ein{" "}
-            <span className="font-semibold text-gray-900">
-              kostenloses und unverbindliches Erstgespräch
-            </span>
-            . Ich berate dich gerne persönlich und zeige dir deinen besten Weg
-            ins neue Zuhause.
+            Wer früh plant, trifft später bessere Entscheidungen. Gemeinsam
+            zeige ich euch, welches Fertighaus zu euren Vorstellungen passt,
+            welche Voraussetzungen wichtig sind und helfe sogar bei der
+            Grundstückssuche. Kostenlos, unverbindlich und oft der entscheidende
+            erste Schritt zum Eigenheim.
           </p>
 
           <div className="flex flex-col gap-3 sm:flex-row sm:justify-end">
@@ -57,7 +55,7 @@ export default function ExitPopup() {
               onClick={scrollToContact}
               className="hover:bg-dark-brown/90 order-1 rounded-lg bg-(--color-dark-brown) px-6 py-3 text-center text-sm font-semibold text-white shadow-md transition-colors duration-200 hover:shadow-lg sm:order-2"
             >
-              Jetzt Termin vereinbaren
+              Jetzt Beratung vereinbaren
             </button>
           </div>
         </div>
