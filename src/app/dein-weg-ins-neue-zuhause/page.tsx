@@ -3,14 +3,15 @@ import Image from "next/image";
 import Container from "@/components/layout/container";
 import Section from "@/components/layout/section";
 import Heading from "@/components/ui/heading";
-import { financingSections, sellingBulletPoints } from "@/lib/pages-text-data";
+import { financingSections } from "@/lib/pages-text-data";
 import { ArrowRight, Home, Key } from "lucide-react";
 import Button from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Dein Weg ins Neue Zuhause",
+  title:
+    "In 6 Schritten zum Fertighaus | Bewährtes Modell inklusive Verkaufsberatung",
   description:
-    "6 Schritte zum neuen Zuhause – Ich begleite euren Weg zum ELK Fertighaus Schritt für Schritt d.",
+    "Intensive Beratung und Begleitung von der Planung über die Fertighaus-Konfiguration bis hin zur Schlüsselübergabe.",
 };
 
 export default function FinanzierungAblaufPage() {

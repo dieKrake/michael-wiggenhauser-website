@@ -11,9 +11,9 @@ import Button from "@/components/ui/button";
 import { TestimonialCarousel } from "@/components/ui/testimonial-carousel";
 
 export const metadata: Metadata = {
-  title: "Startseite",
+  title: "ELK Fertighaus-Fachberatung | Sorgenfrei zum Traumhaus ",
   description:
-    "Euer Fachberater für ELK Fertighäuser – Bauberatung, Finanzierung und individuelle Hausplanung.",
+    "Sorgenfrei ins neue Zuhause: Persönliche Beratung für euer ELK Fertighaus. Von Bedarfsanalyse und Planung bis zur Schlüsselübergabe - alles aus einer Hand.",
 };
 
 export default function Startseite() {

@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Image from "next/image";
 import Container from "@/components/layout/container";
 import Section from "@/components/layout/section";
 import Heading from "@/components/ui/heading";
 import Card from "@/components/ui/card";
-import Button from "@/components/ui/button";
 import { aboutMeData, aboutMeStats } from "@/lib/pages-text-data";
 
 export const metadata: Metadata = {
-  title: "Über mich",
+  title:
+    "ELK Fachberater Michael Wiggenhauser | Sorgenfrei bauen auf Augenhöhe",
   description:
-    "Michael Wiggenhauser – Euer erfahrener Fachberater für ELK Fertighäuser.",
+    "Euer persönlicher Ansprechpartner für ELK Fertighäuser. Stets erreichbar und dort, wo ihr seid.",
 };
 
 export default function UeberMichPage() {

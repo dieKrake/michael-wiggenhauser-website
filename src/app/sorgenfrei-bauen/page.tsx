@@ -16,9 +16,9 @@ import {
 } from "@/lib/pages-text-data";
 
 export const metadata: Metadata = {
-  title: "Sorgenfrei Bauen",
+  title: "Sorgenfrei bauen | Persönliche Fertighaus-Beratung mit ELK",
   description:
-    "Leistungen, ELK Fertighäuser und Immobilienverkauf – alles aus einer Hand.",
+    "Von der ersten Idee bis zum Einzug: Persönliche Fertighaus-Beratung, Hausplanung und Baubegleitung für euren sorgenfreien Hausbau mit ELK.",
 };
 
 export default function SorgenfreiBauenPage() {
