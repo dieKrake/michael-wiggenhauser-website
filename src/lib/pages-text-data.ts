@@ -98,21 +98,34 @@ export const faqItems = [
 
 export const testimonials = [
   {
-    name: "Familie Müller",
-    location: "Bauherren aus Heilbronn",
+    name: "Tabea Justenfels",
+    location: "Memmingen",
     quote:
-      "Die Beratung war von Anfang an persönlich und kompetent. Wir fühlen uns in unserem neuen Zuhause rundum wohl.",
+      "Bei jeder Frage hat man gemerkt, dass Michi den Hausbau selbst erlebt hat. Er kennt nicht nur die Theorie, sondern weiß genau, welche Entscheidungen und Herausforderungen auf dem Weg zum eigenen Zuhause wirklich auf einen zukommen.",
   },
   {
-    name: "Nils Kurz",
-    location: "Bauherr aus Saverwang",
-    quote: "Michi ist toll!",
+    name: "Andreas Kranwett",
+    location: "Neu-Ulm",
+    quote:
+      "Michael hat sich unglaublich viel Zeit genommen und Fragen gestellt, über die wir selbst noch gar nicht nachgedacht hatten. Jedes Gespräch war ehrlich, transparent und hat uns viel Sicherheit für den nächsten Schritt gegeben.",
   },
   {
-    name: "Familie Schmidt",
-    location: "Bauherren aus Mannheim",
+    name: "Thorsten Sessa",
+    location: "Biberach",
     quote:
-      "Dank der umfassenden Finanzierungsberatung konnten wir unseren Traum vom Eigenheim verwirklichen.",
+      "Von Fördermöglichkeiten bis hin zu Details bei der Hausplanung – Michi hat viele Punkte proaktiv eingebracht, die uns später viel Zeit, Geld und Nerven gespart haben. Genau deshalb war die Beratung für uns so wertvoll.",
+  },
+  {
+    name: "Luka Horvat",
+    location: "Aalen",
+    quote:
+      "Vor dem ersten Gespräch waren wir überzeugt, dass ein Fertighaus für uns finanziell nicht realistisch ist. Michi hat uns verschiedene Möglichkeiten aufgezeigt und einen Weg gefunden, der wirklich zu unserer Situation passt.",
+  },
+  {
+    name: "Celina Taubig",
+    location: "Landsberg am Lech",
+    quote:
+      "Die Betreuung hat nicht mit der Schlüsselübergabe aufgehört. Auch nach unserem Einzug konnten wir uns jederzeit bei Fragen melden. Genau diese Verlässlichkeit macht für uns den Unterschied.",
   },
 ];
 
