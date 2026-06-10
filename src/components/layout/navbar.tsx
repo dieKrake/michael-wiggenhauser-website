@@ -47,11 +47,11 @@ const Navbar: FC = () => {
             {/* Mobil & Tablet: Kleines Logo (unter lg) */}
             <div className="block lg:hidden">
               <Image
-                src="/images/Wiggenhauser-Logo-dark-small.png"
+                src="/images/Wiggenhauser-Logo-dark.png"
                 alt={siteConfig.name}
                 width={125}
                 height={40}
-                className="w-[60px] object-contain md:w-[70px]"
+                className="w-[100px] object-contain md:w-[110px]"
                 style={{ height: "auto" }}
                 priority
               />
