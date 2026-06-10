@@ -5,6 +5,7 @@ import Section from "@/components/layout/section";
 import Heading from "@/components/ui/heading";
 import Card from "@/components/ui/card";
 import { aboutMeData, aboutMeStats } from "@/lib/pages-text-data";
+import MapsLocation from "@/components/sections/maps-location";
 
 export const metadata: Metadata = {
   title:
@@ -159,6 +160,14 @@ export default function UeberMichPage() {
           </div>
         </Container>
       </Section>
+
+      <MapsLocation
+        address={{
+          street: "Hauptstraße 60",
+          city: "73489 Jagstzell",
+          extra: "Beratungsbüro",
+        }}
+      />
     </>
   );
 }
