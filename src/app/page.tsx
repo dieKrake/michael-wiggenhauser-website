@@ -1,14 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, HardHat, MessageCircle, Home, Check } from "lucide-react";
+import {
+  ArrowRight,
+  HardHat,
+  MessageCircle,
+  Home,
+  Check,
+  Section,
+  Container,
+} from "lucide-react";
 import {
   heroSectionTextTop,
   landingPageTiles,
+  sliderFactsData,
   testimonials,
 } from "@/lib/pages-text-data";
 import Button from "@/components/ui/button";
 import { TestimonialCarousel } from "@/components/ui/testimonial-carousel";
+import { ImageCarousel } from "@/components/ui/image-carousel";
 
 export const metadata: Metadata = {
   title: "ELK Fertighaus-Fachberatung | Sorgenfrei zum Traumhaus ",
@@ -209,11 +219,11 @@ export default function Startseite() {
             <div className="relative max-h-[600px] overflow-hidden lg:min-h-full">
               <div className="relative aspect-3/4 w-full lg:absolute lg:inset-0 lg:aspect-auto">
                 <Image
-                  src="/images/michi-gespraech.webp"
+                  src="/images/michi-treppe.webp"
                   alt="Michael Wiggenhauser"
                   priority
                   fill
-                  className="object-cover object-[center_20%] transition-transform duration-700 hover:scale-105"
+                  className="scale-200 object-cover transition-transform duration-700 sm:object-[center_120%] md:object-[center_130%] lg:scale-150 lg:object-[center_50%] lg:hover:scale-155"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
@@ -221,6 +231,19 @@ export default function Startseite() {
           </div>
         </section>
       </div>
+
+      {/* Slider Facts */}
+
+      <ImageCarousel
+        className="mt-12 px-4"
+        autoplay={true}
+        showArrows={false}
+        bgImage="/images/Elk-Haus-Zimmer.webp"
+        slides={sliderFactsData.map((fact) => ({
+          title: fact.title,
+          text: fact.text,
+        }))}
+      />
 
       {/* Leistungen als elegante Liste */}
       <section className="py-16 lg:py-24">

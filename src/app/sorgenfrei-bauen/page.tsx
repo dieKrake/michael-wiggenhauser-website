@@ -57,7 +57,7 @@ export default function SorgenfreiBauenPage() {
           </Heading>
           <p className="mt-4 max-w-2xl text-gray-600 lg:mx-auto lg:text-center">
             Als euer ELK-Fachberater übernehme ich die komplette Koordination
-            und Begleitung (Begleitung?) eures Fertighaus-Projekts. Damit ihr
+            und begleite euer Fertighaus-Projekt von Anfang bis Ende. Damit ihr
             euch auf das Wesentliche konzentrieren könnt.
           </p>
           <div className="mt-12">
@@ -87,10 +87,10 @@ export default function SorgenfreiBauenPage() {
             ELK Fertighäuser
           </Heading>
           <p className="mt-4 max-w-2xl lg:mx-auto lg:text-center lg:text-xl">
-            Als einer der führenden Hersteller Europas steht ELK für über 60
-            Jahre Erfahrung, schnelle Lieferzeiten zum Festpreis und komplette
-            Individualisierbarkeit. Jedes Haus wird exakt nach euren Wünschen
-            konfiguriert.
+            Als Marktführer in Europa steht ELK für über 60 Jahre Erfahrung,
+            schnelle Lieferzeiten zum Festpreis und komplette
+            Individualisierbarkeit. Ihr profitiert beim Hausbau von bewährten
+            Konzepten, hoher Qualität und Planungssicherheit.
           </p>
         </Container>
       </Section>
