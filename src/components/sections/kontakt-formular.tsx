@@ -10,6 +10,8 @@ import {
   CheckCircle2,
   XCircle,
   MapPin,
+  ChevronRight,
+  ArrowUpRight,
 } from "lucide-react";
 import Button from "@/components/ui/button";
 import { siteConfig } from "@/lib/constants";
@@ -177,7 +179,7 @@ const KontaktFormular = () => {
             <div className="mt-8 space-y-3 border-t border-neutral-200/60 pt-6">
               <a
                 href={`tel:${siteConfig.phone}`}
-                className="group hover:border-dark-brown/20 flex items-center gap-4 rounded-xl border border-neutral-200/50 bg-white/50 p-3.5 transition-all duration-300 hover:bg-white hover:shadow-md"
+                className="group hover:border-dark-brown/20 flex cursor-pointer items-center gap-4 rounded-xl border border-neutral-200/50 bg-white/50 p-3.5 transition-all duration-300 hover:bg-white hover:shadow-md"
               >
                 <div className="bg-dark-brown/5 text-dark-brown group-hover:bg-dark-brown flex h-11 w-11 shrink-0 items-center justify-center rounded-lg transition-colors duration-300 group-hover:text-white">
                   <Phone className="h-5 w-5" />
@@ -190,11 +192,12 @@ const KontaktFormular = () => {
                     {siteConfig.phone}
                   </p>
                 </div>
+                <ArrowUpRight className="group-hover:text-dark-brown ml-auto h-5 w-5 shrink-0 text-neutral-300 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
 
               <a
                 href={`mailto:${siteConfig.email}`}
-                className="group hover:border-dark-brown/20 flex items-center gap-4 rounded-xl border border-neutral-200/50 bg-white/50 p-3.5 transition-all duration-300 hover:bg-white hover:shadow-md"
+                className="group hover:border-dark-brown/20 flex cursor-pointer items-center gap-4 rounded-xl border border-neutral-200/50 bg-white/50 p-3.5 transition-all duration-300 hover:bg-white hover:shadow-md"
               >
                 <div className="bg-dark-brown/5 text-dark-brown group-hover:bg-dark-brown flex h-11 w-11 shrink-0 items-center justify-center rounded-lg transition-colors duration-300 group-hover:text-white">
                   <Mail className="h-5 w-5" />
@@ -207,13 +210,14 @@ const KontaktFormular = () => {
                     {siteConfig.email}
                   </p>
                 </div>
+                <ArrowUpRight className="group-hover:text-dark-brown ml-auto h-5 w-5 shrink-0 text-neutral-300 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
 
               <a
                 href={siteConfig.address.mapsHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group hover:border-dark-brown/20 flex items-center gap-4 rounded-xl border border-neutral-200/50 bg-white/50 p-3.5 transition-all duration-300 hover:bg-white hover:shadow-md"
+                className="group hover:border-dark-brown/20 flex cursor-pointer items-center gap-4 rounded-xl border border-neutral-200/50 bg-white/50 p-3.5 transition-all duration-300 hover:bg-white hover:shadow-md"
               >
                 <div className="bg-dark-brown/5 text-dark-brown group-hover:bg-dark-brown flex h-11 w-11 shrink-0 items-center justify-center rounded-lg transition-colors duration-300 group-hover:text-white">
                   <MapPin className="h-5 w-5" />
@@ -226,13 +230,14 @@ const KontaktFormular = () => {
                     {siteConfig.address.street}, {siteConfig.address.city}
                   </p>
                 </div>
+                <ArrowUpRight className="group-hover:text-dark-brown ml-auto h-5 w-5 shrink-0 text-neutral-300 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
 
               <a
                 href={siteConfig.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group hover:border-dark-brown/20 flex items-center gap-4 rounded-xl border border-neutral-200/50 bg-white/50 p-3.5 transition-all duration-300 hover:bg-white hover:shadow-md"
+                className="group hover:border-dark-brown/20 flex cursor-pointer items-center gap-4 rounded-xl border border-neutral-200/50 bg-white/50 p-3.5 transition-all duration-300 hover:bg-white hover:shadow-md"
               >
                 <div className="bg-dark-brown/5 text-dark-brown group-hover:bg-dark-brown flex h-11 w-11 shrink-0 items-center justify-center rounded-lg transition-colors duration-300 group-hover:text-white">
                   <InstagramIcon className="h-5 w-5" />
@@ -245,6 +250,7 @@ const KontaktFormular = () => {
                     @michael.wiggenhauser
                   </p>
                 </div>
+                <ArrowUpRight className="group-hover:text-dark-brown ml-auto h-5 w-5 shrink-0 text-neutral-300 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
             </div>
           </div>
