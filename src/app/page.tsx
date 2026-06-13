@@ -5,12 +5,10 @@ import { ArrowRight, HardHat, MessageCircle, Home, Check } from "lucide-react";
 import {
   heroSectionTextTop,
   landingPageTiles,
-  sliderFactsData,
   testimonials,
 } from "@/lib/pages-text-data";
 import Button from "@/components/ui/button";
 import { TestimonialCarousel } from "@/components/ui/testimonial-carousel";
-import { ImageCarousel } from "@/components/ui/image-carousel";
 
 export const metadata: Metadata = {
   title: "ELK Fertighaus-Fachberatung | Sorgenfrei zum Traumhaus ",
@@ -30,7 +28,7 @@ export default function Startseite() {
               src="/images/titelbild-front.webp"
               alt="ELK Fertighaus"
               fill
-              className="object-cover lg:object-[80%_center]"
+              className="object-cover"
               sizes="(max-width: 1024px) 100vw, 42vw"
               priority
               fetchPriority="high"

@@ -18,18 +18,19 @@ export default function UeberMichPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden py-32 md:py-60 lg:py-68">
+      <section className="relative mx-auto max-h-[500px] min-h-[370px] max-w-[2000px] overflow-hidden py-32 sm:min-h-[400px] md:py-60 lg:max-h-[400px] lg:min-h-[300px] lg:py-68">
         <Image
-          src="/images/michi-gespraech.webp"
+          src="/images/michi-treppe.webp"
           alt="Michael Wiggenhauser – Persönliche Bauberatung für ELK Fertighäuser"
           fetchPriority="high"
           fill
-          className="scale-150 object-cover object-center sm:scale-180 sm:object-[center_50%] lg:scale-100 lg:object-[center_20%]"
+          quality={100}
+          className="translate-x-9 translate-y-6 scale-260 object-cover object-center sm:translate-x-12 sm:scale-200 sm:object-[center_48%] md:scale-150 md:object-[center_50%] lg:translate-x-0 lg:translate-y-0 lg:scale-100 lg:object-[center_50%] xl:object-[center_47%]"
           priority
-          sizes="100vw"
+          sizes="(max-width: 640px) 250vw, (max-width: 1024px) 150vw, 100vw"
         />
-        <div className="absolute inset-0 bg-black/50" />
-        <Container className="relative z-10 lg:text-center">
+        <div className="absolute inset-0 hidden bg-black/35 md:block" />
+        <Container className="relative z-10 hidden md:block lg:text-center">
           <Heading as="h1" className="text-white">
             Michael Wiggenhauser
           </Heading>
