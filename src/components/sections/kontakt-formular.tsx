@@ -3,9 +3,33 @@
 import { useState, FormEvent, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import { Mail, Phone, Loader2, CheckCircle2, XCircle } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  Loader2,
+  CheckCircle2,
+  XCircle,
+  MapPin,
+} from "lucide-react";
 import Button from "@/components/ui/button";
 import { siteConfig } from "@/lib/constants";
+
+const InstagramIcon = ({ className }: { className?: string }) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+    aria-hidden="true"
+  >
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+  </svg>
+);
 
 interface FormErrors {
   name?: string;
@@ -181,6 +205,44 @@ const KontaktFormular = () => {
                   </p>
                   <p className="group-hover:text-dark-brown mt-0.5 text-sm font-bold text-neutral-900 transition-colors">
                     {siteConfig.email}
+                  </p>
+                </div>
+              </a>
+
+              <a
+                href={siteConfig.address.mapsHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group hover:border-dark-brown/20 flex items-center gap-4 rounded-xl border border-neutral-200/50 bg-white/50 p-3.5 transition-all duration-300 hover:bg-white hover:shadow-md"
+              >
+                <div className="bg-dark-brown/5 text-dark-brown group-hover:bg-dark-brown flex h-11 w-11 shrink-0 items-center justify-center rounded-lg transition-colors duration-300 group-hover:text-white">
+                  <MapPin className="h-5 w-5" />
+                </div>
+                <div>
+                  <p className="text-[11px] font-bold tracking-wider text-neutral-400 uppercase">
+                    Standort & Anfahrt
+                  </p>
+                  <p className="group-hover:text-dark-brown mt-0.5 text-sm font-bold text-neutral-900 transition-colors">
+                    {siteConfig.address.street}, {siteConfig.address.city}
+                  </p>
+                </div>
+              </a>
+
+              <a
+                href={siteConfig.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group hover:border-dark-brown/20 flex items-center gap-4 rounded-xl border border-neutral-200/50 bg-white/50 p-3.5 transition-all duration-300 hover:bg-white hover:shadow-md"
+              >
+                <div className="bg-dark-brown/5 text-dark-brown group-hover:bg-dark-brown flex h-11 w-11 shrink-0 items-center justify-center rounded-lg transition-colors duration-300 group-hover:text-white">
+                  <InstagramIcon className="h-5 w-5" />
+                </div>
+                <div>
+                  <p className="text-[11px] font-bold tracking-wider text-neutral-400 uppercase">
+                    Folge mir auf Instagram
+                  </p>
+                  <p className="group-hover:text-dark-brown mt-0.5 text-sm font-bold text-neutral-900 transition-colors">
+                    @michael.wiggenhauser
                   </p>
                 </div>
               </a>

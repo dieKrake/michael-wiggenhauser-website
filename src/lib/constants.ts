@@ -2,9 +2,17 @@ export const siteConfig = {
   name: "Michael Wiggenhauser",
   description:
     "Euer Fachberater für ELK Fertighäuser – Verkauf, Bauberatung und individuelle Hausplanung.",
-  url: "https://www.michael-wiggenhauser.de",
+  url: "https://www.sorgenfreibauen.de",
   phone: "+49 176 43488686",
   email: "michael.wiggenhauser@elkhaus.de",
+  instagram:
+    "https://www.instagram.com/michael.wiggenhauser?utm_source=qr&igsh=MXc4dHJkbzcxNnh5NQ==",
+  address: {
+    street: "Gartenweg 3",
+    city: "73492 Schwabsberg",
+    mapsHref:
+      "https://www.google.com/maps/search/?api=1&query=Gartenweg+3%2C+73492+Schwabsberg",
+  },
 };
 
 export const navigation = [
