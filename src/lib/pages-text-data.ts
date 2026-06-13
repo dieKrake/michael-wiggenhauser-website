@@ -313,6 +313,22 @@ export const aboutMeData = {
   ],
 };
 
+export const partnerData = {
+  title: "Partner",
+  partners: [
+    {
+      name: "Partner 1",
+      image: "",
+      alt: "Logo Partner 1",
+    },
+    {
+      name: "Partner 2",
+      image: "",
+      alt: "Logo Partner 2",
+    },
+  ],
+};
+
 export const whyElkSectionData = {
   title: "Warum ein ELK Fertighaus?",
   description:

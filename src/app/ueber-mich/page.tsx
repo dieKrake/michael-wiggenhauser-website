@@ -4,6 +4,7 @@ import Container from "@/components/layout/container";
 import Section from "@/components/layout/section";
 import Heading from "@/components/ui/heading";
 import Card from "@/components/ui/card";
+import PartnerSection from "@/components/sections/partner-section";
 import { aboutMeData, aboutMeStats } from "@/lib/pages-text-data";
 
 export const metadata: Metadata = {
@@ -160,6 +161,9 @@ export default function UeberMichPage() {
           </div>
         </Container>
       </Section>
+
+      {/* Partner */}
+      <PartnerSection />
     </>
   );
 }
