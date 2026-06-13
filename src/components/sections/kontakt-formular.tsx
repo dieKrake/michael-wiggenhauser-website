@@ -134,10 +134,10 @@ const KontaktFormular = () => {
   return (
     <section
       id="kontakt"
-      className="scroll-mt-20 bg-linear-to-b from-white via-neutral-50 to-neutral-100 py-24 md:py-32"
+      className="bg-linear-to-b from-white via-neutral-50 to-neutral-100 py-24 md:py-32"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid gap-16 md:grid-cols-2 md:items-stretch">
+        <div className="grid gap-12 md:grid-cols-[5fr_6fr] md:items-stretch lg:grid-cols-[5fr_7fr] lg:gap-16">
           {/* Info-Seite (Personal Trust & Quote) */}
           <div className="flex h-full flex-col justify-between lg:pr-4">
             <div>
@@ -258,95 +258,97 @@ const KontaktFormular = () => {
           {/* Formular */}
           <form
             onSubmit={handleSubmit}
-            className="space-y-5 rounded-2xl border border-neutral-200 bg-white p-6 shadow-lg shadow-neutral-200/50 sm:p-8"
+            className="flex h-full flex-col gap-5 rounded-2xl border border-neutral-200 bg-white p-6 shadow-lg shadow-neutral-200/50 sm:p-8"
           >
-            <h3 className="text-dark-brown mb-6 text-2xl font-bold tracking-tight">
-              Kontakt
-            </h3>
+            <div className="flex flex-col gap-5">
+              <h3 className="text-dark-brown mb-2 text-2xl font-bold tracking-tight">
+                Kontakt
+              </h3>
 
-            {/* Status-Meldungen */}
-            {submitStatus === "success" && (
-              <div className="flex items-start gap-3 rounded-xl border border-emerald-100 bg-emerald-50/50 p-4 text-emerald-800">
-                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-emerald-600" />
-                <div>
-                  <h4 className="text-sm font-semibold">
-                    Nachricht erfolgreich gesendet!
-                  </h4>
-                  <p className="mt-1 text-xs text-emerald-700/90">
-                    Vielen Dank für dein Interesse. Ich werde mich so schnell
-                    wie möglich persönlich bei dir melden.
-                  </p>
+              {/* Status-Meldungen */}
+              {submitStatus === "success" && (
+                <div className="flex items-start gap-3 rounded-xl border border-emerald-100 bg-emerald-50/50 p-4 text-emerald-800">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-emerald-600" />
+                  <div>
+                    <h4 className="text-sm font-semibold">
+                      Nachricht erfolgreich gesendet!
+                    </h4>
+                    <p className="mt-1 text-xs text-emerald-700/90">
+                      Vielen Dank für dein Interesse. Ich werde mich so schnell
+                      wie möglich persönlich bei dir melden.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
 
-            {submitStatus === "error" && (
-              <div className="flex items-start gap-3 rounded-xl border border-red-100 bg-red-50/50 p-4 text-red-800">
-                <XCircle className="mt-0.5 h-5 w-5 shrink-0 text-red-600" />
-                <div>
-                  <h4 className="text-sm font-semibold">
-                    Senden fehlgeschlagen
-                  </h4>
-                  <p className="mt-1 text-xs text-red-700/90">
-                    Es gab ein Problem beim Übermitteln deiner Nachricht. Bitte
-                    versuche es später noch einmal oder kontaktiere mich direkt
-                    telefonisch.
-                  </p>
+              {submitStatus === "error" && (
+                <div className="flex items-start gap-3 rounded-xl border border-red-100 bg-red-50/50 p-4 text-red-800">
+                  <XCircle className="mt-0.5 h-5 w-5 shrink-0 text-red-600" />
+                  <div>
+                    <h4 className="text-sm font-semibold">
+                      Senden fehlgeschlagen
+                    </h4>
+                    <p className="mt-1 text-xs text-red-700/90">
+                      Es gab ein Problem beim Übermitteln deiner Nachricht.
+                      Bitte versuche es später noch einmal oder kontaktiere mich
+                      direkt telefonisch.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
 
-            <div className="grid gap-5 sm:grid-cols-2">
-              <div>
-                <label
-                  htmlFor="contact-name"
-                  className="block text-sm font-medium text-neutral-700"
-                >
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="contact-name"
-                  name="name"
-                  value={formData.name || ""}
-                  onChange={handleChange}
-                  className={`mt-1.5 block w-full rounded-xl border px-4 py-3 text-[15px] transition-colors focus:outline-none ${
-                    errors.name
-                      ? "border-red-500 bg-red-50 focus:border-red-500"
-                      : "border-neutral-200 bg-neutral-50 focus:border-black focus:bg-white"
-                  }`}
-                  placeholder="Dein Name"
-                />
-                {errors.name && (
-                  <p className="mt-1 text-xs text-red-600">{errors.name}</p>
-                )}
-              </div>
-              <div>
-                <label
-                  htmlFor="contact-email"
-                  className="block text-sm font-medium text-neutral-700"
-                >
-                  E-Mail
-                </label>
-                <input
-                  type="email"
-                  id="contact-email"
-                  name="email"
-                  value={formData.email || ""}
-                  onChange={handleChange}
-                  className={`mt-1.5 block w-full rounded-xl border px-4 py-3 text-[15px] transition-colors focus:outline-none ${
-                    errors.email
-                      ? "border-red-500 bg-red-50 focus:border-red-500"
-                      : "border-neutral-200 bg-neutral-50 focus:border-black focus:bg-white"
-                  }`}
-                  placeholder={siteConfig.email}
-                />
-                {errors.email && (
-                  <p className="mt-1 text-xs text-red-600">{errors.email}</p>
-                )}
+              <div className="grid gap-5 sm:grid-cols-2">
+                <div>
+                  <label
+                    htmlFor="contact-name"
+                    className="block text-sm font-medium text-neutral-700"
+                  >
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    value={formData.name || ""}
+                    onChange={handleChange}
+                    className={`mt-1.5 block w-full rounded-xl border px-4 py-3 text-[15px] transition-colors focus:outline-none ${
+                      errors.name
+                        ? "border-red-500 bg-red-50 focus:border-red-500"
+                        : "border-neutral-200 bg-neutral-50 focus:border-black focus:bg-white"
+                    }`}
+                    placeholder="Dein Name"
+                  />
+                  {errors.name && (
+                    <p className="mt-1 text-xs text-red-600">{errors.name}</p>
+                  )}
+                </div>
+                <div>
+                  <label
+                    htmlFor="contact-email"
+                    className="block text-sm font-medium text-neutral-700"
+                  >
+                    E-Mail
+                  </label>
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    value={formData.email || ""}
+                    onChange={handleChange}
+                    className={`mt-1.5 block w-full rounded-xl border px-4 py-3 text-[15px] transition-colors focus:outline-none ${
+                      errors.email
+                        ? "border-red-500 bg-red-50 focus:border-red-500"
+                        : "border-neutral-200 bg-neutral-50 focus:border-black focus:bg-white"
+                    }`}
+                    placeholder={siteConfig.email}
+                  />
+                  {errors.email && (
+                    <p className="mt-1 text-xs text-red-600">{errors.email}</p>
+                  )}
+                </div>
               </div>
             </div>
-            <div>
+            <div className="flex min-h-[150px] flex-1 flex-col">
               <label
                 htmlFor="contact-message"
                 className="block text-sm font-medium text-neutral-700"
@@ -359,7 +361,7 @@ const KontaktFormular = () => {
                 value={formData.message || ""}
                 onChange={handleChange}
                 rows={5}
-                className={`mt-1.5 block w-full rounded-xl border px-4 py-3 text-[15px] transition-colors focus:outline-none ${
+                className={`mt-1.5 block min-h-[120px] w-full flex-1 resize-none rounded-xl border px-4 py-3 text-[15px] transition-colors focus:outline-none md:h-0 ${
                   errors.message
                     ? "border-red-500 bg-red-50 focus:border-red-500"
                     : "border-neutral-200 bg-neutral-50 focus:border-black focus:bg-white"
@@ -370,56 +372,60 @@ const KontaktFormular = () => {
                 <p className="mt-1 text-xs text-red-600">{errors.message}</p>
               )}
             </div>
-            <div className="flex items-start gap-2.5">
-              <input
-                type="checkbox"
-                id="contact-datenschutz"
-                name="datenschutz"
-                checked={formData.datenschutz || false}
-                onChange={handleChange}
-                className={`mt-1 h-4 w-4 rounded text-black focus:ring-black ${
-                  errors.datenschutz ? "border-red-500" : "border-neutral-300"
-                }`}
-              />
-              <label
-                htmlFor="contact-datenschutz"
-                className="text-sm leading-relaxed text-neutral-500"
-              >
-                Ich habe die{" "}
-                <a
-                  href="/agb"
-                  className="text-neutral-700 underline underline-offset-2 hover:text-black"
+            <div className="flex flex-col gap-5 pt-2">
+              <div className="flex items-start gap-2.5">
+                <input
+                  type="checkbox"
+                  id="contact-datenschutz"
+                  name="datenschutz"
+                  checked={formData.datenschutz || false}
+                  onChange={handleChange}
+                  className={`mt-1 h-4 w-4 rounded text-black focus:ring-black ${
+                    errors.datenschutz ? "border-red-500" : "border-neutral-300"
+                  }`}
+                />
+                <label
+                  htmlFor="contact-datenschutz"
+                  className="text-sm leading-relaxed text-neutral-500"
                 >
-                  AGB
-                </a>{" "}
-                und die{" "}
-                <a
-                  href="/datenschutz"
-                  className="text-neutral-700 underline underline-offset-2 hover:text-black"
-                >
-                  Datenschutzerklärung
-                </a>{" "}
-                gelesen und stimme der Verarbeitung meiner Daten zu.
-              </label>
-            </div>
-            {errors.datenschutz && (
-              <p className="mt-1 text-xs text-red-600">{errors.datenschutz}</p>
-            )}
-            <Button
-              type="submit"
-              variant="accent"
-              className="flex w-full items-center justify-center gap-2"
-              disabled={submitStatus === "loading"}
-            >
-              {submitStatus === "loading" ? (
-                <>
-                  <Loader2 className="h-4 w-4 animate-spin" />
-                  Wird gesendet...
-                </>
-              ) : (
-                "Nachricht senden"
+                  Ich habe die{" "}
+                  <a
+                    href="/agb"
+                    className="text-neutral-700 underline underline-offset-2 hover:text-black"
+                  >
+                    AGB
+                  </a>{" "}
+                  und die{" "}
+                  <a
+                    href="/datenschutz"
+                    className="text-neutral-700 underline underline-offset-2 hover:text-black"
+                  >
+                    Datenschutzerklärung
+                  </a>{" "}
+                  gelesen und stimme der Verarbeitung meiner Daten zu.
+                </label>
+              </div>
+              {errors.datenschutz && (
+                <p className="mt-1 text-xs text-red-600">
+                  {errors.datenschutz}
+                </p>
               )}
-            </Button>
+              <Button
+                type="submit"
+                variant="accent"
+                className="flex w-full items-center justify-center gap-2"
+                disabled={submitStatus === "loading"}
+              >
+                {submitStatus === "loading" ? (
+                  <>
+                    <Loader2 className="h-4 w-4 animate-spin" />
+                    Wird gesendet...
+                  </>
+                ) : (
+                  "Nachricht senden"
+                )}
+              </Button>
+            </div>
           </form>
         </div>
       </div>

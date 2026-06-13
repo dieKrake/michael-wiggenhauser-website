@@ -115,7 +115,7 @@ export default function UeberMichPage() {
       </Section>
 
       {/* Persönliche Geschichte */}
-      <Section background="white">
+      <Section background="white" className="py-16 sm:pb-8 md:pt-24 md:pb-8">
         <Container>
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="aspect-4/3 overflow-hidden rounded-2xl">
