@@ -132,7 +132,7 @@ export default function SorgenfreiBauenPage() {
         <div className="mt-8 flex flex-row items-stretch">
           <div className="relative overflow-hidden sm:w-1/3">
             <Image
-              src="/images/elk-haus.webp"
+              src="/images/Warum-ELK.webp"
               alt="ELK Haus"
               fill
               className="hidden object-cover object-left sm:block"
