@@ -1,15 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import {
-  ArrowRight,
-  HardHat,
-  MessageCircle,
-  Home,
-  Check,
-  Section,
-  Container,
-} from "lucide-react";
+import { ArrowRight, HardHat, MessageCircle, Home, Check } from "lucide-react";
 import {
   heroSectionTextTop,
   landingPageTiles,
@@ -38,7 +30,7 @@ export default function Startseite() {
               src="/images/titelbild-front.webp"
               alt="ELK Fertighaus"
               fill
-              className="object-cover"
+              className="object-cover lg:object-[80%_center]"
               sizes="(max-width: 1024px) 100vw, 42vw"
               priority
               fetchPriority="high"
@@ -170,9 +162,9 @@ export default function Startseite() {
       </section>
 
       {/* Wrapper to swap order on mobile/tablet but keep normal order on desktop (lg) */}
-      <div className="flex flex-col-reverse lg:block">
+      <div className="flex flex-col">
         {/* Intro-Text */}
-        <section className="px-6 pt-16 pb-0 lg:py-24 lg:pt-0 lg:pb-0">
+        <section className="hidden px-6 pt-16 pb-0 lg:block lg:py-24 lg:pt-0 lg:pb-0">
           <div className="mx-auto max-w-7xl pb-0 lg:pb-28">
             <p className="mx-auto max-w-5xl text-base leading-relaxed text-neutral-700 lg:text-center lg:text-lg">
               Ob moderner Bungalow, energieeffizientes Einfamilienhaus oder
@@ -216,14 +208,14 @@ export default function Startseite() {
             </div>
 
             {/* Bild */}
-            <div className="relative max-h-[600px] overflow-hidden lg:min-h-full">
+            <div className="relative max-h-[350px] overflow-hidden sm:max-h-[450px] lg:min-h-full">
               <div className="relative aspect-3/4 w-full lg:absolute lg:inset-0 lg:aspect-auto">
                 <Image
                   src="/images/michi-treppe.webp"
                   alt="Michael Wiggenhauser"
                   priority
                   fill
-                  className="scale-200 object-cover transition-transform duration-700 sm:object-[center_120%] md:object-[center_130%] lg:scale-150 lg:object-[center_50%] lg:hover:scale-155"
+                  className="translate-x-6 scale-220 object-cover object-[center_100%] transition-transform duration-700 min-[440px]:object-[center_140%] min-[700px]:translate-y-[-10px] min-[760px]:translate-y-[-25px] min-[820px]:translate-y-[-40px] min-[940px]:translate-y-[-55px] sm:translate-x-14 sm:object-[center_150%] md:translate-x-13 md:scale-170 lg:translate-x-10 lg:translate-y-0 lg:scale-200 lg:object-[center_48%] lg:hover:scale-205"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
@@ -231,19 +223,6 @@ export default function Startseite() {
           </div>
         </section>
       </div>
-
-      {/* Slider Facts */}
-
-      <ImageCarousel
-        className="mt-12 px-4"
-        autoplay={true}
-        showArrows={false}
-        bgImage="/images/Elk-Haus-Zimmer.webp"
-        slides={sliderFactsData.map((fact) => ({
-          title: fact.title,
-          text: fact.text,
-        }))}
-      />
 
       {/* Leistungen als elegante Liste */}
       <section className="py-16 lg:py-24">
