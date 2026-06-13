@@ -6,6 +6,7 @@ import Heading from "@/components/ui/heading";
 import { financingSections } from "@/lib/pages-text-data";
 import { ArrowRight, Home, Key } from "lucide-react";
 import Button from "@/components/ui/button";
+import WorriesSection from "@/components/sections/worries-section";
 
 export const metadata: Metadata = {
   title:
@@ -116,6 +117,9 @@ export default function FinanzierungAblaufPage() {
           </div>
         </div>
       </section>
+
+      {/* Bedenken / Häufige Sorgen */}
+      <WorriesSection />
 
       {/* Übergang: Vom neuen Haus zum Verkauf des alten */}
       <section className="hidden bg-(--color-dark-brown) text-white lg:block">
