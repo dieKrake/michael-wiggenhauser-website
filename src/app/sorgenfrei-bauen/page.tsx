@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Check } from "lucide-react";
+import { Check, ChevronDown } from "lucide-react";
 import Container from "@/components/layout/container";
 import Section from "@/components/layout/section";
 import Heading from "@/components/ui/heading";
@@ -60,12 +60,12 @@ export default function SorgenfreiBauenPage() {
             und begleite euer Fertighaus-Projekt von Anfang bis Ende. Damit ihr
             euch auf das Wesentliche konzentrieren könnt.
           </p>
-          <div className="mt-12">
-            <ul className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:mx-auto lg:max-w-6xl lg:grid-cols-3">
+          <div className="relative mt-12">
+            <ul className="grid max-h-96 grid-cols-1 gap-4 overflow-y-auto scroll-smooth px-0.5 py-1 md:max-h-none md:grid-cols-2 md:overflow-visible lg:mx-auto lg:max-w-6xl lg:grid-cols-3">
               {servicesList.map((item) => (
                 <li
                   key={item}
-                  className="group flex items-center gap-4 rounded-xl border border-neutral-100 bg-white p-5 shadow-sm transition-all duration-300 hover:border-neutral-200"
+                  className="group flex snap-start items-center gap-4 rounded-xl border border-neutral-100 bg-white p-5 shadow-sm transition-all duration-300 hover:border-neutral-200"
                 >
                   <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-neutral-100 text-neutral-800 transition-colors duration-300 group-hover:bg-neutral-900 group-hover:text-white">
                     <Check className="h-3.5 w-3.5 stroke-[2.5]" />
@@ -76,6 +76,17 @@ export default function SorgenfreiBauenPage() {
                 </li>
               ))}
             </ul>
+            {/* Verlaufs-Fades als Scroll-Hinweis – nur auf dem Smartphone */}
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-x-0 top-0 h-8 bg-linear-to-b from-white to-transparent md:hidden"
+            />
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-x-0 bottom-0 flex h-12 items-end justify-center bg-linear-to-t from-white via-white/80 to-transparent md:hidden"
+            >
+              <ChevronDown className="h-5 w-5 animate-bounce text-neutral-400" />
+            </div>
           </div>
         </Container>
       </Section>
