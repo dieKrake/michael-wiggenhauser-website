@@ -139,7 +139,7 @@ const KontaktFormular = () => {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-[5fr_6fr] md:items-stretch lg:grid-cols-[5fr_7fr] lg:gap-16">
           {/* Info-Seite (Personal Trust & Quote) */}
-          <div className="flex h-full flex-col justify-between lg:pr-4">
+          <div className="flex h-full min-w-0 flex-col justify-between lg:pr-4">
             <div>
               {/* Profil-Header */}
               <div className="flex items-center gap-5">
@@ -184,11 +184,11 @@ const KontaktFormular = () => {
                 <div className="bg-dark-brown/5 text-dark-brown group-hover:bg-dark-brown flex h-11 w-11 shrink-0 items-center justify-center rounded-lg transition-colors duration-300 group-hover:text-white">
                   <Phone className="h-5 w-5" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-[11px] font-bold tracking-wider text-neutral-400 uppercase">
                     Telefonisch erreichbar
                   </p>
-                  <p className="group-hover:text-dark-brown mt-0.5 text-sm font-bold text-neutral-900 transition-colors">
+                  <p className="group-hover:text-dark-brown mt-0.5 truncate text-sm font-bold text-neutral-900 transition-colors">
                     {siteConfig.phone}
                   </p>
                 </div>
@@ -202,11 +202,11 @@ const KontaktFormular = () => {
                 <div className="bg-dark-brown/5 text-dark-brown group-hover:bg-dark-brown flex h-11 w-11 shrink-0 items-center justify-center rounded-lg transition-colors duration-300 group-hover:text-white">
                   <Mail className="h-5 w-5" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-[11px] font-bold tracking-wider text-neutral-400 uppercase">
                     E-Mail schreiben
                   </p>
-                  <p className="group-hover:text-dark-brown mt-0.5 text-sm font-bold text-neutral-900 transition-colors">
+                  <p className="group-hover:text-dark-brown mt-0.5 truncate text-sm font-bold text-neutral-900 transition-colors">
                     {siteConfig.email}
                   </p>
                 </div>
@@ -222,11 +222,11 @@ const KontaktFormular = () => {
                 <div className="bg-dark-brown/5 text-dark-brown group-hover:bg-dark-brown flex h-11 w-11 shrink-0 items-center justify-center rounded-lg transition-colors duration-300 group-hover:text-white">
                   <MapPin className="h-5 w-5" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-[11px] font-bold tracking-wider text-neutral-400 uppercase">
                     Standort & Anfahrt
                   </p>
-                  <p className="group-hover:text-dark-brown mt-0.5 text-sm font-bold text-neutral-900 transition-colors">
+                  <p className="group-hover:text-dark-brown mt-0.5 truncate text-sm font-bold text-neutral-900 transition-colors">
                     {siteConfig.address.street}, {siteConfig.address.city}
                   </p>
                 </div>
@@ -242,11 +242,11 @@ const KontaktFormular = () => {
                 <div className="bg-dark-brown/5 text-dark-brown group-hover:bg-dark-brown flex h-11 w-11 shrink-0 items-center justify-center rounded-lg transition-colors duration-300 group-hover:text-white">
                   <InstagramIcon className="h-5 w-5" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-[11px] font-bold tracking-wider text-neutral-400 uppercase">
                     Folge mir auf Instagram
                   </p>
-                  <p className="group-hover:text-dark-brown mt-0.5 text-sm font-bold text-neutral-900 transition-colors">
+                  <p className="group-hover:text-dark-brown mt-0.5 truncate text-sm font-bold text-neutral-900 transition-colors">
                     @michael.wiggenhauser
                   </p>
                 </div>
@@ -258,7 +258,7 @@ const KontaktFormular = () => {
           {/* Formular */}
           <form
             onSubmit={handleSubmit}
-            className="flex h-full flex-col gap-5 rounded-2xl border border-neutral-200 bg-white p-6 shadow-lg shadow-neutral-200/50 sm:p-8"
+            className="flex h-full min-w-0 flex-col gap-5 rounded-2xl border border-neutral-200 bg-white p-6 shadow-lg shadow-neutral-200/50 sm:p-8"
           >
             <div className="flex flex-col gap-5">
               <h3 className="text-dark-brown mb-2 text-2xl font-bold tracking-tight">
