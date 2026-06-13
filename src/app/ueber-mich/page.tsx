@@ -23,7 +23,7 @@ export default function UeberMichPage() {
           alt="Michael Wiggenhauser – Persönliche Bauberatung für ELK Fertighäuser"
           fetchPriority="high"
           fill
-          quality={100}
+          quality={80}
           className="translate-x-9 translate-y-6 scale-260 object-cover object-center sm:translate-x-12 sm:scale-200 sm:object-[center_48%] md:scale-150 md:object-[center_50%] lg:translate-x-0 lg:translate-y-0 lg:scale-100 lg:object-[center_50%] xl:object-[center_47%]"
           priority
           sizes="(max-width: 640px) 250vw, (max-width: 1024px) 150vw, 100vw"
