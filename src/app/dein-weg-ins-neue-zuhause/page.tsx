@@ -4,7 +4,16 @@ import Container from "@/components/layout/container";
 import Section from "@/components/layout/section";
 import Heading from "@/components/ui/heading";
 import { financingSections } from "@/lib/pages-text-data";
-import { ArrowRight, Home, Key } from "lucide-react";
+import {
+  ArrowRight,
+  ClipboardList,
+  FileCheck2,
+  Hammer,
+  Home,
+  Key,
+  PencilRuler,
+  PiggyBank,
+} from "lucide-react";
 import Button from "@/components/ui/button";
 import WorriesSection from "@/components/sections/worries-section";
 
@@ -14,6 +23,15 @@ export const metadata: Metadata = {
   description:
     "Intensive Beratung und Begleitung von der Planung über die Fertighaus-Konfiguration bis hin zur Schlüsselübergabe.",
 };
+
+const stepIcons = [
+  ClipboardList,
+  PiggyBank,
+  PencilRuler,
+  FileCheck2,
+  Hammer,
+  Key,
+];
 
 export default function FinanzierungAblaufPage() {
   return (
@@ -41,35 +59,64 @@ export default function FinanzierungAblaufPage() {
         </Container>
       </section>
 
-      {/* Abschnitte */}
-      {financingSections.map((abschnitt, index) => (
-        <Section
-          key={abschnitt.title}
-          className="py-8 md:py-16 lg:py-24"
-          background={index % 2 === 0 ? "gray" : "white"}
-        >
-          <Container>
-            <div className="max-w-3xl lg:mx-auto">
-              <div className="flex flex-col items-baseline gap-4 lg:flex-row lg:justify-center">
-                <span className="text-3xl font-bold text-gray-200 md:text-4xl">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <Heading as="h2" className="lg:text-center">
-                  {abschnitt.title}
-                </Heading>
-              </div>
-              <div className="mt-4 space-y-2 text-lg leading-relaxed text-gray-600 lg:text-center">
-                {(Array.isArray(abschnitt.content)
-                  ? abschnitt.content
-                  : [abschnitt.content]
-                ).map((para, i) => (
-                  <p key={i}>{para}</p>
-                ))}
-              </div>
-            </div>
-          </Container>
-        </Section>
-      ))}
+      {/* Ablauf – Vertikale Timeline */}
+      <Section>
+        <Container>
+          <div className="mx-auto mb-12 max-w-2xl text-center md:mb-16">
+            <span className="text-dark-brown/60 text-sm font-semibold tracking-[0.2em] uppercase">
+              Der Ablauf
+            </span>
+            <Heading as="h2" className="mt-3">
+              Von der ersten Idee bis zur Schlüsselübergabe
+            </Heading>
+          </div>
+
+          <ol className="relative mx-auto max-w-3xl">
+            {financingSections.map((abschnitt, index) => {
+              const Icon = stepIcons[index];
+              const isLast = index === financingSections.length - 1;
+              const paragraphs = Array.isArray(abschnitt.content)
+                ? abschnitt.content
+                : [abschnitt.content];
+
+              return (
+                <li
+                  key={abschnitt.title}
+                  className="relative flex gap-5 pb-12 last:pb-0 md:gap-8"
+                >
+                  {/* Verbindungslinie */}
+                  {!isLast && (
+                    <span
+                      aria-hidden
+                      className="bg-dark-brown/20 absolute top-14 bottom-0 left-6 w-px -translate-x-1/2 md:left-7"
+                    />
+                  )}
+
+                  {/* Marker */}
+                  <div className="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-(--color-dark-brown) text-white shadow-md md:h-14 md:w-14">
+                    <Icon className="h-5 w-5 md:h-6 md:w-6" />
+                  </div>
+
+                  {/* Inhalt */}
+                  <div className="pt-1.5 md:pt-2.5">
+                    <div className="flex items-baseline gap-3">
+                      <span className="text-dark-brown/40 text-sm font-bold md:text-base">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+                      <Heading as="h3">{abschnitt.title}</Heading>
+                    </div>
+                    <div className="mt-3 space-y-2 text-lg leading-relaxed text-gray-600">
+                      {paragraphs.map((para, i) => (
+                        <p key={i}>{para}</p>
+                      ))}
+                    </div>
+                  </div>
+                </li>
+              );
+            })}
+          </ol>
+        </Container>
+      </Section>
 
       <section className="relative mt-16 overflow-hidden bg-neutral-100">
         <div className="mx-auto grid max-w-7xl lg:grid-cols-2">
