@@ -92,12 +92,12 @@ export default function SorgenfreiBauenPage() {
       </Section>
 
       {/* ELK Fertighäuser */}
-      <Section className="bg-neutral-100">
+      <Section className="bg-(--color-dark-brown)">
         <Container>
-          <Heading as="h2" className="lg:text-center">
+          <Heading as="h2" className="text-white lg:text-center">
             ELK Fertighäuser
           </Heading>
-          <p className="mt-4 max-w-2xl lg:mx-auto lg:text-center lg:text-xl">
+          <p className="mt-4 max-w-2xl text-white lg:mx-auto lg:text-center lg:text-xl">
             Als Marktführer in Europa steht ELK für über 60 Jahre Erfahrung,
             schnelle Lieferzeiten zum Festpreis und komplette
             Individualisierbarkeit. Ihr profitiert beim Hausbau von bewährten
@@ -106,6 +106,7 @@ export default function SorgenfreiBauenPage() {
         </Container>
       </Section>
 
+      <div className="block h-8 md:h-12 lg:h-0" />
       {/* Bildergalerie */}
       {galerieKategorien.map((kategorie) => (
         <Section
