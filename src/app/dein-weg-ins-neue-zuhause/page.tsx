@@ -93,19 +93,19 @@ export default function FinanzierungAblaufPage() {
                   )}
 
                   {/* Marker */}
-                  <div className="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-(--color-dark-brown) text-white shadow-md md:h-14 md:w-14">
+                  <div className="bg-dark-brown relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-white shadow-md md:h-14 md:w-14">
                     <Icon className="h-5 w-5 md:h-6 md:w-6" />
                   </div>
 
                   {/* Inhalt */}
                   <div className="pt-1.5 md:pt-2.5">
-                    <div className="flex items-baseline gap-3">
-                      <span className="text-dark-brown/40 text-sm font-bold md:text-base">
+                    <Heading as="h3" className="flex items-start">
+                      <span className="text-dark-brown/30 w-8 shrink-0 md:w-10">
                         {String(index + 1).padStart(2, "0")}
                       </span>
-                      <Heading as="h3">{abschnitt.title}</Heading>
-                    </div>
-                    <div className="mt-3 space-y-2 text-lg leading-relaxed text-gray-600">
+                      <span className="flex-1">{abschnitt.title}</span>
+                    </Heading>
+                    <div className="mt-3 space-y-2 pl-8 text-lg leading-relaxed text-gray-600 md:pl-10">
                       {paragraphs.map((para, i) => (
                         <p key={i}>{para}</p>
                       ))}
