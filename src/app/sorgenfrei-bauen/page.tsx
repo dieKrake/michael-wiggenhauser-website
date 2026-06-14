@@ -27,7 +27,7 @@ export default function SorgenfreiBauenPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden py-20 md:py-28">
+      <section className="relative overflow-hidden py-20 md:py-28 lg:flex lg:h-[500px] lg:items-center lg:py-0">
         <Image
           src="/images/Hintergrund-Banner-Sorgenfrei-bauen.webp"
           alt="Moderne ELK Fertighäuser – Sorgenfrei Bauen mit persönlicher Bauberatung"
