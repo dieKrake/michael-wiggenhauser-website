@@ -212,7 +212,7 @@ export default function Startseite() {
                   src="/images/michi-treppe.webp"
                   alt="Michael Wiggenhauser"
                   priority
-                  quality={100}
+                  quality={90}
                   fill
                   className="translate-x-6 scale-220 object-cover object-[center_100%] transition-transform duration-700 min-[440px]:object-[center_140%] min-[700px]:translate-y-[-10px] min-[760px]:translate-y-[-25px] min-[820px]:translate-y-[-40px] min-[940px]:translate-y-[-55px] sm:translate-x-14 sm:object-[center_150%] md:translate-x-13 md:scale-170 lg:translate-x-10 lg:translate-y-0 lg:scale-200 lg:object-[center_48%] lg:hover:scale-205"
                   sizes="(max-width: 1024px) 220vw, 100vw"
