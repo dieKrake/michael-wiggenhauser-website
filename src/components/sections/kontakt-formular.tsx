@@ -14,6 +14,7 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 import Button from "@/components/ui/button";
+import { ContactButton } from "@/components/ui/contact-button";
 import { siteConfig } from "@/lib/constants";
 
 const InstagramIcon = ({ className }: { className?: string }) => (
@@ -177,81 +178,37 @@ const KontaktFormular = () => {
 
             {/* Premium Klickbare Kontakt-Karten */}
             <div className="mt-8 space-y-3 border-t border-neutral-200/60 pt-6">
-              <a
+              <ContactButton
                 href={`tel:${siteConfig.phone}`}
-                className="group hover:border-dark-brown/20 flex cursor-pointer items-center gap-4 rounded-xl border border-neutral-200/50 bg-white/50 p-3.5 transition-all duration-300 hover:bg-white hover:shadow-md"
-              >
-                <div className="bg-dark-brown/5 text-dark-brown group-hover:bg-dark-brown flex h-11 w-11 shrink-0 items-center justify-center rounded-lg transition-colors duration-300 group-hover:text-white">
-                  <Phone className="h-5 w-5" />
-                </div>
-                <div className="min-w-0">
-                  <p className="text-[11px] font-bold tracking-wider text-neutral-400 uppercase">
-                    Telefonisch erreichbar
-                  </p>
-                  <p className="group-hover:text-dark-brown mt-0.5 truncate text-sm font-bold text-neutral-900 transition-colors">
-                    {siteConfig.phone}
-                  </p>
-                </div>
-                <ArrowUpRight className="group-hover:text-dark-brown ml-auto h-5 w-5 shrink-0 text-neutral-300 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-              </a>
+                icon={Phone}
+                label="Telefonisch erreichbar"
+                value={siteConfig.phone}
+              />
 
-              <a
+              <ContactButton
                 href={`mailto:${siteConfig.email}`}
-                className="group hover:border-dark-brown/20 flex cursor-pointer items-center gap-4 rounded-xl border border-neutral-200/50 bg-white/50 p-3.5 transition-all duration-300 hover:bg-white hover:shadow-md"
-              >
-                <div className="bg-dark-brown/5 text-dark-brown group-hover:bg-dark-brown flex h-11 w-11 shrink-0 items-center justify-center rounded-lg transition-colors duration-300 group-hover:text-white">
-                  <Mail className="h-5 w-5" />
-                </div>
-                <div className="min-w-0">
-                  <p className="text-[11px] font-bold tracking-wider text-neutral-400 uppercase">
-                    E-Mail schreiben
-                  </p>
-                  <p className="group-hover:text-dark-brown mt-0.5 truncate text-sm font-bold text-neutral-900 transition-colors">
-                    {siteConfig.email}
-                  </p>
-                </div>
-                <ArrowUpRight className="group-hover:text-dark-brown ml-auto h-5 w-5 shrink-0 text-neutral-300 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-              </a>
+                icon={Mail}
+                label="E-Mail schreiben"
+                value={siteConfig.email}
+              />
 
-              <a
+              <ContactButton
                 href={siteConfig.address.mapsHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group hover:border-dark-brown/20 flex cursor-pointer items-center gap-4 rounded-xl border border-neutral-200/50 bg-white/50 p-3.5 transition-all duration-300 hover:bg-white hover:shadow-md"
-              >
-                <div className="bg-dark-brown/5 text-dark-brown group-hover:bg-dark-brown flex h-11 w-11 shrink-0 items-center justify-center rounded-lg transition-colors duration-300 group-hover:text-white">
-                  <MapPin className="h-5 w-5" />
-                </div>
-                <div className="min-w-0">
-                  <p className="text-[11px] font-bold tracking-wider text-neutral-400 uppercase">
-                    Standort & Anfahrt
-                  </p>
-                  <p className="group-hover:text-dark-brown mt-0.5 truncate text-sm font-bold text-neutral-900 transition-colors">
-                    {siteConfig.address.street}, {siteConfig.address.city}
-                  </p>
-                </div>
-                <ArrowUpRight className="group-hover:text-dark-brown ml-auto h-5 w-5 shrink-0 text-neutral-300 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-              </a>
+                icon={MapPin}
+                label="Standort & Anfahrt"
+                value={`${siteConfig.address.street}, ${siteConfig.address.city}`}
+              />
 
-              <a
+              <ContactButton
                 href={siteConfig.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group hover:border-dark-brown/20 flex cursor-pointer items-center gap-4 rounded-xl border border-neutral-200/50 bg-white/50 p-3.5 transition-all duration-300 hover:bg-white hover:shadow-md"
-              >
-                <div className="bg-dark-brown/5 text-dark-brown group-hover:bg-dark-brown flex h-11 w-11 shrink-0 items-center justify-center rounded-lg transition-colors duration-300 group-hover:text-white">
-                  <InstagramIcon className="h-5 w-5" />
-                </div>
-                <div className="min-w-0">
-                  <p className="text-[11px] font-bold tracking-wider text-neutral-400 uppercase">
-                    Folge mir auf Instagram
-                  </p>
-                  <p className="group-hover:text-dark-brown mt-0.5 truncate text-sm font-bold text-neutral-900 transition-colors">
-                    @michael.wiggenhauser
-                  </p>
-                </div>
-                <ArrowUpRight className="group-hover:text-dark-brown ml-auto h-5 w-5 shrink-0 text-neutral-300 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-              </a>
+                icon={InstagramIcon}
+                label="Folge mir auf Instagram"
+                value="@michael.wiggenhauser"
+              />
             </div>
           </div>
 
