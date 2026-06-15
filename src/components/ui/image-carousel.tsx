@@ -193,7 +193,7 @@ export function ImageCarousel({
               src={bgImage}
               alt="Hintergrund"
               fill
-              className="pointer-events-none object-cover object-center"
+              className="animate-ken-burns pointer-events-none object-cover object-center will-change-transform"
               sizes={sizes}
               quality={quality}
               priority

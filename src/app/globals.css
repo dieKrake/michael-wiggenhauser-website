@@ -26,6 +26,7 @@ html {
   --breakpoint-4xl: 240rem;
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
+  --animate-ken-burns: ken-burns 24s ease-in-out infinite alternate;
 }
 
 body {
@@ -54,5 +55,20 @@ body {
   to {
     height: 0;
     opacity: 0;
+  }
+}
+
+@keyframes ken-burns {
+  from {
+    transform: scale(1.05) translate(0, 0);
+  }
+  to {
+    transform: scale(1.18) translate(-3%, 2%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-ken-burns {
+    animation: none;
   }
 }
