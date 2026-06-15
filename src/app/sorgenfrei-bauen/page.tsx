@@ -67,7 +67,7 @@ export default function SorgenfreiBauenPage() {
                   key={item}
                   className="group flex snap-start items-center gap-4 rounded-xl border border-neutral-100 bg-white p-5 shadow-sm transition-all duration-300 hover:border-neutral-200"
                 >
-                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-neutral-100 text-neutral-800 transition-colors duration-300 group-hover:bg-neutral-900 group-hover:text-white">
+                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-neutral-100 text-neutral-800">
                     <Check className="h-3.5 w-3.5 stroke-[2.5]" />
                   </div>
                   <span className="text-base font-medium text-neutral-700 transition-colors duration-300 group-hover:text-neutral-900 md:text-lg">

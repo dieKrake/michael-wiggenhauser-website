@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, HardHat, MessageCircle, Home, Check } from "lucide-react";
+import {
+  ArrowRight,
+  ArrowUpRight,
+  HardHat,
+  MessageCircle,
+  Home,
+  Check,
+} from "lucide-react";
 import {
   heroSectionTextTop,
   landingPageTiles,
@@ -228,7 +235,7 @@ export default function Startseite() {
       <section className="py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
-            <div>
+            <div className="flex flex-col justify-center lg:pb-12">
               <h2 className="text-3xl font-semibold tracking-tight lg:text-4xl">
                 Meine Dienstleistungen
               </h2>
@@ -236,13 +243,13 @@ export default function Startseite() {
                 Von der ersten Idee bis zum Einzug begleite ich
                 partnerschaftlich und professionell.
               </p>
-              <Link
+              {/* <Link
                 href="/sorgenfrei-bauen"
                 className="group mt-10 hidden items-center gap-2 text-sm font-bold tracking-wider uppercase hover:underline lg:inline-flex"
               >
                 Mehr erfahren{" "}
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-              </Link>
+              </Link> */}
             </div>
             <ul className="space-y-5">
               {landingServicesList.map((item) => (
@@ -256,9 +263,10 @@ export default function Startseite() {
                   {item.href ? (
                     <Link
                       href={item.href}
-                      className="text-base font-medium text-neutral-700 transition-colors duration-300 group-hover:text-neutral-900 hover:underline md:text-lg"
+                      className="flex flex-1 items-center gap-2 text-base font-medium text-neutral-700 transition-colors duration-300 group-hover:text-neutral-900 md:text-lg"
                     >
-                      {item.text}
+                      <span>{item.text}</span>
+                      <ArrowUpRight className="ml-auto h-5 w-5 shrink-0 text-neutral-300 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-neutral-900" />
                     </Link>
                   ) : (
                     <span className="text-base font-medium text-neutral-700 transition-colors duration-300 group-hover:text-neutral-900 md:text-lg">
@@ -267,12 +275,12 @@ export default function Startseite() {
                   )}
                 </li>
               ))}
-              <Link
+              {/* <Link
                 href="/sorgenfrei-bauen#leistungen"
                 className="mt-8 inline-flex items-center gap-1.5 text-sm font-bold tracking-wider text-neutral-800 uppercase lg:mt-0 lg:hidden"
               >
                 Mehr erfahren <ArrowRight className="h-3.5 w-3.5" />
-              </Link>
+              </Link> */}
             </ul>
           </div>
         </div>
