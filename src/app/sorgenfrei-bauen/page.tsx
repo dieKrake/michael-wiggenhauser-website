@@ -35,6 +35,7 @@ export default function SorgenfreiBauenPage() {
           className="object-cover object-center"
           priority
           fetchPriority="high"
+          quality={55}
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-black/50" />

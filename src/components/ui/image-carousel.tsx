@@ -33,7 +33,7 @@ export function ImageCarousel({
   slides,
   className,
   sizes = "(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px",
-  quality = 80,
+  quality = 65,
   autoplay = false,
   autoplayInterval = 6000,
   showArrows = true,
