@@ -406,3 +406,15 @@ export const climateFriendlyHousesData = [
       "Jedes ELK Fertighaus ist mit moderner und energieeffizienter Haustechnik ausgestattet. Intelligente Heiz- und Lüftungssysteme mit Wärmerückgewinnung senken langfristig die Energiekosten und sorgen gleichzeitig für ein gesundes Raumklima sowie höchsten Wohnkomfort.",
   },
 ];
+
+export const landingServicesList = [
+  {
+    text: "Neubau von Einfamilien-, Doppel- und Mehrfamilienhäusern",
+    href: "",
+  },
+  { text: "Individuelle Grundrissplanung und Konfiguration", href: "" },
+  { text: "Finanzierungsberatung inkl. Fördermittelprüfung", href: "" },
+  { text: "Begleitung vom Erstgespräch bis zur Schlüsselübergabe", href: "" },
+  { text: "Verkauf Eurer bestehenden Immobilie", href: "" },
+  { text: "Abriss und Neubau aus einer Hand", href: "" },
+];

@@ -6,6 +6,7 @@ import {
   heroSectionTextTop,
   landingPageTiles,
   testimonials,
+  landingServicesList,
 } from "@/lib/pages-text-data";
 import Button from "@/components/ui/button";
 import { TestimonialCarousel } from "@/components/ui/testimonial-carousel";
@@ -244,24 +245,26 @@ export default function Startseite() {
               </Link>
             </div>
             <ul className="space-y-5">
-              {[
-                "Neubau von Einfamilien-, Doppel- und Mehrfamilienhäusern",
-                "Individuelle Grundrissplanung und Konfiguration",
-                "Finanzierungsberatung inkl. Fördermittelprüfung",
-                "Begleitung vom Erstgespräch bis zur Schlüsselübergabe",
-                "Verkauf Eurer bestehenden Immobilie",
-                "Abriss und Neubau aus einer Hand",
-              ].map((item) => (
+              {landingServicesList.map((item) => (
                 <li
-                  key={item}
+                  key={item.text}
                   className="group flex items-start gap-4 border-b border-neutral-100 pt-1 pb-4 transition-all duration-300 hover:border-neutral-200"
                 >
                   <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-neutral-100 text-neutral-800 transition-colors duration-300 group-hover:bg-neutral-900 group-hover:text-white">
                     <Check className="h-3.5 w-3.5 stroke-[2.5]" />
                   </div>
-                  <span className="text-base font-medium text-neutral-700 transition-colors duration-300 group-hover:text-neutral-900 md:text-lg">
-                    {item}
-                  </span>
+                  {item.href ? (
+                    <Link
+                      href={item.href}
+                      className="text-base font-medium text-neutral-700 transition-colors duration-300 group-hover:text-neutral-900 hover:underline md:text-lg"
+                    >
+                      {item.text}
+                    </Link>
+                  ) : (
+                    <span className="text-base font-medium text-neutral-700 transition-colors duration-300 group-hover:text-neutral-900 md:text-lg">
+                      {item.text}
+                    </span>
+                  )}
                 </li>
               ))}
               <Link
