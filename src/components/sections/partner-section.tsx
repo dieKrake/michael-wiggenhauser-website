@@ -7,7 +7,7 @@ import { partnerData } from "@/lib/pages-text-data";
 
 export const PartnerSection: FC = () => {
   return (
-    <Section background="gray">
+    <Section background="gray" id="partner">
       <Container>
         <Heading as="h2" className="text-center">
           {partnerData.title}

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import Container from "@/components/layout/container";
 import Section from "@/components/layout/section";
 import Heading from "@/components/ui/heading";
@@ -169,7 +170,7 @@ export default function FinanzierungAblaufPage() {
       <WorriesSection />
 
       {/* Übergang: Vom neuen Haus zum Verkauf des alten */}
-      <section className="hidden bg-(--color-dark-brown) text-white lg:block">
+      <section className="bg-dark-brown hidden text-white lg:block">
         <Container className="py-16 text-center lg:py-20">
           <div className="mx-auto flex max-w-3xl flex-col items-center">
             <div className="flex items-center gap-4 text-white/60">
@@ -185,28 +186,72 @@ export default function FinanzierungAblaufPage() {
               <br className="hidden sm:block" />
               was passiert mit dem alten?
             </h2>
+            <div className="mt-8 flex justify-center gap-4">
+              <Button
+                href="#verkaufen"
+                variant="secondary"
+                className="normal-case"
+              >
+                Verkaufen
+              </Button>
+              <Button
+                href="#abreissen"
+                variant="secondary"
+                className="normal-case"
+              >
+                Abreißen
+              </Button>
+            </div>
           </div>
         </Container>
       </section>
 
       {/* === VERGLEICH: Divider-Option B – Label-Linie === */}
-      <div className="block bg-(--color-dark-brown) py-12 sm:py-16 md:py-20 lg:hidden">
+      <div className="bg-dark-brown block py-12 text-white sm:py-16 md:py-20 lg:hidden">
         <Container>
-          <div className="flex items-center gap-6">
-            <span className="h-px flex-1 bg-gray-300" />
-            <div className="flex items-center gap-3 text-gray-50">
-              <Home className="h-5 w-5" />
-              <span className="text-sm font-semibold tracking-[0.2em] uppercase">
-                Und euer altes Zuhause?
-              </span>
+          <div className="flex flex-col items-center">
+            <div className="flex w-full items-center gap-6">
+              <span className="h-px flex-1 bg-gray-300/20" />
+              <div className="flex items-center gap-3 text-gray-50">
+                <Home className="h-5 w-5" />
+                <span className="text-sm font-semibold tracking-[0.2em] uppercase">
+                  Und euer altes Zuhause?
+                </span>
+              </div>
+              <span className="h-px flex-1 bg-gray-300/20" />
             </div>
-            <span className="h-px flex-1 bg-gray-300" />
+
+            {/* <h2 className="mt-6 text-center text-xl font-bold tracking-tight uppercase sm:text-2xl">
+              Ihr habt euer Traumhaus gefunden –
+              <br />
+              was passiert mit dem alten?
+            </h2> */}
+
+            <div className="mt-8 flex w-full flex-col justify-center gap-4 px-4 sm:flex-row sm:px-0">
+              <Button
+                href="#verkaufen"
+                variant="secondary"
+                className="w-full normal-case sm:w-auto"
+              >
+                Verkaufen
+              </Button>
+              <Button
+                href="#abreissen"
+                variant="secondary"
+                className="w-full normal-case sm:w-auto"
+              >
+                Abreißen
+              </Button>
+            </div>
           </div>
         </Container>
       </div>
 
       {/* Sorgenfrei Verkaufen */}
-      <Section className="relative overflow-hidden py-24 text-white sm:py-32 lg:py-40">
+      <Section
+        id="verkaufen"
+        className="relative overflow-hidden py-24 text-white sm:py-32 lg:py-40"
+      >
         <Image
           src="/images/haus-verkaufen.webp"
           alt="Sorgenfrei Verkaufen"
@@ -229,8 +274,8 @@ export default function FinanzierungAblaufPage() {
         </Container>
       </Section>
       <Section background="gray">
-        <Container>
-          <p className="text-lg lg:text-center lg:text-xl">
+        <Container className="max-w-5xl">
+          <p className="text-lg lg:text-center">
             Den ersten Schritt bildet eine{" "}
             <strong>kostenlose und unverbindliche Wertermittlung</strong>, bei
             der ich eure Immobilie anhand aktueller Marktpreise und regionaler
@@ -261,6 +306,78 @@ export default function FinanzierungAblaufPage() {
             <br />
             Mein Ziel ist es, euren Immobilienverkauf so einfach, transparent
             und erfolgreich wie möglich zu gestalten.
+          </p>
+        </Container>
+      </Section>
+
+      {/* Sorgenfrei Abreissen */}
+      <Section
+        id="abreissen"
+        className="relative overflow-hidden py-24 text-white sm:py-32 lg:py-40"
+      >
+        <Image
+          src="/images/haus-verkaufen.webp"
+          alt="Sorgenfrei Verkaufen"
+          fill
+          className="object-cover object-[center_60%]"
+          fetchPriority="high"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-black/50" />
+        <Container className="relative z-10">
+          <Heading as="h2" className="text-white lg:text-center">
+            Abreißen. Neu bauen.
+          </Heading>
+          <p className="mt-4 max-w-2xl text-lg text-white/90 lg:mx-auto lg:text-center">
+            Nicht jede Bestandsimmobilie lässt sich wirtschaftlich sanieren. Oft
+            ist es sinnvoller, ein altes Haus abzureißen und die Möglichkeiten
+            eines modernen Neubaus zu nutzen. Auch bei diesem Schritt begleite
+            ich euch.
+          </p>
+        </Container>
+      </Section>
+      <Section background="gray">
+        <Container className="max-w-5xl">
+          <p className="text-lg lg:text-center">
+            Gemeinsam mit erfahrenen{" "}
+            <Link
+              href="/ueber-mich#partner"
+              className="text-blue-600 hover:underline"
+            >
+              Partnerunternehmen
+            </Link>{" "}
+            übernehmen wir die{" "}
+            <strong>
+              komplette Planung und Koordination aller notwendigen
+              Abbrucharbeiten
+            </strong>
+            . Dazu gehören neben dem klassischen <strong>Hausabriss</strong>{" "}
+            auch Spezialleistungen wie <strong>Asbestsanierungen</strong>,{" "}
+            <strong>Schadstoffrückbau</strong> und die{" "}
+            <strong>fachgerechte Entsorgung</strong> von Baumaterialien.
+            <br />
+            <br />
+            Nach dem Rückbau schaffen wir die optimale Grundlage für euer neues
+            ELK Fertighaus. Der große Vorteil:{" "}
+            <strong>
+              Abriss und Neubau werden zentral koordiniert und aufeinander
+              abgestimmt
+            </strong>
+            . Dadurch entstehen wertvolle Synergieeffekte, die Zeit sparen,
+            Kosten reduzieren und für maximale Planungssicherheit sorgen.
+            <br />
+            <br />
+            Ihr müsst euch nicht mit verschiedenen Gewerken, Behörden oder
+            Dienstleistern abstimmen. Stattdessen habt ihr einen{" "}
+            <strong>festen Ansprechpartner</strong> an eurer Seite, der den
+            gesamten Prozess begleitet - vom ersten Gespräch über den Hausabriss
+            bis zum Einzug in euer neues Fertighaus.
+            <br />
+            <br />
+            So wird aus einer in die Jahre gekommenen Immobilie Schritt für
+            Schritt ein modernes, energieeffizientes Zuhause - persönlich,
+            planbar und sorgenfrei.
           </p>
         </Container>
       </Section>
