@@ -61,7 +61,7 @@ export default function FinanzierungAblaufPage() {
       </section>
 
       {/* Ablauf – Vertikale Timeline */}
-      <Section>
+      <Section id="timeline">
         <Container>
           <div className="mx-auto mb-12 max-w-2xl text-center md:mb-16">
             <span className="text-dark-brown/60 text-sm font-semibold tracking-[0.2em] uppercase">

@@ -410,11 +410,26 @@ export const climateFriendlyHousesData = [
 export const landingServicesList = [
   {
     text: "Neubau von Einfamilien-, Doppel- und Mehrfamilienhäusern",
-    href: "",
+    href: "/sorgenfrei-bauen#elk-fertighaeuser",
   },
-  { text: "Individuelle Grundrissplanung und Konfiguration", href: "" },
-  { text: "Finanzierungsberatung inkl. Fördermittelprüfung", href: "" },
-  { text: "Begleitung vom Erstgespräch bis zur Schlüsselübergabe", href: "" },
-  { text: "Verkauf Eurer bestehenden Immobilie", href: "" },
-  { text: "Abriss und Neubau aus einer Hand", href: "" },
+  {
+    text: "Individuelle Grundrissplanung und Konfiguration",
+    href: "/dein-weg-ins-neue-zuhause#timeline",
+  },
+  {
+    text: "Finanzierungsberatung inkl. Fördermittelprüfung",
+    href: "/dein-weg-ins-neue-zuhause#timeline",
+  },
+  {
+    text: "Begleitung vom Erstgespräch bis zur Schlüsselübergabe",
+    href: "/dein-weg-ins-neue-zuhause#timeline",
+  },
+  {
+    text: "Verkauf Eurer bestehenden Immobilie",
+    href: "/dein-weg-ins-neue-zuhause#verkaufen",
+  },
+  {
+    text: "Abriss und Neubau aus einer Hand",
+    href: "/dein-weg-ins-neue-zuhause#abreissen",
+  },
 ];

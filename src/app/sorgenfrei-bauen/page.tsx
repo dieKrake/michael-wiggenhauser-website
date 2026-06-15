@@ -92,7 +92,7 @@ export default function SorgenfreiBauenPage() {
       </Section>
 
       {/* ELK Fertighäuser */}
-      <Section className="bg-(--color-dark-brown)">
+      <Section className="bg-(--color-dark-brown)" id="elk-fertighaeuser">
         <Container>
           <Heading as="h2" className="text-white lg:text-center">
             ELK Fertighäuser
