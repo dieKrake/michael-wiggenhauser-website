@@ -250,6 +250,7 @@ export default function Startseite() {
                 "Finanzierungsberatung inkl. Fördermittelprüfung",
                 "Begleitung vom Erstgespräch bis zur Schlüsselübergabe",
                 "Verkauf Eurer bestehenden Immobilie",
+                "Abriss und Neubau aus einer Hand",
               ].map((item) => (
                 <li
                   key={item}

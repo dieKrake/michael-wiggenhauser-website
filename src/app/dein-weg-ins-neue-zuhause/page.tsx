@@ -184,22 +184,14 @@ export default function FinanzierungAblaufPage() {
             <h2 className="mt-4 text-xl leading-snug font-bold tracking-tight uppercase lg:text-2xl">
               Ihr habt euer Traumhaus gefunden –{" "}
               <br className="hidden sm:block" />
-              was passiert mit dem alten?
+              was passiert Bestandsimmobilien?
             </h2>
             <div className="mt-8 flex justify-center gap-4">
-              <Button
-                href="#verkaufen"
-                variant="secondary"
-                className="normal-case"
-              >
-                Verkaufen
+              <Button href="#verkaufen" variant="secondary">
+                Verkauf
               </Button>
-              <Button
-                href="#abreissen"
-                variant="secondary"
-                className="normal-case"
-              >
-                Abreißen
+              <Button href="#abreissen" variant="secondary">
+                Abriss
               </Button>
             </div>
           </div>
@@ -221,26 +213,20 @@ export default function FinanzierungAblaufPage() {
               <span className="h-px flex-1 bg-gray-300/20" />
             </div>
 
-            {/* <h2 className="mt-6 text-center text-xl font-bold tracking-tight uppercase sm:text-2xl">
-              Ihr habt euer Traumhaus gefunden –
-              <br />
-              was passiert mit dem alten?
-            </h2> */}
-
             <div className="mt-8 flex w-full flex-col justify-center gap-4 px-4 sm:flex-row sm:px-0">
               <Button
                 href="#verkaufen"
                 variant="secondary"
                 className="w-full normal-case sm:w-auto"
               >
-                Verkaufen
+                Verkauf
               </Button>
               <Button
                 href="#abreissen"
                 variant="secondary"
                 className="w-full normal-case sm:w-auto"
               >
-                Abreißen
+                Abriss
               </Button>
             </div>
           </div>
@@ -327,7 +313,7 @@ export default function FinanzierungAblaufPage() {
         <div className="absolute inset-0 bg-black/50" />
         <Container className="relative z-10">
           <Heading as="h2" className="text-white lg:text-center">
-            Abreißen. Neu bauen.
+            Abriss und Neubau
           </Heading>
           <p className="mt-4 max-w-2xl text-lg text-white/90 lg:mx-auto lg:text-center">
             Nicht jede Bestandsimmobilie lässt sich wirtschaftlich sanieren. Oft
