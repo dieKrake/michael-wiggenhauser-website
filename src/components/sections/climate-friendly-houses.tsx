@@ -8,7 +8,8 @@ export const ClimateFriendlyHouses: FC = () => {
   return (
     <Section background="white">
       <Container>
-        <div className="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-6 lg:max-w-none lg:grid-cols-4 lg:gap-4">
+        {/* Mobile & Tablet: gestapelte Karten */}
+        <div className="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-6 lg:hidden">
           {climateFriendlyHousesData.map((item, index) => (
             <div
               key={index}
@@ -20,14 +21,43 @@ export const ClimateFriendlyHouses: FC = () => {
                   alt={item.title}
                   fill
                   className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 250px"
+                  sizes="100vw"
                 />
               </div>
               <div className="flex grow flex-col p-6">
                 <h3 className="mb-3 text-base leading-snug font-bold tracking-wider uppercase">
                   {item.title}
                 </h3>
-                <p className="text-sm leading-relaxed font-light text-white/90">
+                <p className="text-md leading-relaxed font-light text-white/90">
+                  {item.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop (lg+): Image-Accordion – gehovertes Panel dehnt sich aus */}
+        <div className="mt-4 hidden h-[460px] gap-3 lg:flex">
+          {climateFriendlyHousesData.map((item, index) => (
+            <div
+              key={index}
+              className="group relative flex-1 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-500 ease-in-out hover:grow-[2.5]"
+            >
+              <Image
+                src={item.image}
+                alt={item.title}
+                fill
+                className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+                sizes="(max-width: 1024px) 0px, 45vw"
+              />
+              {/* Farbverlauf-Overlay für Lesbarkeit */}
+              <div className="from-dark-brown via-dark-brown/55 to-dark-brown/10 group-hover:via-dark-brown/70 absolute inset-0 bg-linear-to-t transition-opacity duration-500" />
+
+              <div className="absolute bottom-0 left-0 flex w-[380px] flex-col p-6 text-white xl:w-[460px]">
+                <h3 className="text-lg leading-snug font-bold tracking-wider uppercase">
+                  {item.title}
+                </h3>
+                <p className="mt-0 max-h-0 overflow-hidden text-lg leading-relaxed font-light text-white/90 opacity-0 transition-all duration-500 ease-in-out group-hover:mt-3 group-hover:max-h-72 group-hover:opacity-100">
                   {item.description}
                 </p>
               </div>
