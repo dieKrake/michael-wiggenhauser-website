@@ -179,12 +179,12 @@ export default function FinanzierungAblaufPage() {
               <Home className="h-6 w-6" />
             </div>
             <span className="mt-6 text-xs font-semibold tracking-[0.25em] text-white/50 uppercase">
-              Und euer altes Zuhause?
+              Bestandsimmobilien?
             </span>
             <h2 className="mt-4 text-xl leading-snug font-bold tracking-tight uppercase lg:text-2xl">
               Ihr habt euer Traumhaus gefunden –{" "}
               <br className="hidden sm:block" />
-              was passiert Bestandsimmobilien?
+              was passiert mit der Bestandsimmobilie?
             </h2>
             <div className="mt-8 flex justify-center gap-4">
               <Button href="#verkaufen" variant="secondary">
@@ -207,7 +207,7 @@ export default function FinanzierungAblaufPage() {
               <div className="flex items-center gap-3 text-gray-50">
                 <Home className="h-5 w-5" />
                 <span className="text-sm font-semibold tracking-[0.2em] uppercase">
-                  Und euer altes Zuhause?
+                  Bestandsimmobilien?
                 </span>
               </div>
               <span className="h-px flex-1 bg-gray-300/20" />
@@ -302,7 +302,7 @@ export default function FinanzierungAblaufPage() {
         className="relative overflow-hidden py-24 text-white sm:py-32 lg:py-40"
       >
         <Image
-          src="/images/haus-verkaufen.webp"
+          src="/images/Abriss.webp"
           alt="Sorgenfrei Verkaufen"
           fill
           className="object-cover object-[center_60%]"
@@ -313,57 +313,42 @@ export default function FinanzierungAblaufPage() {
         <div className="absolute inset-0 bg-black/50" />
         <Container className="relative z-10">
           <Heading as="h2" className="text-white lg:text-center">
-            Abriss und Neubau
+            Abriss und Neubau aus einer Hand
           </Heading>
           <p className="mt-4 max-w-2xl text-lg text-white/90 lg:mx-auto lg:text-center">
             Nicht jede Bestandsimmobilie lässt sich wirtschaftlich sanieren. Oft
-            ist es sinnvoller, ein altes Haus abzureißen und die Möglichkeiten
-            eines modernen Neubaus zu nutzen. Auch bei diesem Schritt begleite
-            ich euch.
+            ist es sinnvoll, ein altes Haus abzureißen und sich für einen
+            modernen, energieeffizienten und zukunftsorientierten Neubau zu
+            entscheiden. Auch bei diesem Schritt begleite ich euch.
           </p>
         </Container>
       </Section>
       <Section background="gray">
         <Container className="max-w-5xl">
           <p className="text-lg lg:text-center">
-            Gemeinsam mit erfahrenen{" "}
-            <Link
-              href="/ueber-mich#partner"
-              className="text-blue-600 hover:underline"
-            >
-              Partnerunternehmen
-            </Link>{" "}
-            übernehmen wir die{" "}
+            Wir übernehmen die{" "}
             <strong>
               komplette Planung und Koordination aller notwendigen
               Abbrucharbeiten
             </strong>
             . Dazu gehören neben dem klassischen <strong>Hausabriss</strong>{" "}
-            auch Spezialleistungen wie <strong>Asbestsanierungen</strong>,{" "}
-            <strong>Schadstoffrückbau</strong> und die{" "}
-            <strong>fachgerechte Entsorgung</strong> von Baumaterialien.
+            auch die <strong>Schadstoffsanierung</strong> von belasteten
+            Materialien, wie u.a. Asbest, und die{" "}
+            <strong>umweltgerechte Entsorgung</strong> der Baumaterialien.
             <br />
             <br />
-            Nach dem Rückbau schaffen wir die optimale Grundlage für euer neues
-            ELK Fertighaus. Der große Vorteil:{" "}
-            <strong>
-              Abriss und Neubau werden zentral koordiniert und aufeinander
-              abgestimmt
-            </strong>
-            . Dadurch entstehen wertvolle Synergieeffekte, die Zeit sparen,
-            Kosten reduzieren und für maximale Planungssicherheit sorgen.
-            <br />
-            <br />
-            Ihr müsst euch nicht mit verschiedenen Gewerken, Behörden oder
-            Dienstleistern abstimmen. Stattdessen habt ihr einen{" "}
-            <strong>festen Ansprechpartner</strong> an eurer Seite, der den
-            gesamten Prozess begleitet - vom ersten Gespräch über den Hausabriss
-            bis zum Einzug in euer neues Fertighaus.
+            Nach dem Rückbau schaffen wir die{" "}
+            <strong>fachgerechte Baufläche</strong> für euer neues ELK
+            Fertighaus. Der große Vorteil: Abriss und Neubau werden zentral
+            koordiniert und aufeinander abgestimmt. Dadurch entstehen wertvolle
+            Synergieeffekte, die <strong>Zeit sparen</strong>,{" "}
+            <strong>Kosten reduzieren</strong> und für maximale{" "}
+            <strong>Planungssicherheit</strong> sorgen.
             <br />
             <br />
             So wird aus einer in die Jahre gekommenen Immobilie Schritt für
-            Schritt ein modernes, energieeffizientes Zuhause - persönlich,
-            planbar und sorgenfrei.
+            Schritt ein modernes, energieeffizientes Zuhause - planbar,
+            sorgenfrei und aus einer Hand.
           </p>
         </Container>
       </Section>

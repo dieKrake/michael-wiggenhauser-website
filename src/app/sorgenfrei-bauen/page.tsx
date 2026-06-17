@@ -145,7 +145,7 @@ export default function SorgenfreiBauenPage() {
         <div className="mt-8 flex flex-row items-stretch">
           <div className="relative overflow-hidden sm:w-1/3">
             <Image
-              src="/images/Warum-ELK.webp"
+              src="/images/Wald.webp"
               alt="ELK Haus"
               fill
               className="hidden object-cover object-left sm:block"
@@ -171,7 +171,7 @@ export default function SorgenfreiBauenPage() {
       </Section>
 
       {/* Slider Facts */}
-      <Section>
+      {/* <Section>
         <Container>
           <ImageCarousel
             autoplay={true}
@@ -183,7 +183,7 @@ export default function SorgenfreiBauenPage() {
             }))}
           />
         </Container>
-      </Section>
+      </Section> */}
 
       {/* Climate friendly houses */}
       <ClimateFriendlyHouses />
