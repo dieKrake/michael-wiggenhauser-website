@@ -141,21 +141,32 @@ export default function SorgenfreiBauenPage() {
           <p className="mt-4 max-w-2xl lg:mx-auto lg:text-center">
             {whyElkSectionData.description}
           </p>
-        </Container>
-        <div className="mt-8 flex flex-row items-stretch">
-          <div className="relative overflow-hidden sm:w-1/3">
+          {/* Mobile & Tablet Image (visible below lg) */}
+          <div className="relative mt-6 h-[240px] w-full overflow-hidden rounded-lg sm:h-[340px] md:h-[400px] lg:hidden">
             <Image
               src="/images/Wald.webp"
               alt="ELK Haus"
               fill
-              className="hidden object-cover object-left sm:block"
-              sizes="(max-width: 1024px) 33vw, 500px"
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 0px"
+              priority
             />
           </div>
-          <div className="relative w-1/6 overflow-hidden sm:hidden">
-            <div className="block h-full w-full bg-(--color-dark-brown) sm:hidden" />
+        </Container>
+        <div className="mt-8 flex flex-row items-stretch">
+          <div className="relative hidden overflow-hidden lg:block lg:w-1/3">
+            <Image
+              src="/images/Wald.webp"
+              alt="ELK Haus"
+              fill
+              className="object-cover object-left"
+              sizes="(max-width: 1024px) 0px, 500px"
+            />
           </div>
-          <div className="flex w-full flex-col pr-4 pl-8 sm:pr-6 md:w-2/3 md:pl-16 lg:pr-8">
+          <div className="relative w-1/10 overflow-hidden sm:hidden">
+            <div className="block h-full w-full rounded-r-lg bg-(--color-dark-brown) sm:hidden" />
+          </div>
+          <div className="flex w-full flex-col pr-4 pl-8 sm:pr-6 lg:w-2/3 lg:pr-8 lg:pl-16">
             {whyElkSectionData.usps.map((usp) => (
               <div key={usp.title} className="mb-6">
                 <h3 className="mt-4 text-left text-lg font-semibold">
