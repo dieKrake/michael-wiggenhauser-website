@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import Button from "@/components/ui/button";
 import WorriesSection from "@/components/sections/worries-section";
+import ParallaxBanner from "@/components/sections/parallax-banner";
 
 export const metadata: Metadata = {
   title:
@@ -234,31 +235,17 @@ export default function FinanzierungAblaufPage() {
       </div>
 
       {/* Sorgenfrei Verkaufen */}
-      <Section
+      <ParallaxBanner
         id="verkaufen"
-        className="relative overflow-hidden py-24 text-white sm:py-32 lg:py-40"
+        src="/images/haus-verkaufen.webp"
+        alt="Sorgenfrei Verkaufen"
+        heading="Sorgenfrei Verkaufen"
+        priority
       >
-        <Image
-          src="/images/haus-verkaufen.webp"
-          alt="Sorgenfrei Verkaufen"
-          fill
-          className="object-cover object-[center_60%]"
-          fetchPriority="high"
-          priority
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-black/50" />
-        <Container className="relative z-10">
-          <Heading as="h2" className="text-white lg:text-center">
-            Sorgenfrei Verkaufen
-          </Heading>
-          <p className="mt-4 max-w-2xl text-lg text-white/90 lg:mx-auto lg:text-center">
-            Du möchtest eine bestehende Immobilie verkaufen? Auch hier begleite
-            ich dich von der ersten Beratung bis zum erfolgreichen Abschluss -
-            persönlich, professionell und sorgenfrei.
-          </p>
-        </Container>
-      </Section>
+        Du möchtest eine bestehende Immobilie verkaufen? Auch hier begleite ich
+        dich von der ersten Beratung bis zum erfolgreichen Abschluss -
+        persönlich, professionell und sorgenfrei.
+      </ParallaxBanner>
       <Section background="gray">
         <Container className="max-w-5xl">
           <p className="text-lg lg:text-center">
@@ -297,32 +284,17 @@ export default function FinanzierungAblaufPage() {
       </Section>
 
       {/* Sorgenfrei Abreissen */}
-      <Section
+      <ParallaxBanner
         id="abreissen"
-        className="relative overflow-hidden py-24 text-white sm:py-32 lg:py-40"
+        src="/images/Abriss.webp"
+        alt="Abriss und Neubau aus einer Hand"
+        heading="Abriss und Neubau aus einer Hand"
       >
-        <Image
-          src="/images/Abriss.webp"
-          alt="Sorgenfrei Verkaufen"
-          fill
-          className="object-cover object-[center_60%]"
-          fetchPriority="high"
-          priority
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-black/50" />
-        <Container className="relative z-10">
-          <Heading as="h2" className="text-white lg:text-center">
-            Abriss und Neubau aus einer Hand
-          </Heading>
-          <p className="mt-4 max-w-2xl text-lg text-white/90 lg:mx-auto lg:text-center">
-            Nicht jede Bestandsimmobilie lässt sich wirtschaftlich sanieren. Oft
-            ist es sinnvoll, ein altes Haus abzureißen und sich für einen
-            modernen, energieeffizienten und zukunftsorientierten Neubau zu
-            entscheiden. Auch bei diesem Schritt begleite ich euch.
-          </p>
-        </Container>
-      </Section>
+        Nicht jede Bestandsimmobilie lässt sich wirtschaftlich sanieren. Oft ist
+        es sinnvoll, ein altes Haus abzureißen und sich für einen modernen,
+        energieeffizienten und zukunftsorientierten Neubau zu entscheiden. Auch
+        bei diesem Schritt begleite ich euch.
+      </ParallaxBanner>
       <Section background="gray">
         <Container className="max-w-5xl">
           <p className="text-lg lg:text-center">
