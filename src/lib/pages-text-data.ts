@@ -383,25 +383,25 @@ export const sliderFactsData = [
 export const climateFriendlyHousesData = [
   {
     image: "/images/holz.webp",
-    title: "NACHHALTIGES BAUEN MIT HOLZ",
+    title: "NACHHALTIGES BAUEN\nMIT HOLZ",
     description:
       "Nachhaltiges Bauen beginnt beim richtigen Baustoff. ELK Holzfertighäuser werden in moderner Holzrahmenbauweise gefertigt und verbinden höchste Qualität mit einem natürlichen Wohngefühl. Das verwendete Holz stammt aus nachhaltig bewirtschafteten Wäldern und sorgt für ein gesundes Zuhause mit hervorragenden Dämmeigenschaften.",
   },
   {
     image: "/images/pflanze.webp",
-    title: "KLIMAFREUNDLICHES FERTIGHAUS",
+    title: "KLIMAFREUNDLICHES\nFERTIGHAUS",
     description:
       "Wer sich für ein Holzfertighaus entscheidet, baut nachhaltig und ressourcenschonend. Holz ist ein nachwachsender Rohstoff, speichert CO₂ und verbessert die Umweltbilanz eures Hauses deutlich. So verbindet ihr modernes Wohnen mit energieeffizientem Bauen und einem aktiven Beitrag zum Klimaschutz.",
   },
   {
     image: "/images/wintergarten.webp",
-    title: "GESUNDES WOHNEN & RAUMKLIMA",
+    title: "GESUNDES WOHNEN &\nRAUMKLIMA",
     description:
-      "Holz schafft ein angenehmes Raumklima und sorgt das ganze Jahr über für ein natürliches Wohngefühl. Die besondere Bauweise moderner Fertighäuser reguliert Feuchtigkeit auf natürliche Weise und schafft eine behagliche Atmosphäre, in der ihr euch vom ersten Tag an zuhause fühlt.",
+      "Holz schafft ein angenehmes Raumklima und\nsorgt das ganze Jahr über für ein natürliches Wohngefühl. Die besondere Bauweise moderner Fertighäuser reguliert Feuchtigkeit auf natürliche Weise und schafft eine behagliche Atmosphäre, in der ihr euch vom ersten Tag an zuhause fühlt.",
   },
   {
     image: "/images/paar.webp",
-    title: "ENERGIEEFFIZIENTE HAUSTECHNIK",
+    title: "ENERGIEEFFIZIENTE\nHAUSTECHNIK",
     description:
       "Jedes ELK Fertighaus ist mit moderner und energieeffizienter Haustechnik ausgestattet. Intelligente Heiz- und Lüftungssysteme mit Wärmerückgewinnung senken langfristig die Energiekosten und sorgen gleichzeitig für ein gesundes Raumklima sowie höchsten Wohnkomfort.",
   },

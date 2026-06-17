@@ -170,21 +170,6 @@ export default function SorgenfreiBauenPage() {
         </div>
       </Section>
 
-      {/* Slider Facts */}
-      {/* <Section>
-        <Container>
-          <ImageCarousel
-            autoplay={true}
-            showArrows={false}
-            bgImage="/images/Elk-Haus-Zimmer.webp"
-            slides={sliderFactsData.map((fact) => ({
-              title: fact.title,
-              text: fact.text,
-            }))}
-          />
-        </Container>
-      </Section> */}
-
       {/* Climate friendly houses */}
       <ClimateFriendlyHouses />
 
