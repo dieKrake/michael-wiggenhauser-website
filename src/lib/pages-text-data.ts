@@ -412,15 +412,15 @@ export const climateFriendlyHousesData = [
 export const landingServicesList = [
   {
     text: "Neubau von Einfamilien-, Doppel- und Mehrfamilienhäusern",
-    href: "/sorgenfrei-bauen#elk-fertighaeuser",
+    href: "/sorgenfrei-bauen",
   },
   {
     text: "Individuelle Grundrissplanung und Konfiguration",
-    href: "/dein-weg-ins-neue-zuhause#timeline",
+    href: "/sorgenfrei-bauen",
   },
   {
     text: "Finanzierungsberatung inkl. Fördermittelprüfung",
-    href: "/dein-weg-ins-neue-zuhause#timeline",
+    href: "/sorgenfrei-bauen",
   },
   {
     text: "Begleitung vom Erstgespräch bis zur Schlüsselübergabe",

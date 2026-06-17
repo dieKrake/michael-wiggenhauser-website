@@ -275,12 +275,6 @@ export default function Startseite() {
                   )}
                 </li>
               ))}
-              {/* <Link
-                href="/sorgenfrei-bauen#leistungen"
-                className="mt-8 inline-flex items-center gap-1.5 text-sm font-bold tracking-wider text-neutral-800 uppercase lg:mt-0 lg:hidden"
-              >
-                Mehr erfahren <ArrowRight className="h-3.5 w-3.5" />
-              </Link> */}
             </ul>
           </div>
         </div>
