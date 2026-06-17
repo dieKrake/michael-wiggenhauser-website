@@ -4,6 +4,12 @@ import Container from "@/components/layout/container";
 import Section from "@/components/layout/section";
 import Heading from "@/components/ui/heading";
 import { partnerData } from "@/lib/pages-text-data";
+import { cn } from "@/lib/utils";
+
+const bgClasses: Record<string, string> = {
+  light: "bg-white",
+  dark: "bg-(--color-dark-brown)",
+};
 
 export const PartnerSection: FC = () => {
   return (
@@ -16,7 +22,10 @@ export const PartnerSection: FC = () => {
           {partnerData.partners.map((partner) => (
             <div
               key={partner.name}
-              className="flex aspect-video items-center justify-center overflow-hidden rounded-2xl bg-white p-8 shadow-sm"
+              className={cn(
+                "flex aspect-video items-center justify-center overflow-hidden rounded-2xl p-8 shadow-sm",
+                bgClasses[partner.bg] ?? "bg-white"
+              )}
             >
               {partner.image ? (
                 <Image

@@ -317,14 +317,16 @@ export const partnerData = {
   title: "Partner",
   partners: [
     {
-      name: "Partner 1",
-      image: "",
-      alt: "Logo Partner 1",
+      name: "ELK",
+      image: "/images/ELK-Logo.webp",
+      alt: "Logo ELK",
+      bg: "light",
     },
     {
-      name: "Partner 2",
-      image: "",
-      alt: "Logo Partner 2",
+      name: "Weissenberger",
+      image: "/images/WB-Logo.webp",
+      alt: "Logo Weissenberger",
+      bg: "dark",
     },
   ],
 };
