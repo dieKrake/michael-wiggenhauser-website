@@ -328,6 +328,12 @@ export const partnerData = {
       alt: "Logo Weissenberger",
       bg: "dark",
     },
+    {
+      name: "Marcus Lutz Bau GmbH",
+      image: "/images/Lutz-Bau-Logo.webp",
+      alt: "Logo Marcus Lutz Bau GmbH",
+      bg: "light",
+    },
   ],
 };
 

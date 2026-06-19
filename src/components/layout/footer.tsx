@@ -10,14 +10,16 @@ const Footer: FC = () => {
         <div className="grid gap-12 md:grid-cols-3">
           {/* Brand */}
           <div className="flex flex-col items-start">
-            <Image
-              src="/images/Wiggenhauser-Logo-light.png"
-              alt={siteConfig.name}
-              width={160}
-              height={40}
-              className="h-auto w-32 object-contain md:w-36 lg:w-40"
-              style={{ height: "auto" }}
-            />
+            <div className="w-32 md:w-36 lg:w-40">
+              <Image
+                src="/images/Wiggenhauser-Logo-light.png"
+                alt={siteConfig.name}
+                width={160}
+                height={40}
+                className="object-contain"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
             <p className="mt-3 text-sm leading-relaxed text-gray-200">
               {siteConfig.description}
             </p>

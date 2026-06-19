@@ -150,7 +150,7 @@ export default function Startseite() {
                     <h3 className="mt-6 text-sm font-bold tracking-wider uppercase">
                       {item.title}
                     </h3>
-                    <p className="mt-3 text-base leading-relaxed text-neutral-600 lg:mx-auto lg:max-w-xs">
+                    <p className="mt-3 text-base leading-relaxed text-neutral-600 md:pr-16 lg:mx-auto lg:max-w-xs lg:pr-0">
                       {item.description}
                     </p>
                   </div>

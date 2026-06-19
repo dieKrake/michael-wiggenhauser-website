@@ -18,7 +18,7 @@ export const PartnerSection: FC = () => {
         <Heading as="h2" className="text-center">
           {partnerData.title}
         </Heading>
-        <div className="mx-auto mt-12 grid max-w-3xl grid-cols-1 gap-8 sm:grid-cols-2">
+        <div className="mx-auto mt-12 grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3">
           {partnerData.partners.map((partner) => (
             <div
               key={partner.name}
