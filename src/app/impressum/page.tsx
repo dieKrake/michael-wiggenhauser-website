@@ -3,8 +3,8 @@ import Container from "@/components/layout/container";
 import Section from "@/components/layout/section";
 
 export const metadata: Metadata = {
-  title: "Impressum | Krazius Solutions",
-  description: "Impressum und rechtliche Hinweise von Krazius Solutions",
+  title: "Impressum | Michael Wiggenhauser",
+  description: "Impressum und rechtliche Hinweise von Michael Wiggenhauser",
 };
 
 export default function ImpressumPage() {
