@@ -8,6 +8,7 @@ import "./globals.css";
 import WhatsAppButton from "@/components/ui/whatsapp-button";
 import CookieConsent from "@/components/ui/cookie-consent";
 import ExitPopup from "@/components/ui/exit-popup";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -43,6 +44,7 @@ export default function RootLayout({
         <Footer />
         <CookieConsent />
         <ExitPopup />
+        <SpeedInsights />
       </body>
     </html>
   );
