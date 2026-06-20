@@ -99,10 +99,10 @@ export default function SorgenfreiBauenPage() {
             ELK Fertighäuser
           </Heading>
           <p className="text-primary-200 mt-4 max-w-2xl lg:mx-auto lg:text-center lg:text-xl">
-            Als Marktführer in Europa steht ELK für über 60 Jahre Erfahrung,
-            schnelle Lieferzeiten zum Festpreis und komplette
-            Individualisierbarkeit. Ihr profitiert beim Hausbau von bewährten
-            Konzepten, hoher Qualität und Planungssicherheit.
+            Als Marktführer steht ELK für über 60 Jahre Erfahrung, schnelle
+            Lieferzeiten zum Festpreis und komplette Individualisierbarkeit. Ihr
+            profitiert beim Hausbau von bewährten Konzepten, hoher Qualität und
+            Planungssicherheit.
           </p>
         </Container>
       </Section>
