@@ -7,7 +7,7 @@ export const heroSectionTextTop = {
 
 export const landingPageTiles = [
   {
-    title: "Sorgenfrei mit ELK",
+    title: "Sorgenfrei Bauen",
     description:
       "Von der Grundrissplanung über die Konfiguration bis zur Schlüsselübergabe. Umfassende Beratung gepaart mit den Fertighaus-Qualitätsstandards von ELK.",
     href: "/sorgenfrei-bauen",

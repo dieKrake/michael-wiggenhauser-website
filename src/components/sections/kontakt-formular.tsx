@@ -16,6 +16,7 @@ import {
 import Button from "@/components/ui/button";
 import { ContactButton } from "@/components/ui/contact-button";
 import { siteConfig } from "@/lib/constants";
+import { sendContactEmail } from "@/app/actions/send-email";
 
 const InstagramIcon = ({ className }: { className?: string }) => (
   <svg
@@ -102,15 +103,20 @@ const KontaktFormular = () => {
     setSubmitStatus("loading");
 
     try {
-      // Künstliche Verzögerung von 1,5 Sekunden für die Ladeanimation
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+      const result = await sendContactEmail({
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      });
 
-      // Hier würde der echte API-Call stehen (z.B. Resend oder ein Next.js Server Action)
-      console.log("Formular erfolgreich gesendet:", formData);
-
-      setSubmitStatus("success");
-      setFormData({ name: "", email: "", message: "", datenschutz: false });
-      setErrors({});
+      if (result.success) {
+        setSubmitStatus("success");
+        setFormData({ name: "", email: "", message: "", datenschutz: false });
+        setErrors({});
+      } else {
+        console.error("Send error:", result.error);
+        setSubmitStatus("error");
+      }
     } catch (error) {
       console.error(error);
       setSubmitStatus("error");
