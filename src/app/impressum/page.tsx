@@ -24,7 +24,7 @@ export default function ImpressumPage() {
               <p className="mt-2 text-sm leading-relaxed md:text-base">
                 <strong>Firma:</strong> Michael Wiggenhauser
                 <br />
-                <strong>Adresse:</strong> Gartenweg 3, 73489 Rainau Schwabsberg
+                <strong>Adresse:</strong> Gartenweg 3, 73492 Rainau Schwabsberg
                 <br />
                 <strong>Geschäftsführer:</strong> Michael Wiggenhauser
               </p>
@@ -70,7 +70,7 @@ export default function ImpressumPage() {
               <p className="mt-2 text-sm leading-relaxed md:text-base">
                 Michael Wiggenhauser
                 <br />
-                <strong>Adresse:</strong> Gartenweg 3, 73497 Rainau Schwabsberg
+                <strong>Adresse:</strong> Gartenweg 3, 73492 Rainau Schwabsberg
               </p>
             </div>
 
