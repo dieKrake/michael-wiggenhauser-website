@@ -300,7 +300,7 @@ export default function Startseite() {
           {/* Content */}
           <div className="relative px-6 py-16 lg:px-12 lg:py-24">
             <h2 className="text-center text-3xl font-semibold tracking-tight text-white lg:text-4xl">
-              Zufriedene Bauherren
+              Zufriedene Bauherr:innen
             </h2>
 
             <TestimonialCarousel items={testimonials} className="mt-10" />

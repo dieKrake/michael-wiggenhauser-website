@@ -13,13 +13,13 @@ export const landingPageTiles = [
     href: "/sorgenfrei-bauen",
   },
   {
-    title: "Finanziert. Geplant. Gebaut.",
+    title: "Dein Weg ins neue Zuhause",
     description:
-      "Profitiert von der Erfahrung hunderter ELK-Bauprojekte – mit bewährten Abläufen, sicherer Finanzierung und einem starken Partner, der euch Schritt für Schritt begleitet.",
+      "Egal ob Hausbau, Hausverkauf oder Abriss des Altbestands – ich begleite euer Bauvorhaben mit bewährten, klar strukturierten Abläufen.",
     href: "/dein-weg-ins-neue-zuhause",
   },
   {
-    title: "Immer für euch da",
+    title: "Über mich",
     description:
       "Ein Haus zu bauen braucht Vertrauen. Ich begleite euch persönlich durch jede Phase eures Bauvorhabens – mit Erfahrung, ehrlicher Beratung und einem klaren Plan für euer Fertighaus.",
     href: "/ueber-mich",
