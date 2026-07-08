@@ -2,6 +2,7 @@ import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { siteConfig, footerLinks } from "@/lib/constants";
+import CookieSettingsButton from "@/components/ui/cookie-settings-button";
 
 const Footer: FC = () => {
   return (
@@ -60,6 +61,9 @@ const Footer: FC = () => {
                   </Link>
                 </li>
               ))}
+              <li className="flex">
+                <CookieSettingsButton />
+              </li>
             </ul>
           </div>
         </div>

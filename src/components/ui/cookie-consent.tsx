@@ -21,6 +21,18 @@ export const CookieConsent: FC = () => {
     }
   }, []);
 
+  useEffect(() => {
+    const handleOpen = () => {
+      setIsMounted(true);
+      // Wait a tiny bit to let the DOM node render, then trigger slide up animation
+      const animTimer = setTimeout(() => setIsAnimated(true), 50);
+      return () => clearTimeout(animTimer);
+    };
+
+    window.addEventListener("show-cookie-consent", handleOpen);
+    return () => window.removeEventListener("show-cookie-consent", handleOpen);
+  }, []);
+
   const handleDismiss = (choice: "all" | "essential") => {
     localStorage.setItem("cookie-consent-choice", choice);
     setIsAnimated(false);
