@@ -274,10 +274,10 @@ const KontaktFormular = () => {
                     name="name"
                     value={formData.name || ""}
                     onChange={handleChange}
-                    className={`mt-1.5 block w-full rounded-xl border px-4 py-3 text-[15px] transition-colors focus:outline-none ${
+                    className={`mt-1.5 block w-full rounded-xl border px-4 py-3 text-[15px] transition-all focus:ring-4 focus:outline-none ${
                       errors.name
-                        ? "border-red-500 bg-red-50 focus:border-red-500"
-                        : "border-neutral-200 bg-neutral-50 focus:border-black focus:bg-white"
+                        ? "border-red-500 bg-red-50 focus:border-red-500 focus:ring-red-500/10"
+                        : "border-neutral-200 bg-neutral-50 focus:border-neutral-900 focus:bg-white focus:ring-neutral-900/5"
                     }`}
                     placeholder="Dein Name"
                   />
@@ -298,10 +298,10 @@ const KontaktFormular = () => {
                     name="email"
                     value={formData.email || ""}
                     onChange={handleChange}
-                    className={`mt-1.5 block w-full rounded-xl border px-4 py-3 text-[15px] transition-colors focus:outline-none ${
+                    className={`mt-1.5 block w-full rounded-xl border px-4 py-3 text-[15px] transition-all focus:ring-4 focus:outline-none ${
                       errors.email
-                        ? "border-red-500 bg-red-50 focus:border-red-500"
-                        : "border-neutral-200 bg-neutral-50 focus:border-black focus:bg-white"
+                        ? "border-red-500 bg-red-50 focus:border-red-500 focus:ring-red-500/10"
+                        : "border-neutral-200 bg-neutral-50 focus:border-neutral-900 focus:bg-white focus:ring-neutral-900/5"
                     }`}
                     placeholder={siteConfig.email}
                   />
@@ -324,10 +324,10 @@ const KontaktFormular = () => {
                 value={formData.message || ""}
                 onChange={handleChange}
                 rows={5}
-                className={`mt-1.5 block min-h-[120px] w-full flex-1 resize-none rounded-xl border px-4 py-3 text-[15px] transition-colors focus:outline-none md:h-0 ${
+                className={`mt-1.5 block min-h-[120px] w-full flex-1 resize-none rounded-xl border px-4 py-3 text-[15px] transition-all focus:ring-4 focus:outline-none md:h-0 ${
                   errors.message
-                    ? "border-red-500 bg-red-50 focus:border-red-500"
-                    : "border-neutral-200 bg-neutral-50 focus:border-black focus:bg-white"
+                    ? "border-red-500 bg-red-50 focus:border-red-500 focus:ring-red-500/10"
+                    : "border-neutral-200 bg-neutral-50 focus:border-neutral-900 focus:bg-white focus:ring-neutral-900/5"
                 }`}
                 placeholder="Deine Nachricht..."
               />
