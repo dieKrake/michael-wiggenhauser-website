@@ -220,7 +220,7 @@ export default function DatenschutzPage() {
                     <br />
                     Selbstständiger Handelsvertreter für ELK Fertighäuser
                     <br />
-                    Gartenweg 3, 73492 Rainau-Saverwang, Deutschland
+                    Gartenweg 3, 73492 Rainau-Schwabsberg, Deutschland
                   </p>
                   <p className="mt-4">
                     <strong>E-Mail:</strong>{" "}

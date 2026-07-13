@@ -28,7 +28,7 @@ export default function ImpressumPage() {
                 <br />
                 Gartenweg 3
                 <br />
-                73492 Rainau-Saverwang
+                73492 Rainau-Schwabsberg
                 <br />
                 Deutschland
               </div>
@@ -89,7 +89,7 @@ export default function ImpressumPage() {
                 <br />
                 Gartenweg 3
                 <br />
-                73492 Rainau-Saverwang
+                73492 Rainau-Schwabsberg
               </p>
             </div>
 

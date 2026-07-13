@@ -42,7 +42,7 @@ export default function AGBPage() {
                     <br />
                     Gartenweg 3
                     <br />
-                    73492 Rainau-Saverwang
+                    73492 Rainau-Schwabsberg
                     <br />
                     nachfolgend „Handelsvertreter" oder „Berater" genannt.
                   </p>
@@ -465,39 +465,48 @@ export default function AGBPage() {
                 </h2>
                 <div className="space-y-4 text-sm leading-relaxed md:text-base">
                   <p>
-                    (1) Michael Wiggenhauser haftet unbeschränkt für Schäden,
-                    die vorsätzlich oder grob fahrlässig verursacht wurden,
-                    sowie bei Schäden aus der Verletzung des Lebens, des Körpers
-                    oder der Gesundheit.
+                    (1) Michael Wiggenhauser ist selbstständiger
+                    Handelsvertreter der ELK Fertighaus GmbH und handelt im
+                    Rahmen seiner Tätigkeit als Vermittler und Berater für den
+                    Erwerb von ELK Fertighäusern.
                   </p>
                   <p>
-                    (2) Bei leicht fahrlässiger Verletzung wesentlicher
-                    Vertragspflichten (Kardinalpflichten) ist die Haftung auf
-                    den vertragstypischen, vorhersehbaren Schaden begrenzt.
-                    Kardinalpflichten sind Pflichten, deren Erfüllung die
-                    ordnungsgemäße Durchführung des Vertrags überhaupt erst
-                    ermöglicht und auf deren Einhaltung der Auftraggeber
-                    regelmäßig vertrauen darf.
+                    (2) Vertragspartner für den Erwerb eines ELK Fertighauses
+                    ist ausschließlich die ELK Fertighaus GmbH. Sämtliche Rechte
+                    und Pflichten aus dem Hauskaufvertrag, insbesondere
+                    hinsichtlich Planung, Bauausführung, Bauqualität,
+                    Lieferzeiten, Gewährleistung, Mängelansprüchen und sonstigen
+                    werkvertraglichen Leistungen, bestehen ausschließlich
+                    zwischen dem Auftraggeber und der ELK Fertighaus GmbH.
+                    Soweit Michael Wiggenhauser im Namen der ELK Fertighaus GmbH
+                    Erklärungen entgegennimmt oder Verträge unterzeichnet,
+                    handelt er ausschließlich als Handelsvertreter und Vertreter
+                    der ELK Fertighaus GmbH.
                   </p>
                   <p>
-                    (3) Im Übrigen ist eine Haftung für leicht fahrlässig
-                    verursachte Schäden ausgeschlossen, soweit gesetzlich
-                    zulässig.
+                    (3) Michael Wiggenhauser übernimmt keine Haftung für
+                    Leistungen, Zusagen oder Entscheidungen der ELK Fertighaus
+                    GmbH sowie der von ihm vermittelten Partnerunternehmen. Dies
+                    gilt insbesondere für Finanzierungsentscheidungen,
+                    Förderzusagen, Immobilienvermittlungen, Abriss-, Rückbau-
+                    und Sanierungsleistungen sowie behördliche Genehmigungen
+                    oder Entscheidungen Dritter.
                   </p>
-                  <p>(4) Michael Wiggenhauser haftet insbesondere nicht für:</p>
-                  <ul className="list-inside list-disc space-y-2 pl-4">
-                    <li>
-                      Entscheidungen von Banken oder Finanzierungspartnern,
-                    </li>
-                    <li>die Bewilligung oder Ablehnung von Fördermitteln,</li>
-                    <li>Entscheidungen von Behörden,</li>
-                    <li>Genehmigungs- oder Baugenehmigungsverfahren,</li>
-                    <li>Lieferengpässe oder Materialverfügbarkeiten,</li>
-                    <li>Bauzeiten oder Fertigstellungstermine,</li>
-                    <li>Leistungen oder Zusagen der ELK Fertighaus GmbH,</li>
-                    <li>Leistungen vermittelter Partnerunternehmen,</li>
-                    <li>Preisänderungen der ELK Fertighaus GmbH.</li>
-                  </ul>
+                  <p>
+                    (4) Beratungen, Empfehlungen und Einschätzungen erfolgen
+                    nach bestem Wissen und auf Grundlage der zum Zeitpunkt der
+                    Beratung verfügbaren Informationen. Sie stellen keine
+                    verbindlichen Zusicherungen oder Garantien dar. Insbesondere
+                    besteht kein Anspruch auf die Bewilligung von Fördermitteln
+                    oder Finanzierungen sowie auf die Erteilung behördlicher
+                    Genehmigungen.
+                  </p>
+                  <p>
+                    (5) Die gesetzliche Haftung für vorsätzlich oder grob
+                    fahrlässig verursachte Schäden sowie für Schäden aus der
+                    Verletzung des Lebens, des Körpers oder der Gesundheit
+                    bleibt unberührt.
+                  </p>
                 </div>
               </section>
 

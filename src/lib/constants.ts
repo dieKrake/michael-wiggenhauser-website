@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Michael Wiggenhauser",
   description:
-    "Euer Fachberater für ELK Fertighäuser – Verkauf, Bauberatung und individuelle Hausplanung.",
+    "Euer Fachberater für ELK Fertighäuser – Neubau, Bestandsimmobilien und Abriss.",
   url: "https://www.sorgenfreibauen.de",
   phone: "+49 176 43488686",
   email: "michael.wiggenhauser@elkhaus.de",
