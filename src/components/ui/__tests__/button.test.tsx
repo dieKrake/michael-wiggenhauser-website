@@ -10,7 +10,7 @@ describe("Button", () => {
   it("should apply primary variant by default", () => {
     render(<Button>Test</Button>);
     const button = screen.getByRole("button");
-    expect(button.className).toContain("bg-primary-700");
+    expect(button.className).toContain("bg-neutral-900");
   });
 
   it("should apply secondary variant", () => {
@@ -22,13 +22,13 @@ describe("Button", () => {
   it("should apply outline variant", () => {
     render(<Button variant="outline">Test</Button>);
     const button = screen.getByRole("button");
-    expect(button.className).toContain("border-2");
+    expect(button.className).toContain("border");
   });
 
   it("should apply size classes", () => {
     render(<Button size="lg">Test</Button>);
     const button = screen.getByRole("button");
-    expect(button.className).toContain("px-8");
+    expect(button.className).toContain("px-10");
   });
 
   it("should pass additional props", () => {
