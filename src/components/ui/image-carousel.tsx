@@ -119,12 +119,10 @@ export function ImageCarousel({
     setFullscreenStartIndex(index);
     setFullscreenSelectedIndex(index);
     setIsFullscreen(true);
-    document.body.style.overflow = "hidden";
   };
 
   const closeFullscreen = () => {
     setIsFullscreen(false);
-    document.body.style.overflow = "";
   };
 
   // Handle ESC key to close fullscreen
@@ -156,12 +154,13 @@ export function ImageCarousel({
     };
   }, [fullscreenApi, isFullscreen]);
 
-  // Cleanup on unmount
   useEffect(() => {
+    document.body.style.overflow = isFullscreen ? "hidden" : "";
+
     return () => {
       document.body.style.overflow = "";
     };
-  }, []);
+  }, [isFullscreen]);
 
   const fullscreenScrollPrev = useCallback(
     () => fullscreenApi?.scrollPrev(),

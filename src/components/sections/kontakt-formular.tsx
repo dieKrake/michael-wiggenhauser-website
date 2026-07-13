@@ -10,8 +10,6 @@ import {
   CheckCircle2,
   XCircle,
   MapPin,
-  ChevronRight,
-  ArrowUpRight,
 } from "lucide-react";
 import Button from "@/components/ui/button";
 import { ContactButton } from "@/components/ui/contact-button";
@@ -57,9 +55,13 @@ const KontaktFormular = () => {
 
   // Reset form when navigating to a different page
   useEffect(() => {
-    setFormData({ name: "", email: "", message: "", datenschutz: false });
-    setErrors({});
-    setSubmitStatus("idle");
+    const resetTimer = setTimeout(() => {
+      setFormData({ name: "", email: "", message: "", datenschutz: false });
+      setErrors({});
+      setSubmitStatus("idle");
+    }, 0);
+
+    return () => clearTimeout(resetTimer);
   }, [pathname]);
 
   const validateEmail = (email: string): boolean => {

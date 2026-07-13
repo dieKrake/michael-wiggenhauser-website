@@ -44,7 +44,7 @@ export default function AGBPage() {
                     <br />
                     73492 Rainau-Schwabsberg
                     <br />
-                    nachfolgend „Handelsvertreter" oder „Berater" genannt.
+                    nachfolgend „Handelsvertreter“ oder „Berater“ genannt.
                   </p>
                   <p>
                     (2) Die Leistungen richten sich sowohl an Verbraucher im

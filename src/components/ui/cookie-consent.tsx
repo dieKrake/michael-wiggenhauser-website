@@ -14,10 +14,13 @@ export const CookieConsent: FC = () => {
     // Check if user has already made a choice
     const consent = localStorage.getItem("cookie-consent-choice");
     if (!consent) {
-      setIsMounted(true);
+      const mountTimer = setTimeout(() => setIsMounted(true), 0);
       // Wait for mount, then trigger entrance animation
       const animTimer = setTimeout(() => setIsAnimated(true), 1500);
-      return () => clearTimeout(animTimer);
+      return () => {
+        clearTimeout(mountTimer);
+        clearTimeout(animTimer);
+      };
     }
   }, []);
 

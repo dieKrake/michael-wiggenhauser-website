@@ -12,7 +12,6 @@ import {
   elkGalery,
   faqItems,
   whyElkSectionData,
-  sliderFactsData,
 } from "@/lib/pages-text-data";
 
 export const metadata: Metadata = {
